@@ -11,6 +11,13 @@ This repo explores:
 - **Trajectory over profile** — chronology reveals more than branding
 - **Repeated action over static identity** — commits, experiments, pivots as signal
 - **Evolving context over polished presentation** — reasoning traces stay visible
+- **Context-embedded calibration** — tikitaka happens *on* obsession, feed items, and reasoning traces — not in a side channel
+
+## Origin
+
+The product started from a coordination gap: builders talk in Slack, but **alignment inside shared context** is hard. Calibration should happen where obsession, pivots, and reasoning live — not in a detached chat tab.
+
+See [`docs/thesis.md`](docs/thesis.md) and [`docs/context-calibration.md`](docs/context-calibration.md).
 
 ## MVP
 
@@ -19,6 +26,7 @@ A minimal Next.js prototype with:
 1. **Trajectory feed** — notes, experiments, commits, focus, directional shifts
 2. **Current obsession card** — structured evolving context block
 3. **Reasoning / context layer** — short traces of why direction changed
+4. **Calibration threads** — short multi-author back-and-forth anchored to context objects (read-only seed data in v0.2)
 
 Run locally:
 
@@ -51,9 +59,9 @@ Open [http://localhost:3000](http://localhost:3000).
 
 ## Design direction
 
-**Not:** LinkedIn, Twitter/X, Slack, Discord.
+**Not:** LinkedIn, Twitter/X, Slack-style global chat, Discord.
 
-**Instead:** a calm, exploratory builder operating surface — minimal, thoughtful, alive.
+**Instead:** a calm, exploratory builder operating surface — minimal, thoughtful, alive. **Calibration is in-context, not in a channel.**
 
 ## GitHub-native direction
 
@@ -73,7 +81,7 @@ See [`docs/architecture.md`](docs/architecture.md).
 
 - How do builders expose evolving context?
 - Can repeated actions reveal identity better than profiles?
-- What does trajectory-native collaboration look like?
+- What does trajectory-native collaboration look like when calibration stays on the object?
 
 ---
 

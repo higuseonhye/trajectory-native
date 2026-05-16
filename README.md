@@ -29,6 +29,16 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000).
 
+## Product demo
+
+**Hero view** — obsession card and trajectory feed at a glance:
+
+![Builder trajectory workspace — hero view](docs/screenshots/demo-hero.png)
+
+**Full page** — obsession card, trajectory feed, and reasoning layer:
+
+![Builder trajectory workspace — full page](docs/screenshots/demo-full.png)
+
 ## Repository structure
 
 | Path | Purpose |

@@ -7,6 +7,7 @@ import {
   obsession,
   trajectoryFeed,
   reasoningTraces,
+  calibrationReplies,
 } from "@/lib/data";
 
 export default function Home() {
@@ -15,9 +16,15 @@ export default function Home() {
       <Header />
       <main className="flex-1 px-6 py-10 md:px-10">
         <div className="mx-auto max-w-3xl space-y-16">
-          <ObsessionCard data={obsession} />
-          <TrajectoryFeed entries={trajectoryFeed} />
-          <ReasoningLayer traces={reasoningTraces} />
+          <ObsessionCard data={obsession} calibrations={calibrationReplies} />
+          <TrajectoryFeed
+            entries={trajectoryFeed}
+            calibrations={calibrationReplies}
+          />
+          <ReasoningLayer
+            traces={reasoningTraces}
+            calibrations={calibrationReplies}
+          />
         </div>
       </main>
       <Footer />

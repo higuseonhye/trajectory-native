@@ -1,4 +1,6 @@
-import type { ObsessionCard } from "@/lib/types";
+import type { CalibrationReply, ObsessionCard } from "@/lib/types";
+import { CalibrationThread } from "./CalibrationThread";
+import { hasReplies } from "@/lib/calibration";
 
 const fields: { key: keyof ObsessionCard; label: string }[] = [
   { key: "exploring", label: "What I'm exploring" },
@@ -9,9 +11,10 @@ const fields: { key: keyof ObsessionCard; label: string }[] = [
 
 interface Props {
   data: ObsessionCard;
+  calibrations: CalibrationReply[];
 }
 
-export function ObsessionCard({ data }: Props) {
+export function ObsessionCard({ data, calibrations }: Props) {
   return (
     <section
       className="rounded-lg border border-[var(--border)] bg-[var(--surface)] p-6"
@@ -33,14 +36,24 @@ export function ObsessionCard({ data }: Props) {
       </div>
 
       <dl className="mt-6 space-y-5">
-        {fields.map(({ key, label }) => (
-          <div key={key}>
-            <dt className="text-xs font-medium text-[var(--muted)]">{label}</dt>
-            <dd className="mt-1.5 text-sm leading-relaxed text-[var(--foreground)]">
-              {data[key]}
-            </dd>
-          </div>
-        ))}
+        {fields.map(({ key, label }) => {
+          const anchor = { type: "obsession" as const, id: key };
+          return (
+            <div key={key}>
+              <dt className="text-xs font-medium text-[var(--muted)]">{label}</dt>
+              <dd className="mt-1.5 text-sm leading-relaxed text-[var(--foreground)]">
+                {data[key]}
+              </dd>
+              {hasReplies(calibrations, anchor) && (
+                <CalibrationThread
+                  anchor={anchor}
+                  replies={calibrations}
+                  label="Calibrating · signal"
+                />
+              )}
+            </div>
+          );
+        })}
       </dl>
     </section>
   );

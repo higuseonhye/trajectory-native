@@ -1,4 +1,9 @@
-import type { ObsessionCard, ReasoningTrace, TrajectoryEntry } from "./types";
+import type {
+  CalibrationReply,
+  ObsessionCard,
+  ReasoningTrace,
+  TrajectoryEntry,
+} from "./types";
 
 export const obsession: ObsessionCard = {
   exploring:
@@ -72,5 +77,69 @@ export const reasoningTraces: ReasoningTrace[] = [
     insight:
       "A chronological stream of obsessions, pivots, and experiments reads more honest than a bio",
     timestamp: "2026-05-15T16:00:00Z",
+  },
+];
+
+/** Context-embedded calibration — short back-and-forth on specific objects */
+export const calibrationReplies: CalibrationReply[] = [
+  {
+    id: "c1",
+    anchor: { type: "reasoning", id: "r1" },
+    author: "collaborator-a",
+    body: "Slack thread from Tuesday already argued this — can we link that commit series instead of rewriting?",
+    timestamp: "2026-05-16T08:20:00Z",
+  },
+  {
+    id: "c2",
+    anchor: { type: "reasoning", id: "r1" },
+    author: "builder",
+    body: "Agreed. Treating commits as residue means the feed item should point at SHAs, not paraphrase.",
+    timestamp: "2026-05-16T08:35:00Z",
+    isCalibration: true,
+  },
+  {
+    id: "c3",
+    anchor: { type: "reasoning", id: "r1" },
+    author: "collaborator-a",
+    body: "Then Layer 2 is priority — without SHA links, calibration stays verbal.",
+    timestamp: "2026-05-16T08:42:00Z",
+    isCalibration: true,
+  },
+  {
+    id: "c4",
+    anchor: { type: "reasoning", id: "r2" },
+    author: "collaborator-b",
+    body: "Honest chronology — does that include failed experiments or only published pivots?",
+    timestamp: "2026-05-15T17:00:00Z",
+  },
+  {
+    id: "c5",
+    anchor: { type: "obsession", id: "watchingSignal" },
+    author: "collaborator-a",
+    body: "Revisit rate matters — if traces are write-once, the reasoning layer is just a diary.",
+    timestamp: "2026-05-16T11:00:00Z",
+  },
+  {
+    id: "c6",
+    anchor: { type: "obsession", id: "watchingSignal" },
+    author: "builder",
+    body: "Signal updated: we'll measure replies-on-trace, not page views. That's the calibration loop.",
+    timestamp: "2026-05-16T11:15:00Z",
+    isCalibration: true,
+  },
+  {
+    id: "c7",
+    anchor: { type: "feed", id: "t1" },
+    author: "collaborator-b",
+    body: "Feed as spine — does obsession card become secondary or still the 'now' surface?",
+    timestamp: "2026-05-16T10:15:00Z",
+  },
+  {
+    id: "c8",
+    anchor: { type: "feed", id: "t1" },
+    author: "builder",
+    body: "Both. Obsession = compressed now; feed = proof over time. Calibration can happen on either.",
+    timestamp: "2026-05-16T10:22:00Z",
+    isCalibration: true,
   },
 ];

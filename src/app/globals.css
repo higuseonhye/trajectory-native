@@ -12,6 +12,7 @@
   --kind-commit: #6ee7b7;
   --kind-focus: #fcd34d;
   --kind-shift: #f97316;
+  --calibration-bg: #1a1916;
 }
 
 @theme inline {

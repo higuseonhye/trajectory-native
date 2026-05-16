@@ -31,3 +31,23 @@ export interface ReasoningTrace {
   directionChange?: string;
   timestamp: string;
 }
+
+/** Where calibration (context-embedded back-and-forth) attaches */
+export type ContextAnchorType = "reasoning" | "obsession" | "feed";
+
+export interface ContextAnchor {
+  type: ContextAnchorType;
+  /** reasoning id | feed entry id | obsession field key */
+  id: string;
+}
+
+/** Short reply anchored to a context object — not global chat */
+export interface CalibrationReply {
+  id: string;
+  anchor: ContextAnchor;
+  author: string;
+  body: string;
+  timestamp: string;
+  /** Marks a reply that shifted shared understanding */
+  isCalibration?: boolean;
+}

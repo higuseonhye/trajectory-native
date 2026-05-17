@@ -6,11 +6,12 @@ export function Header() {
           trajectory-native
         </p>
         <h1 className="mt-3 text-2xl font-medium tracking-tight text-[var(--foreground)] md:text-3xl">
-          Builder trajectory workspace
+          Trajectory-aware calibration memory
         </h1>
         <p className="mt-3 max-w-xl text-sm leading-relaxed text-[var(--muted)]">
-          A live thinking + execution artifact. Trajectory over profile.
-          Repeated action over static identity.
+          Not another social network. A living strategic notebook for builders:
+          capture signals, persist calibration, link execution to evolving
+          reasoning across GitHub, X, DMs, and beyond.
         </p>
       </div>
     </header>

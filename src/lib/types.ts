@@ -5,6 +5,32 @@ export type TrajectoryKind =
   | "focus"
   | "shift";
 
+/** External ecosystem where high-signal interaction occurred */
+export type SignalSource =
+  | "x"
+  | "github"
+  | "discord"
+  | "slack"
+  | "dm"
+  | "accelerator"
+  | "conference"
+  | "other";
+
+export interface EcosystemReference {
+  source: SignalSource;
+  label: string;
+  url?: string;
+}
+
+export interface CommitContext {
+  whyChanged: string;
+  trigger: string;
+  uncertainty?: string;
+  /** Links to reasoning trace or signal */
+  reasoningId?: string;
+  signalId?: string;
+}
+
 export interface TrajectoryEntry {
   id: string;
   kind: TrajectoryKind;
@@ -12,8 +38,8 @@ export interface TrajectoryEntry {
   body: string;
   timestamp: string;
   tags?: string[];
-  /** Future: link to GitHub commit SHA or PR */
   githubRef?: string;
+  commitContext?: CommitContext;
 }
 
 export interface ObsessionCard {
@@ -24,30 +50,62 @@ export interface ObsessionCard {
   updatedAt: string;
 }
 
+export interface CalibrationNotes {
+  currentlyBelieve: string;
+  uncertainAbout: string;
+  watchingSignal: string;
+  feedbackNeeded: string;
+  updatedAt: string;
+}
+
+export interface SignalReceived {
+  id: string;
+  interaction: string;
+  misunderstanding?: string;
+  signalFelt: string;
+  changedAfterward: string;
+  timestamp: string;
+  source: SignalSource;
+  externalRef?: EcosystemReference;
+}
+
 export interface ReasoningTrace {
   id: string;
   trigger: string;
   insight: string;
   directionChange?: string;
   timestamp: string;
+  externalRef?: EcosystemReference;
 }
 
-/** Where calibration (context-embedded back-and-forth) attaches */
+export type TimelineEventKind =
+  | "signal"
+  | "calibration"
+  | "reasoning"
+  | "pivot"
+  | "obsession"
+  | "commit";
+
+export interface TimelineEvent {
+  id: string;
+  kind: TimelineEventKind;
+  title: string;
+  summary: string;
+  timestamp: string;
+}
+
 export type ContextAnchorType = "reasoning" | "obsession" | "feed";
 
 export interface ContextAnchor {
   type: ContextAnchorType;
-  /** reasoning id | feed entry id | obsession field key */
   id: string;
 }
 
-/** Short reply anchored to a context object — not global chat */
 export interface CalibrationReply {
   id: string;
   anchor: ContextAnchor;
   author: string;
   body: string;
   timestamp: string;
-  /** Marks a reply that shifted shared understanding */
   isCalibration?: boolean;
 }

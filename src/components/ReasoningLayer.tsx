@@ -1,6 +1,7 @@
 import type { CalibrationReply, ReasoningTrace } from "@/lib/types";
 import { formatRelativeTime } from "@/lib/format";
 import { CalibrationThread } from "./CalibrationThread";
+import { EcosystemRef } from "./EcosystemRef";
 import { hasReplies } from "@/lib/calibration";
 
 interface Props {
@@ -15,11 +16,11 @@ export function ReasoningLayer({ traces, calibrations }: Props) {
         id="reasoning-heading"
         className="font-mono text-xs uppercase tracking-[0.15em] text-[var(--accent)]"
       >
-        Reasoning / context
+        Reasoning continuity
       </h2>
       <p className="mt-2 text-sm text-[var(--muted)]">
-        Short traces — why direction changed, what triggered a pivot, what
-        emerged. Calibration happens here, on the trace — not in a side channel.
+        What changed, why, and which external signal caused it. Reasoning
+        persists here even when the conversation happened elsewhere.
       </p>
 
       <ul className="mt-8 space-y-4">
@@ -65,6 +66,10 @@ export function ReasoningLayer({ traces, calibrations }: Props) {
                   </div>
                 )}
               </div>
+
+              {trace.externalRef && (
+                <EcosystemRef externalRef={trace.externalRef} />
+              )}
 
               {hasReplies(calibrations, anchor) && (
                 <CalibrationThread

@@ -6,8 +6,36 @@ const kindLabels: Record<string, string> = {
   shift: "shift",
 };
 
+const signalSourceLabels: Record<string, string> = {
+  x: "X",
+  github: "GitHub",
+  discord: "Discord",
+  slack: "Slack",
+  dm: "DM",
+  accelerator: "Accelerator",
+  conference: "Conference",
+  other: "External",
+};
+
+const timelineKindLabels: Record<string, string> = {
+  signal: "signal",
+  calibration: "calibration",
+  reasoning: "reasoning",
+  pivot: "pivot",
+  obsession: "obsession",
+  commit: "commit",
+};
+
 export function formatKind(kind: string): string {
   return kindLabels[kind] ?? kind;
+}
+
+export function formatSignalSource(source: string): string {
+  return signalSourceLabels[source] ?? source;
+}
+
+export function formatTimelineKind(kind: string): string {
+  return timelineKindLabels[kind] ?? kind;
 }
 
 export function formatRelativeTime(iso: string): string {
@@ -24,5 +52,13 @@ export function formatRelativeTime(iso: string): string {
     month: "short",
     day: "numeric",
     year: date.getFullYear() !== now.getFullYear() ? "numeric" : undefined,
+  });
+}
+
+export function formatDate(iso: string): string {
+  return new Date(iso).toLocaleDateString("en-US", {
+    month: "short",
+    day: "numeric",
+    year: "numeric",
   });
 }

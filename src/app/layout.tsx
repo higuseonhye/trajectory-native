@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "trajectory-native",
   description:
-    "A live builder trajectory workspace — trajectory over profile, repeated action over static identity.",
+    "Trajectory-aware calibration memory for builders — persist context, signals, and reasoning across the ecosystem.",
 };
 
 export default function RootLayout({

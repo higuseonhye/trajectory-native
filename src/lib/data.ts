@@ -1,52 +1,181 @@
 import type {
+  CalibrationNotes,
   CalibrationReply,
   ObsessionCard,
   ReasoningTrace,
+  SignalReceived,
+  TimelineEvent,
   TrajectoryEntry,
 } from "./types";
 
-export const obsession: ObsessionCard = {
-  exploring:
-    "Whether repeated builder actions reveal identity better than static profiles",
-  changedRecently:
-    "Shifted from profile-centric UX to trajectory-first feed as the primary surface",
-  strugglingWith:
-    "How much structure to impose before it feels like another social network",
+export const calibrationNotes: CalibrationNotes = {
+  currentlyBelieve:
+    "Builders need a calibration memory layer — not another place to chat. Execution lives on GitHub; reasoning and signals live elsewhere unless we capture them deliberately.",
+  uncertainAbout:
+    "Whether external signals (X, DMs, accelerators) can be logged lightly enough that it does not become performative journaling.",
   watchingSignal:
-    "Whether reasoning traces get revisited or only written once",
+    "Do logged signals precede measurable trajectory shifts (obsession updates, commits, pivots)?",
+  feedbackNeeded:
+    "Examples of calibration moments that almost disappeared because they happened outside GitHub.",
   updatedAt: "2026-05-16",
 };
+
+export const obsession: ObsessionCard = {
+  exploring:
+    "Trajectory-aware calibration memory across fragmented builder ecosystems",
+  changedRecently:
+    "Reframed from builder social surface to calibration layer — interactions stay external, memory stays here",
+  strugglingWith:
+    "Capturing high-signal external moments without rebuilding Slack or X inside the product",
+  watchingSignal:
+    "Whether signals-received entries correlate with reasoning and commit context updates",
+  updatedAt: "2026-05-16",
+};
+
+export const signalsReceived: SignalReceived[] = [
+  {
+    id: "s1",
+    interaction:
+      "Reply on X questioned whether this is 'another builder Twitter'",
+    misunderstanding:
+      "Assumed the goal was in-app social graph, not cross-ecosystem calibration memory",
+    signalFelt:
+      "Framing problem — we are not optimizing for keeping users on-platform",
+    changedAfterward:
+      "README and thesis rewritten around calibration memory; feed demoted below signals and timeline",
+    timestamp: "2026-05-16T14:00:00Z",
+    source: "x",
+    externalRef: {
+      source: "x",
+      label: "Thread — calibration vs social",
+      url: "https://x.com/example/status/1",
+    },
+  },
+  {
+    id: "s2",
+    interaction:
+      "Accelerator office hours: 'Where does calibration actually stick?'",
+    signalFelt:
+      "Calibration disappears when it stays in conversation but not in trajectory memory",
+    changedAfterward:
+      "Added Signals Received + explicit calibration notes structure",
+    timestamp: "2026-05-15T20:00:00Z",
+    source: "accelerator",
+    externalRef: {
+      source: "accelerator",
+      label: "Office hours — batch 12",
+    },
+  },
+  {
+    id: "s3",
+    interaction: "GitHub issue #4 — collaborator confused profile vs trajectory",
+    misunderstanding:
+      "Thought obsession card was a public profile; missed that feed is evidentiary",
+    signalFelt: "Execution residue (issues, commits) and reasoning must link visibly",
+    changedAfterward:
+      "Started commit ↔ context linking experiment on scaffold commit entry",
+    timestamp: "2026-05-15T14:30:00Z",
+    source: "github",
+    externalRef: {
+      source: "github",
+      label: "issue #4",
+      url: "https://github.com/higuseonhye/trajectory-native/issues/4",
+    },
+  },
+  {
+    id: "s4",
+    interaction: "DM after demo — 'I already talk on Discord, why another app?'",
+    signalFelt:
+      "Product must ingest ecosystem interaction by reference, not replace channels",
+    changedAfterward:
+      "Ecosystem reference fields on signals and reasoning traces",
+    timestamp: "2026-05-14T22:00:00Z",
+    source: "dm",
+  },
+];
+
+export const trajectoryTimeline: TimelineEvent[] = [
+  {
+    id: "tl1",
+    kind: "signal",
+    title: "X reply reframes product",
+    summary: "Not builder Twitter — calibration memory across ecosystems",
+    timestamp: "2026-05-16T14:00:00Z",
+  },
+  {
+    id: "tl2",
+    kind: "calibration",
+    title: "Direction shift documented",
+    summary: "Optimize for trajectory evolution across ecosystem, not time-on-platform",
+    timestamp: "2026-05-16T13:00:00Z",
+  },
+  {
+    id: "tl3",
+    kind: "pivot",
+    title: "Social surface → calibration layer",
+    summary: "Signals, timeline, notes prioritized over viral feed mechanics",
+    timestamp: "2026-05-16T10:00:00Z",
+  },
+  {
+    id: "tl4",
+    kind: "reasoning",
+    title: "GitHub as execution residue",
+    summary: "Commits hold what shipped; this layer holds why and what changed",
+    timestamp: "2026-05-16T08:00:00Z",
+  },
+  {
+    id: "tl5",
+    kind: "signal",
+    title: "Accelerator calibration question",
+    summary: "Where does calibration stick after conversation ends?",
+    timestamp: "2026-05-15T20:00:00Z",
+  },
+  {
+    id: "tl6",
+    kind: "commit",
+    title: "Initial scaffold",
+    summary: "Repo structure + MVP — trajectory notes as living artifact",
+    timestamp: "2026-05-15T08:00:00Z",
+  },
+  {
+    id: "tl7",
+    kind: "obsession",
+    title: "Obsession shift",
+    summary: "Profile-centric → trajectory-first → calibration memory",
+    timestamp: "2026-05-14T12:00:00Z",
+  },
+];
 
 export const trajectoryFeed: TrajectoryEntry[] = [
   {
     id: "t1",
     kind: "shift",
-    title: "Pivot: profile → trajectory",
-    body: "Stopped optimizing for identity cards. The feed is now the spine — chronology over branding.",
+    title: "Pivot: social platform → calibration memory",
+    body: "Stopped optimizing for in-app interaction. Capture what changed, why, and which external signal caused it.",
     timestamp: "2026-05-16T10:00:00Z",
-    tags: ["architecture", "thesis"],
+    tags: ["direction", "thesis"],
   },
   {
     id: "t2",
     kind: "experiment",
-    title: "MVP: trajectory-native workspace",
-    body: "Lightweight Next.js prototype — obsession card, feed, reasoning layer. No database yet; seed data in repo.",
+    title: "Signals + timeline + calibration notes",
+    body: "MVP v0.3 — ecosystem-external interaction capture, trajectory timeline, commit context linking.",
     timestamp: "2026-05-16T09:30:00Z",
     tags: ["mvp", "build"],
   },
   {
     id: "t3",
     kind: "focus",
-    title: "Current focus",
-    body: "GitHub as execution residue layer — design architecture for future commit/context linking.",
+    title: "Commit ↔ context residue",
+    body: "GitHub stores execution; we attach why-changed, trigger, and remaining uncertainty to commits.",
     timestamp: "2026-05-15T18:00:00Z",
     tags: ["github-native"],
   },
   {
     id: "t4",
     kind: "note",
-    title: "Coordination fragmentation",
-    body: "AI builders ship faster, but context-sharing and strategic alignment still feel scattered across tools.",
+    title: "Fragmented context problem",
+    body: "Communication is abundant. Persistent calibration memory and trajectory continuity are not.",
     timestamp: "2026-05-15T12:00:00Z",
     tags: ["thesis"],
   },
@@ -54,92 +183,78 @@ export const trajectoryFeed: TrajectoryEntry[] = [
     id: "t5",
     kind: "commit",
     title: "Initial scaffold",
-    body: "Repository structure: docs, logs, experiments, trajectory-notes. Living artifact over polished SaaS.",
+    body: "Repository structure: docs, logs, experiments, trajectory-notes.",
     timestamp: "2026-05-15T08:00:00Z",
     tags: ["repo"],
-    githubRef: "future:abc123",
+    githubRef: "db84aaf",
+    commitContext: {
+      whyChanged: "Establish public trajectory artifact before adding calibration layer features",
+      trigger: "Thesis that repeated action over time beats static builder profiles",
+      uncertainty: "How much structure before it feels like another social product",
+      reasoningId: "r2",
+    },
   },
 ];
 
 export const reasoningTraces: ReasoningTrace[] = [
   {
     id: "r1",
-    trigger: "Noticed builders rewriting context in Slack, Notion, and README separately",
+    trigger:
+      "Builders rewrite context in Slack, Notion, README — calibration does not persist",
     insight:
-      "Context wants to live where execution happens — GitHub commits are repeated action with timestamps",
+      "High-signal interaction already happens on X, in DMs, at accelerators. Product must capture residue, not relocate conversation.",
     directionChange:
-      "Design for GitHub-native trajectory before adding another datastore",
+      "Design for ecosystem-external capture + GitHub execution linking",
     timestamp: "2026-05-16T08:00:00Z",
+    externalRef: {
+      source: "slack",
+      label: "Internal thread — context fragmentation",
+    },
   },
   {
     id: "r2",
     trigger: "Profile fields felt performative in early wireframes",
     insight:
-      "A chronological stream of obsessions, pivots, and experiments reads more honest than a bio",
+      "Timeline of obsession shifts, signals, and pivots reveals trajectory — not a bio",
     timestamp: "2026-05-15T16:00:00Z",
+  },
+  {
+    id: "r3",
+    trigger: "GitHub issue #4 misunderstanding (see signal s3)",
+    insight:
+      "Issue revealed framing gap: users need visible link between execution and evolving belief",
+    directionChange: "Commit context blocks on every commit-class feed item",
+    timestamp: "2026-05-15T15:00:00Z",
+    externalRef: {
+      source: "github",
+      label: "issue #4",
+      url: "https://github.com/higuseonhye/trajectory-native/issues/4",
+    },
   },
 ];
 
-/** Context-embedded calibration — short back-and-forth on specific objects */
 export const calibrationReplies: CalibrationReply[] = [
   {
     id: "c1",
     anchor: { type: "reasoning", id: "r1" },
     author: "collaborator-a",
-    body: "Slack thread from Tuesday already argued this — can we link that commit series instead of rewriting?",
+    body: "Slack thread from Tuesday already argued this — capture the signal, don't copy the chat.",
     timestamp: "2026-05-16T08:20:00Z",
   },
   {
     id: "c2",
     anchor: { type: "reasoning", id: "r1" },
     author: "builder",
-    body: "Agreed. Treating commits as residue means the feed item should point at SHAs, not paraphrase.",
+    body: "Agreed. Signals Received is the ingest surface; commits hold execution proof.",
     timestamp: "2026-05-16T08:35:00Z",
     isCalibration: true,
   },
   {
-    id: "c3",
-    anchor: { type: "reasoning", id: "r1" },
-    author: "collaborator-a",
-    body: "Then Layer 2 is priority — without SHA links, calibration stays verbal.",
-    timestamp: "2026-05-16T08:42:00Z",
-    isCalibration: true,
-  },
-  {
-    id: "c4",
-    anchor: { type: "reasoning", id: "r2" },
-    author: "collaborator-b",
-    body: "Honest chronology — does that include failed experiments or only published pivots?",
-    timestamp: "2026-05-15T17:00:00Z",
-  },
-  {
     id: "c5",
     anchor: { type: "obsession", id: "watchingSignal" },
-    author: "collaborator-a",
-    body: "Revisit rate matters — if traces are write-once, the reasoning layer is just a diary.",
-    timestamp: "2026-05-16T11:00:00Z",
-  },
-  {
-    id: "c6",
-    anchor: { type: "obsession", id: "watchingSignal" },
     author: "builder",
-    body: "Signal updated: we'll measure replies-on-trace, not page views. That's the calibration loop.",
+    body: "Updated: track signal → timeline → obsession shift correlation.",
     timestamp: "2026-05-16T11:15:00Z",
-    isCalibration: true,
-  },
-  {
-    id: "c7",
-    anchor: { type: "feed", id: "t1" },
-    author: "collaborator-b",
-    body: "Feed as spine — does obsession card become secondary or still the 'now' surface?",
-    timestamp: "2026-05-16T10:15:00Z",
-  },
-  {
-    id: "c8",
-    anchor: { type: "feed", id: "t1" },
-    author: "builder",
-    body: "Both. Obsession = compressed now; feed = proof over time. Calibration can happen on either.",
-    timestamp: "2026-05-16T10:22:00Z",
     isCalibration: true,
   },
 ];

@@ -1,6 +1,7 @@
 import type { CalibrationReply, TrajectoryEntry } from "@/lib/types";
 import { formatKind, formatRelativeTime } from "@/lib/format";
 import { CalibrationThread } from "./CalibrationThread";
+import { CommitContextBlock } from "./CommitContextBlock";
 import { hasReplies } from "@/lib/calibration";
 
 const kindStyles: Record<string, string> = {
@@ -23,10 +24,11 @@ export function TrajectoryFeed({ entries, calibrations }: Props) {
         id="feed-heading"
         className="font-mono text-xs uppercase tracking-[0.15em] text-[var(--accent)]"
       >
-        Trajectory feed
+        Execution residue
       </h2>
       <p className="mt-2 text-sm text-[var(--muted)]">
-        Chronological stream — notes, experiments, commits, focus, shifts.
+        Commits, experiments, and pivots with linked calibration context. Not a
+        social feed.
       </p>
 
       <ol className="mt-8 space-y-0">
@@ -83,7 +85,14 @@ export function TrajectoryFeed({ entries, calibrations }: Props) {
                   </ul>
                 )}
 
-                {entry.githubRef && (
+                {entry.commitContext && (
+                  <CommitContextBlock
+                    context={entry.commitContext}
+                    githubRef={entry.githubRef}
+                  />
+                )}
+
+                {entry.githubRef && !entry.commitContext && (
                   <p className="mt-2 font-mono text-xs text-[var(--muted)] opacity-60">
                     github · {entry.githubRef}
                   </p>

@@ -1,20 +1,38 @@
-# Product direction — calibration memory layer
+# Product direction
 
-## Reframing
+## What this repo is
 
-**From:** builder social platform  
-**To:** trajectory-aware calibration memory system
+The **core trajectory layer** — single living artifact for calibration memory, evolving reasoning, and strategic adaptation.
 
-## The real problem
+Not a new repo per idea. See [`repo-strategy.md`](repo-strategy.md).
 
-Builders already communicate on GitHub, X, Discord, Slack, DMs, accelerators, and conferences.
+## Reframing stack
 
-The gap is not lack of communication. It is:
+| Stage | Frame |
+|-------|-------|
+| v0.1 | Builder trajectory workspace |
+| v0.3 | Calibration memory layer |
+| v0.4 | Strategic adaptation under compressed windows |
 
-- fragmented context
-- disappearing calibration
-- no persistent trajectory memory
-- weak link between execution and evolving reasoning
+## AI-era window dynamics
+
+Strategic reality:
+
+- windows open suddenly
+- capabilities commoditize quickly
+- first-mover advantage decays faster
+- copy cycles accelerate
+- execution abundance increases
+
+Scarce resources: **positioning**, **trajectory calibration**, **ecosystem proximity**, **distribution timing**, **repeated execution velocity**.
+
+Trajectory calibration becomes **more important** when windows compress — misalignment costs rise.
+
+See [`window-dynamics.md`](window-dynamics.md).
+
+## Distribution as survival layer
+
+Not vanity metrics. As windows compress, visibility and positioning are survival mechanics alongside execution.
 
 ## What we optimize for
 
@@ -23,32 +41,31 @@ The gap is not lack of communication. It is:
 - reasoning continuity
 - calibration memory
 - execution-linked evolution
+- **market-aware adaptation**
 
 ## What we do NOT optimize for
 
-- virality
-- creator metrics
-- endless in-app social interaction
-- replacing X, Discord, or Slack
-- keeping users inside the platform
+- virality, creator metrics, dopamine loops
+- replacing X, Discord, Slack
+- keeping users on-platform
+- excessive repo fragmentation
 
-**Guiding principle:** help builders evolve more intelligently across the ecosystem.
+## Core surfaces (v0.4)
 
-## Core surfaces (MVP v0.3)
+1. Calibration notes (incl. distribution/timing)
+2. **Window dynamics**
+3. Trajectory timeline
+4. Signals received
+5. Execution residue + commit context
+6. Reasoning continuity
 
-1. **Calibration notes** — live strategic thinking
-2. **Trajectory timeline** — shifts, signals, pivots over time
-3. **Signals received** — external interactions captured by reference
-4. **Execution residue** — commits with context blocks
-5. **Reasoning continuity** — why direction changed, with ecosystem refs
+## Product philosophy
 
-## Ecosystem-external by design
+Increasingly **not** a productivity product.
 
-Interactions happen outside this product. We capture:
+It is:
 
-- what changed
-- why it changed
-- what signal caused it
-- how trajectory evolved
-
-Future: deeper X, GitHub issue, meeting note integrations — all as references, not relocation of conversation.
+- strategic adaptation layer
+- trajectory calibration system
+- context continuity engine
+- builder survival operating layer for compressed AI markets

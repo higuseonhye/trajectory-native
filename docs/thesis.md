@@ -12,13 +12,18 @@ High-signal interaction already happens on X, in DMs, at accelerators, on GitHub
 
 trajectory-native is a **trajectory-aware calibration memory layer** — not another chat app or builder social network.
 
-## Reframing (v0.3)
+## Reframing (v0.4)
 
 | Old frame | New frame |
 |-----------|-----------|
 | Builder social platform | Calibration memory system |
-| In-app feed engagement | Trajectory timeline + signals |
-| Keep users on-platform | Help builders evolve across ecosystem |
+| Productivity dashboard | Strategic adaptation under window compression |
+| Repo per idea | Single core trajectory artifact |
+| Capability moat | Positioning + calibration + distribution timing |
+
+## Window compression
+
+When industries move faster, strategic misalignment costs more. This repo tracks **window dynamics** — crowding, commoditization, distribution shifts — alongside calibration and execution residue.
 
 ## Hypothesis
 

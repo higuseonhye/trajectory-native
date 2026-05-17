@@ -1,6 +1,6 @@
 # Architecture
 
-## Current (v0.3)
+## Current (v0.4)
 
 ```
 trajectory-notes/  ──►  (future) parser
@@ -11,7 +11,7 @@ src/components/    ──►  presentation layer
 
 - **Stack:** Next.js 16, TypeScript, Tailwind CSS 4, App Router
 - **Data:** In-memory seed (`src/lib/data.ts`). No database yet.
-- **Types:** `CalibrationNotes`, `SignalReceived`, `TimelineEvent`, `CommitContext`, `TrajectoryEntry`, `ReasoningTrace`, `CalibrationReply`
+- **Types:** `CalibrationNotes`, `WindowDynamic`, `SignalReceived`, `TimelineEvent`, `CommitContext`, `TrajectoryEntry`, `ReasoningTrace`, `CalibrationReply`
 
 ## Principles
 
@@ -25,7 +25,8 @@ src/components/    ──►  presentation layer
 
 | Component | Responsibility |
 |-----------|----------------|
-| `CalibrationNotesSection` | Live strategic beliefs and uncertainties |
+| `CalibrationNotesSection` | Live strategic beliefs, distribution/timing uncertainty |
+| `WindowDynamics` | Market timing, crowding, commoditization, adaptation |
 | `TrajectoryTimeline` | Trajectory over time (signals, pivots, calibration) |
 | `SignalsReceived` | External interaction capture with aftermath |
 | `ObsessionCard` | Compressed current focus |

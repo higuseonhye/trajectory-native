@@ -1,42 +1,58 @@
 # trajectory-native
 
-A **trajectory-aware calibration memory layer** for builders and operators — not a social network, not a chat replacement.
+**Core trajectory repo** — a trajectory-aware calibration memory layer for builders operating under compressed AI-era windows.
+
+> In AI-native markets, execution is increasingly abundant while strategic windows compress rapidly.  
+> The challenge is no longer simply shipping.  
+> The challenge is maintaining trajectory alignment while industries move at extreme speed.
 
 ## The real problem
 
-Builders already interact across GitHub, X, Discord, Slack, DMs, accelerators, and conferences. Communication is not scarce.
+Communication is not scarce. Builders already interact on GitHub, X, Discord, Slack, DMs, accelerators, and conferences.
 
 What breaks down:
 
 - fragmented context
 - disappearing calibration
 - no persistent trajectory memory
-- weak connection between execution and evolving reasoning
+- weak link between execution and evolving reasoning
+- **misalignment under timing pressure** as windows compress
 
 ## What this is
 
-> Help builders continuously recalibrate their trajectory through persistent context and repeated action history.
+A **strategic adaptation layer** — not a productivity app, not a social network, not a chat replacement.
 
-**Not:** LinkedIn for builders, Twitter for coders, Discord replacement, another productivity app.
+| Not | Instead |
+|-----|---------|
+| LinkedIn for builders | Trajectory memory |
+| Endless in-app social | Ecosystem-external capture |
+| Repo per new idea | **One living core artifact** |
+| Vanity growth | Survival-oriented positioning |
 
-**Instead:** a living strategic notebook, trajectory operating system, calibration memory layer, GitHub-native builder context surface.
+This repo is simultaneously: **product**, **thesis**, **calibration memory**, **execution residue**, and **strategic adaptation artifact**.
+
+See [`docs/repo-strategy.md`](docs/repo-strategy.md).
 
 ## Core value
 
-Not content creation. **Calibration memory** — capture what changed, why, what signal caused it, and how trajectory evolved — even when the conversation happened elsewhere.
+Help builders **recalibrate trajectory** through persistent context and repeated action history — especially when:
 
-## MVP (v0.3)
+- windows open and close quickly
+- capabilities commoditize
+- distribution timing beats raw capability
+- copy cycles accelerate
+
+## MVP (v0.4)
 
 | Surface | Purpose |
 |---------|---------|
-| **Calibration notes** | What I believe, uncertainty, signals watching, feedback needed |
-| **Trajectory timeline** | Obsession shifts, reasoning, pivots, calibration events, signals over time |
-| **Signals received** | External interactions (X, GitHub, DM, accelerator…) with what changed afterward |
-| **Current obsession** | Compressed "now" state |
-| **Execution residue** | Commits/pivots with **commit ↔ context** linking |
-| **Reasoning continuity** | Why direction changed, with ecosystem references |
-
-Run locally:
+| **Calibration notes** | Beliefs, uncertainty, signals, feedback — includes distribution/timing pressure |
+| **Window dynamics** | Crowding, commoditization, moat decay, distribution urgency, ecosystem shifts |
+| **Trajectory timeline** | Trajectory over time — including window events |
+| **Signals received** | External interactions with what changed afterward |
+| **Current obsession** | Compressed strategic "now" |
+| **Execution residue** | Commits with context linking |
+| **Reasoning continuity** | Why direction changed |
 
 ```bash
 npm install
@@ -47,41 +63,35 @@ Open [http://localhost:3000](http://localhost:3000).
 
 ## Product demo
 
-**Hero view** — calibration notes, timeline, and signals received:
+**Hero view:**
 
 ![Calibration memory layer — hero view](docs/screenshots/demo-hero.png)
 
-**Full page** — timeline, signals, execution residue, and reasoning continuity:
+**Full page:**
 
 ![Calibration memory layer — full page](docs/screenshots/demo-full.png)
 
-## Strategic principle
+*Run locally for latest UI including Window Dynamics.*
 
-Do **not** optimize for keeping users inside the platform.
+## Strategic principles
 
-Optimize for **helping builders evolve more intelligently across the ecosystem**.
-
-## Repository structure
-
-| Path | Purpose |
-|------|---------|
-| `src/` | Next.js app — calibration memory UI |
-| `docs/` | Thesis, product direction, architecture |
-| `trajectory-notes/` | Sample trajectory evolution entries |
-| `logs/` | Session logs |
-| `experiments/` | Hypothesis spikes |
+1. **Do not optimize for time-on-platform** — help builders evolve across the ecosystem
+2. **Keep core repo continuity** — satellite repos only for isolated technical spikes
+3. **Trajectory calibration intensifies when windows compress** — misalignment costs more
 
 ## Docs
 
-- [`docs/thesis.md`](docs/thesis.md) — evolving thesis
-- [`docs/product-direction.md`](docs/product-direction.md) — calibration memory reframing
-- [`docs/context-calibration.md`](docs/context-calibration.md) — in-context back-and-forth
-- [`docs/architecture.md`](docs/architecture.md) — technical layers
+- [`docs/thesis.md`](docs/thesis.md)
+- [`docs/product-direction.md`](docs/product-direction.md)
+- [`docs/window-dynamics.md`](docs/window-dynamics.md)
+- [`docs/repo-strategy.md`](docs/repo-strategy.md)
+- [`docs/context-calibration.md`](docs/context-calibration.md)
+- [`docs/architecture.md`](docs/architecture.md)
 
 ## Status
 
-`v0.3.0` — experimental. Optimize for trajectory visibility and calibration persistence, not virality.
+`v0.4.0` — experimental. Trajectory clarity and strategic coherence over feature bloat.
 
 ---
 
-*Living artifact. Ecosystem-external by design. Calibration over conversation relocation.*
+*One core artifact. Market-aware. Calibration under compression.*

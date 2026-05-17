@@ -11,7 +11,7 @@ This repo explores:
 - **Trajectory over profile** — chronology reveals more than branding
 - **Repeated action over static identity** — commits, experiments, pivots as signal
 - **Evolving context over polished presentation** — reasoning traces stay visible
-- **Context-embedded calibration** — tikitaka happens *on* obsession, feed items, and reasoning traces — not in a side channel
+- **Context-embedded calibration** — back-and-forth happens *on* obsession, feed items, and reasoning traces — not in a side channel
 
 ## Origin
 

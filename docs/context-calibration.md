@@ -6,8 +6,8 @@ The hardest part of builder collaboration is not chat — it is **calibration in
 
 People talk in Slack, but direction drifts because the conversation is detached from obsession, pivots, and reasoning. This product started from that gap:
 
-> **티키타카는 맥락(context) 안에서 일어나야 하고,**  
-> 그 과정에서 조정·calibration·방향 발전이 같이 일어나야 한다.
+> **Back-and-forth must happen inside context,**  
+> and through that process, adjustment, calibration, and directional progress should occur together.
 
 ## What we are NOT building
 

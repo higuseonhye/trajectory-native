@@ -4,11 +4,11 @@
 
 AI builders ship faster. The bottleneck is not execution — it is **alignment inside context**.
 
-Conversations happen in Slack or DMs, but obsession, pivots, and reasoning live elsewhere. People tikitaka, but **outside** the object they are trying to calibrate. Context fragments; direction drifts.
+Conversations happen in Slack or DMs, but obsession, pivots, and reasoning live elsewhere. People exchange ideas back-and-forth, but **outside** the object they are trying to calibrate. Context fragments; direction drifts.
 
 **This project started here:**
 
-> 맥락(context) 속에서 서로 티키타카하며 조정·calibration·발전이 일어나야 하는데, 그게 너무 어렵다.
+> Back-and-forth should happen **inside context** — where adjustment, calibration, and shared progress occur — and that is still very hard to do well.
 
 trajectory-native is an experiment in **context-embedded calibration** — not another chat app.
 

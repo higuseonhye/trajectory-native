@@ -47,15 +47,13 @@ Open [http://localhost:3000](http://localhost:3000).
 
 ## Product demo
 
-**Hero view:**
+**Hero view** — calibration notes, timeline, and signals received:
 
-![Builder trajectory workspace — hero view](docs/screenshots/demo-hero.png)
+![Calibration memory layer — hero view](docs/screenshots/demo-hero.png)
 
-**Full page:**
+**Full page** — timeline, signals, execution residue, and reasoning continuity:
 
-![Builder trajectory workspace — full page](docs/screenshots/demo-full.png)
-
-*Screenshots may predate v0.3 UI — run locally for latest.*
+![Calibration memory layer — full page](docs/screenshots/demo-full.png)
 
 ## Strategic principle
 

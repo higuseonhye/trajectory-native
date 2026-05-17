@@ -63,15 +63,13 @@ Open [http://localhost:3000](http://localhost:3000).
 
 ## Product demo
 
-**Hero view:**
+**Hero view** — core trajectory repo, calibration notes, and window dynamics:
 
-![Calibration memory layer — hero view](docs/screenshots/demo-hero.png)
+![Strategic adaptation under compressed windows — hero view](docs/screenshots/demo-hero.png)
 
-**Full page:**
+**Full page** — timeline, signals, execution residue, and reasoning continuity:
 
-![Calibration memory layer — full page](docs/screenshots/demo-full.png)
-
-*Run locally for latest UI including Window Dynamics.*
+![Strategic adaptation under compressed windows — full page](docs/screenshots/demo-full.png)
 
 ## Strategic principles
 

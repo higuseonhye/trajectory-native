@@ -6,29 +6,88 @@ import type {
   SignalReceived,
   TimelineEvent,
   TrajectoryEntry,
+  WindowDynamic,
 } from "./types";
 
 export const calibrationNotes: CalibrationNotes = {
   currentlyBelieve:
-    "Builders need a calibration memory layer — not another place to chat. Execution lives on GitHub; reasoning and signals live elsewhere unless we capture them deliberately.",
+    "In AI-native markets, execution is abundant and strategic windows compress fast. The scarce resources are positioning, trajectory calibration, ecosystem proximity, and distribution timing — not raw shipping speed.",
   uncertainAbout:
-    "Whether external signals (X, DMs, accelerators) can be logged lightly enough that it does not become performative journaling.",
+    "How to log window dynamics without turning this into anxiety-driven hustle content. Survival-oriented positioning, not vanity growth.",
   watchingSignal:
-    "Do logged signals precede measurable trajectory shifts (obsession updates, commits, pivots)?",
+    "Whether window-dynamic entries precede pivots faster than signals alone — timing pressure as leading indicator.",
   feedbackNeeded:
-    "Examples of calibration moments that almost disappeared because they happened outside GitHub.",
+    "Examples where distribution urgency (not capability) determined survival in a 2–4 week window.",
   updatedAt: "2026-05-16",
 };
 
+export const windowDynamics: WindowDynamic[] = [
+  {
+    id: "w1",
+    kind: "crowding",
+    observation:
+      "This direction became crowded within two weeks — three near-identical open-source repos appeared after a single viral thread.",
+    timingPressure:
+      "Differentiation window collapsed before feature completeness.",
+    adaptation:
+      "Shift thesis emphasis from capability to calibration memory + execution residue — harder to copy quickly.",
+    timestamp: "2026-05-16T16:00:00Z",
+  },
+  {
+    id: "w2",
+    kind: "commoditization",
+    observation:
+      "Open-source replication compressed differentiation — the core workflow is now a weekend project with a popular model API.",
+    timingPressure:
+      "Moat weakened after model commoditization; feature parity is no longer defensible.",
+    adaptation:
+      "Double down on trajectory continuity and ecosystem-linked context — not the widget layer.",
+    timestamp: "2026-05-16T12:00:00Z",
+  },
+  {
+    id: "w3",
+    kind: "distribution-shift",
+    observation:
+      "Distribution became more important than capability for this wedge — builders with reach shipped worse products and still won attention.",
+    timingPressure:
+      "First-mover advantage decayed in days, not quarters.",
+    adaptation:
+      "Explore calibration-driven distribution: public trajectory as positioning, not performance content.",
+    timestamp: "2026-05-15T18:00:00Z",
+  },
+  {
+    id: "w4",
+    kind: "ecosystem-shift",
+    observation:
+      "The wedge changed because the market moved — platform policy shift removed the original integration path.",
+    timingPressure:
+      "Strategic pivot required before accumulated execution became sunk cost.",
+    adaptation:
+      "Logged ecosystem timing observation here before rewriting roadmap in Notion.",
+    timestamp: "2026-05-15T10:00:00Z",
+  },
+  {
+    id: "w5",
+    kind: "opportunity",
+    observation:
+      "A narrow window opened — incumbents slow to adopt agent-native workflows; attention spike on X lasted ~72 hours.",
+    timingPressure:
+      "Repeated execution velocity matters more than perfect architecture in this phase.",
+    adaptation:
+      "Ship calibration memory MVP in core repo; defer satellite experiments.",
+    timestamp: "2026-05-14T08:00:00Z",
+  },
+];
+
 export const obsession: ObsessionCard = {
   exploring:
-    "Trajectory-aware calibration memory across fragmented builder ecosystems",
+    "Strategic adaptation under compressed AI windows — calibration memory as survival layer",
   changedRecently:
-    "Reframed from builder social surface to calibration layer — interactions stay external, memory stays here",
+    "Added window dynamics surface; core repo stays single living trajectory artifact",
   strugglingWith:
-    "Capturing high-signal external moments without rebuilding Slack or X inside the product",
+    "Balancing market-aware urgency without dopamine-driven productivity theater",
   watchingSignal:
-    "Whether signals-received entries correlate with reasoning and commit context updates",
+    "Copy-cycle speed on adjacent repos vs. our trajectory calibration cadence",
   updatedAt: "2026-05-16",
 };
 
@@ -92,9 +151,31 @@ export const signalsReceived: SignalReceived[] = [
     timestamp: "2026-05-14T22:00:00Z",
     source: "dm",
   },
+  {
+    id: "s5",
+    interaction:
+      "Conference hallway — 'Everyone ships now; the fight is positioning and timing'",
+    signalFelt:
+      "Window compression makes trajectory misalignment costlier than slow execution",
+    changedAfterward:
+      "Window Dynamics section added; distribution framed as survival layer not growth hack",
+    timestamp: "2026-05-16T11:00:00Z",
+    source: "conference",
+    externalRef: {
+      source: "conference",
+      label: "Builder systems track — Q&A",
+    },
+  },
 ];
 
 export const trajectoryTimeline: TimelineEvent[] = [
+  {
+    id: "tl0",
+    kind: "window",
+    title: "Direction crowded in 2 weeks",
+    summary: "Open-source copy cycle compressed differentiation window",
+    timestamp: "2026-05-16T16:00:00Z",
+  },
   {
     id: "tl1",
     kind: "signal",
@@ -147,6 +228,14 @@ export const trajectoryTimeline: TimelineEvent[] = [
 ];
 
 export const trajectoryFeed: TrajectoryEntry[] = [
+  {
+    id: "t0",
+    kind: "note",
+    title: "Core repo continuity principle",
+    body: "This repo is the living trajectory artifact. Satellite repos only for isolated technical spikes — always linked back to core thesis.",
+    timestamp: "2026-05-16T15:00:00Z",
+    tags: ["repo-strategy", "continuity"],
+  },
   {
     id: "t1",
     kind: "shift",
@@ -217,6 +306,16 @@ export const reasoningTraces: ReasoningTrace[] = [
     insight:
       "Timeline of obsession shifts, signals, and pivots reveals trajectory — not a bio",
     timestamp: "2026-05-15T16:00:00Z",
+  },
+  {
+    id: "r4",
+    trigger:
+      "Window crowded in two weeks — copy repos appeared before we finished positioning",
+    insight:
+      "When differentiation periods shrink, calibration memory and public trajectory become the moat — not feature lists",
+    directionChange:
+      "Add Window Dynamics; keep all strategic evolution in this core repo",
+    timestamp: "2026-05-16T16:30:00Z",
   },
   {
     id: "r3",

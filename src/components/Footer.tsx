@@ -6,7 +6,7 @@ export function Footer() {
           Calibration memory · ecosystem-external by design · not optimized for
           time-on-platform
         </p>
-        <p className="font-mono">v0.3.0 · living artifact</p>
+        <p className="font-mono">v0.4.0 · core trajectory artifact</p>
       </div>
     </footer>
   );

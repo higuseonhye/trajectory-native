@@ -24,6 +24,17 @@ const timelineKindLabels: Record<string, string> = {
   pivot: "pivot",
   obsession: "obsession",
   commit: "commit",
+  window: "window",
+};
+
+const windowKindLabels: Record<string, string> = {
+  crowding: "crowding",
+  commoditization: "commoditization",
+  "distribution-shift": "distribution",
+  "moat-decay": "moat decay",
+  "timing-pressure": "timing pressure",
+  "ecosystem-shift": "ecosystem shift",
+  opportunity: "opportunity",
 };
 
 export function formatKind(kind: string): string {
@@ -36,6 +47,10 @@ export function formatSignalSource(source: string): string {
 
 export function formatTimelineKind(kind: string): string {
   return timelineKindLabels[kind] ?? kind;
+}
+
+export function formatWindowKind(kind: string): string {
+  return windowKindLabels[kind] ?? kind;
 }
 
 export function formatRelativeTime(iso: string): string {

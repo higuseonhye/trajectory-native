@@ -78,13 +78,33 @@ export interface ReasoningTrace {
   externalRef?: EcosystemReference;
 }
 
+export type WindowDynamicKind =
+  | "crowding"
+  | "commoditization"
+  | "distribution-shift"
+  | "moat-decay"
+  | "timing-pressure"
+  | "ecosystem-shift"
+  | "opportunity";
+
+/** Market timing and strategic window observations — AI-era compression */
+export interface WindowDynamic {
+  id: string;
+  kind: WindowDynamicKind;
+  observation: string;
+  timingPressure?: string;
+  adaptation?: string;
+  timestamp: string;
+}
+
 export type TimelineEventKind =
   | "signal"
   | "calibration"
   | "reasoning"
   | "pivot"
   | "obsession"
-  | "commit";
+  | "commit"
+  | "window";
 
 export interface TimelineEvent {
   id: string;

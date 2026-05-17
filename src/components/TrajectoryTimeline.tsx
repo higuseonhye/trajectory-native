@@ -8,6 +8,7 @@ const kindStyles: Record<string, string> = {
   pivot: "bg-[var(--kind-focus)]",
   obsession: "bg-[var(--kind-note)]",
   commit: "bg-[var(--kind-commit)]",
+  window: "bg-[var(--kind-shift)]",
 };
 
 interface Props {

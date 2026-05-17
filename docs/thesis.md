@@ -2,53 +2,57 @@
 
 ## Origin — the real problem
 
-AI builders ship faster. The bottleneck is not execution — it is **alignment inside context**.
+AI builders ship faster. The bottleneck is not execution — it is **alignment inside context that persists**.
 
-Conversations happen in Slack or DMs, but obsession, pivots, and reasoning live elsewhere. People exchange ideas back-and-forth, but **outside** the object they are trying to calibrate. Context fragments; direction drifts.
+High-signal interaction already happens on X, in DMs, at accelerators, on GitHub issues. Calibration often **disappears** when the conversation ends.
 
 **This project started here:**
 
-> Back-and-forth should happen **inside context** — where adjustment, calibration, and shared progress occur — and that is still very hard to do well.
+> Back-and-forth should happen **inside context** — where adjustment, calibration, and shared progress occur — and that is still very hard to do well across fragmented tools.
 
-trajectory-native is an experiment in **context-embedded calibration** — not another chat app.
+trajectory-native is a **trajectory-aware calibration memory layer** — not another chat app or builder social network.
 
-## Problem observation
+## Reframing (v0.3)
 
-Builders using AI ship faster. Coordination and context-sharing do not keep pace. Context scatters across Slack, Notion, README, and memory.
+| Old frame | New frame |
+|-----------|-----------|
+| Builder social platform | Calibration memory system |
+| In-app feed engagement | Trajectory timeline + signals |
+| Keep users on-platform | Help builders evolve across ecosystem |
 
 ## Hypothesis
 
-**Repeated action over time** — commits, experiments, pivots, obsession updates — may reveal builder identity and intent more honestly than static profiles.
+**Repeated action over time** — commits, experiments, pivots, obsession updates — reveals trajectory more honestly than static profiles.
 
-**Context-embedded calibration** — short back-and-forth anchored to obsession fields, feed items, and reasoning traces — may align direction better than side-channel chat.
+**Ecosystem-external capture** — logging signals from X, GitHub, DMs, accelerators with what changed afterward — preserves calibration that would otherwise vanish.
+
+**Commit ↔ context linking** — GitHub stores execution; this layer stores why, trigger, and remaining uncertainty.
 
 ## Experiment
 
-This repository is the experiment:
-
-1. Ship a minimal trajectory UI
-2. Attach calibration threads to context objects (see [`context-calibration.md`](context-calibration.md))
-3. Maintain trajectory notes in markdown alongside code
-4. Iterate in public with meaningful commits
+1. Ship calibration notes, timeline, signals, commit context
+2. Maintain trajectory notes in markdown alongside code
+3. Measure whether signals precede obsession shifts and commits
+4. Iterate in public — repo as living artifact
 
 ## Design tension (resolved)
 
 | Looks conflicting | Actually compatible |
 |-----------------|---------------------|
-| "No real-time chat" | Calibration on objects, not channels |
-| "No social graph" | Multi-author replies on shared context |
-| "Trajectory over profile" | Identity emerges from feed + calibration history |
+| "No global chat" | Calibration on objects + signal log |
+| "No social graph" | External refs, not follower mechanics |
+| "Not a feed product" | Timeline + execution residue, not virality |
 
 ## Success signals (early)
 
-- Reasoning traces get **revisited and replied to**, not just written
-- Calibrated replies correlate with real direction changes (commits, obsession updates)
-- Obsession card updates follow calibration threads
+- Signals received entries precede reasoning and commit context updates
+- Calibrated moments are revisited, not write-once
+- Builders reference this layer instead of re-explaining context in Slack
 
 ## Failure modes to watch
 
-- Becomes another microblog
-- Calibration devolves into Slack-style threads without object anchor
-- GitHub integration never ships and residue stays manual
+- Becomes performative journaling
+- Duplicates Discord/X instead of referencing them
+- GitHub integration stays manual
 
 *Last updated: 2026-05-16*

@@ -1,32 +1,40 @@
 # trajectory-native
 
-A lightweight experimental workspace for **builder trajectory** — not a polished SaaS, but a live thinking + execution artifact.
+A **trajectory-aware calibration memory layer** for builders and operators — not a social network, not a chat replacement.
 
-## Thesis
+## The real problem
 
-AI builders can ship faster than ever, but coordination, context-sharing, and evolving strategic alignment remain fragmented.
+Builders already interact across GitHub, X, Discord, Slack, DMs, accelerators, and conferences. Communication is not scarce.
 
-This repo explores:
+What breaks down:
 
-- **Trajectory over profile** — chronology reveals more than branding
-- **Repeated action over static identity** — commits, experiments, pivots as signal
-- **Evolving context over polished presentation** — reasoning traces stay visible
-- **Context-embedded calibration** — back-and-forth happens *on* obsession, feed items, and reasoning traces — not in a side channel
+- fragmented context
+- disappearing calibration
+- no persistent trajectory memory
+- weak connection between execution and evolving reasoning
 
-## Origin
+## What this is
 
-The product started from a coordination gap: builders talk in Slack, but **alignment inside shared context** is hard. Calibration should happen where obsession, pivots, and reasoning live — not in a detached chat tab.
+> Help builders continuously recalibrate their trajectory through persistent context and repeated action history.
 
-See [`docs/thesis.md`](docs/thesis.md) and [`docs/context-calibration.md`](docs/context-calibration.md).
+**Not:** LinkedIn for builders, Twitter for coders, Discord replacement, another productivity app.
 
-## MVP
+**Instead:** a living strategic notebook, trajectory operating system, calibration memory layer, GitHub-native builder context surface.
 
-A minimal Next.js prototype with:
+## Core value
 
-1. **Trajectory feed** — notes, experiments, commits, focus, directional shifts
-2. **Current obsession card** — structured evolving context block
-3. **Reasoning / context layer** — short traces of why direction changed
-4. **Calibration threads** — short multi-author back-and-forth anchored to context objects (read-only seed data in v0.2)
+Not content creation. **Calibration memory** — capture what changed, why, what signal caused it, and how trajectory evolved — even when the conversation happened elsewhere.
+
+## MVP (v0.3)
+
+| Surface | Purpose |
+|---------|---------|
+| **Calibration notes** | What I believe, uncertainty, signals watching, feedback needed |
+| **Trajectory timeline** | Obsession shifts, reasoning, pivots, calibration events, signals over time |
+| **Signals received** | External interactions (X, GitHub, DM, accelerator…) with what changed afterward |
+| **Current obsession** | Compressed "now" state |
+| **Execution residue** | Commits/pivots with **commit ↔ context** linking |
+| **Reasoning continuity** | Why direction changed, with ecosystem references |
 
 Run locally:
 
@@ -39,50 +47,43 @@ Open [http://localhost:3000](http://localhost:3000).
 
 ## Product demo
 
-**Hero view** — obsession card, feed, and context-embedded calibration threads:
+**Hero view:**
 
 ![Builder trajectory workspace — hero view](docs/screenshots/demo-hero.png)
 
-**Full page** — obsession, trajectory feed, reasoning layer, and calibration:
+**Full page:**
 
 ![Builder trajectory workspace — full page](docs/screenshots/demo-full.png)
+
+*Screenshots may predate v0.3 UI — run locally for latest.*
+
+## Strategic principle
+
+Do **not** optimize for keeping users inside the platform.
+
+Optimize for **helping builders evolve more intelligently across the ecosystem**.
 
 ## Repository structure
 
 | Path | Purpose |
 |------|---------|
-| `src/` | Next.js app — UI and seed data layer |
-| `docs/` | Architecture, thesis, future directions |
-| `logs/` | Session and build logs over time |
-| `experiments/` | Hypothesis-driven spikes |
-| `trajectory-notes/` | Markdown trajectory entries (repo-as-artifact) |
+| `src/` | Next.js app — calibration memory UI |
+| `docs/` | Thesis, product direction, architecture |
+| `trajectory-notes/` | Sample trajectory evolution entries |
+| `logs/` | Session logs |
+| `experiments/` | Hypothesis spikes |
 
-## Design direction
+## Docs
 
-**Not:** LinkedIn, Twitter/X, Slack-style global chat, Discord.
-
-**Instead:** a calm, exploratory builder operating surface — minimal, thoughtful, alive. **Calibration is in-context, not in a channel.**
-
-## GitHub-native direction
-
-Architecture assumes **GitHub as the execution residue layer**. Future work:
-
-- Commit / context linking
-- Repo trajectory visualization
-- Repeated-action identity mapping
-
-See [`docs/architecture.md`](docs/architecture.md).
+- [`docs/thesis.md`](docs/thesis.md) — evolving thesis
+- [`docs/product-direction.md`](docs/product-direction.md) — calibration memory reframing
+- [`docs/context-calibration.md`](docs/context-calibration.md) — in-context back-and-forth
+- [`docs/architecture.md`](docs/architecture.md) — technical layers
 
 ## Status
 
-`v0.1.0` — experimental MVP. Optimize for clarity of thesis and trajectory visibility, not perfection.
-
-## Open questions
-
-- How do builders expose evolving context?
-- Can repeated actions reveal identity better than profiles?
-- What does trajectory-native collaboration look like when calibration stays on the object?
+`v0.3.0` — experimental. Optimize for trajectory visibility and calibration persistence, not virality.
 
 ---
 
-*Living artifact. Evolving execution. Public reasoning over time.*
+*Living artifact. Ecosystem-external by design. Calibration over conversation relocation.*

@@ -10,6 +10,10 @@
 
 Shared thesis: [adaptive coherence under unstable contexts](docs/adaptive-coherence.md).
 
+<p align="center">
+  <img src="docs/screenshots/demo-hero.png" alt="Founder calibration console" width="720" />
+</p>
+
 ---
 
 ## Why this exists
@@ -89,7 +93,7 @@ Open [http://localhost:3000](http://localhost:3000).
 
 ## Product demo
 
-**Hero — calibration log & weekly movement:**
+**Hero — human-side adaptive coherence:**
 
 ![Founder calibration console — hero](docs/screenshots/demo-hero.png)
 

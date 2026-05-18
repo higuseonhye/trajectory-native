@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "trajectory-native",
   description:
-    "Core trajectory repo — calibration memory and strategic adaptation under compressed AI-era windows.",
+    "Founder calibration console — observable adaptation under compressed AI-era windows.",
 };
 
 export default function RootLayout({

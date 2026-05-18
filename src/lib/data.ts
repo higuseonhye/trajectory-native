@@ -1,24 +1,138 @@
 import type {
+  CalibrationLogEntry,
   CalibrationNotes,
   CalibrationReply,
+  FailedAssumption,
   ObsessionCard,
   ReasoningTrace,
   SignalReceived,
   TimelineEvent,
   TrajectoryEntry,
+  WeeklyChange,
   WindowDynamic,
 } from "./types";
 
+export const calibrationLog: CalibrationLogEntry[] = [
+  {
+    id: "log1",
+    timestamp: "2026-05-17T10:00:00Z",
+    observation:
+      "Posted on X. Almost no engagement on GitHub or X. Silence is loud.",
+    failedAssumption:
+      "Builders would react to abstract trajectory framing without operational tension visible in the product.",
+    emotionalRead:
+      "Not embarrassment — more like 'the market is telling me something I did not instrument.'",
+    reframing:
+      "No reaction is still a signal. Null signals belong in the calibration layer.",
+    nextAction:
+      "Ship v0.5: founder calibration log, failed assumptions, observable weekly movement.",
+  },
+  {
+    id: "log2",
+    timestamp: "2026-05-16T18:00:00Z",
+    observation:
+      "The repo reads conceptually strong but interaction surfaces feel thin — thesis without lived adaptation visible.",
+    emotionalRead: "Founder isolation — building in public without visible calibration loop yet.",
+    reframing:
+      "Optimize for observability of adaptation, not virality. The artifact is the operating surface.",
+    nextAction: "Demote thesis blocks; promote operational logs and signal→action pairs.",
+  },
+  {
+    id: "log3",
+    timestamp: "2026-05-16T12:00:00Z",
+    observation:
+      "Compressed window: adjacent repos appeared within two weeks of a public thread.",
+    failedAssumption: "We had more time to position before copy cycles caught up.",
+    nextAction: "Log window dynamics explicitly; tie pivots to market movement.",
+  },
+  {
+    id: "log4",
+    timestamp: "2026-05-15T09:00:00Z",
+    observation:
+      "Accelerator question: where does calibration stick after conversation ends?",
+    reframing: "Conversation is not the product — persistent calibration memory is.",
+    nextAction: "Signals received + ecosystem references, not in-app chat.",
+  },
+];
+
+export const weeklyChanges: WeeklyChange[] = [
+  {
+    id: "wc1",
+    category: "reframing",
+    title: "Null signal became first-class",
+    body: "No X/GitHub engagement → shift from abstract thesis UI to founder calibration operating surface (v0.5).",
+    timestamp: "2026-05-17T10:00:00Z",
+  },
+  {
+    id: "wc2",
+    category: "positioning",
+    title: "Thesis-heavy → adaptation-visible",
+    body: "Product is now measured by observable strategic movement, not conceptual completeness.",
+    timestamp: "2026-05-17T08:00:00Z",
+  },
+  {
+    id: "wc3",
+    category: "operational",
+    title: "Signals → action loop strengthened",
+    body: "Weak signals render as calibration artifacts with explicit Action column.",
+    timestamp: "2026-05-16T20:00:00Z",
+  },
+  {
+    id: "wc4",
+    category: "thesis",
+    title: "Window dynamics + core repo continuity",
+    body: "Single living artifact; satellite repos only for isolated spikes. Market timing logged explicitly.",
+    timestamp: "2026-05-16T14:00:00Z",
+  },
+  {
+    id: "wc5",
+    category: "interaction",
+    title: "First public X post",
+    body: "Short post, calibration-memory framing. Engagement minimal — logged as signal s0.",
+    timestamp: "2026-05-16T16:00:00Z",
+  },
+];
+
+export const failedAssumptions: FailedAssumption[] = [
+  {
+    id: "fa1",
+    assumption:
+      "Builders will react to abstract trajectory concepts on X/GitHub",
+    whatHappened:
+      "Near-zero external engagement after first post. Abstract framing did not create operational tension.",
+    lesson:
+      "Interaction requires observable founder adaptation — logs, failed assumptions, weekly movement.",
+    timestamp: "2026-05-17T10:00:00Z",
+  },
+  {
+    id: "fa2",
+    assumption: "Virality or replies indicate calibration quality",
+    whatHappened: "Silence after shipping v0.3/v0.4 surfaces. Repo stars quiet.",
+    lesson:
+      "Null signals are calibration inputs. Optimize observability of adaptation, not engagement metrics.",
+    timestamp: "2026-05-17T09:00:00Z",
+  },
+  {
+    id: "fa3",
+    assumption: "More thesis sections = clearer product",
+    whatHappened:
+      "Conceptually strong README; weak sense of live founder movement.",
+    lesson:
+      "Strategic console beats manifesto. Show what changed this week, not only what we believe.",
+    timestamp: "2026-05-16T18:00:00Z",
+  },
+];
+
 export const calibrationNotes: CalibrationNotes = {
   currentlyBelieve:
-    "In AI-native markets, execution is abundant and strategic windows compress fast. The scarce resources are positioning, trajectory calibration, ecosystem proximity, and distribution timing — not raw shipping speed.",
+    "Founder adaptation must be observable in the artifact itself — especially when external reaction is weak.",
   uncertainAbout:
-    "How to log window dynamics without turning this into anxiety-driven hustle content. Survival-oriented positioning, not vanity growth.",
+    "Whether public calibration logs attract the right collaborators or feel too exposed.",
   watchingSignal:
-    "Whether window-dynamic entries precede pivots faster than signals alone — timing pressure as leading indicator.",
+    "Does logging null signals increase my own calibration velocity faster than waiting for replies?",
   feedbackNeeded:
-    "Examples where distribution urgency (not capability) determined survival in a 2–4 week window.",
-  updatedAt: "2026-05-16",
+    "Examples of founders who ship adaptation logs that feel operational, not performative.",
+  updatedAt: "2026-05-17",
 };
 
 export const windowDynamics: WindowDynamic[] = [
@@ -26,113 +140,66 @@ export const windowDynamics: WindowDynamic[] = [
     id: "w1",
     kind: "crowding",
     observation:
-      "This direction became crowded within two weeks — three near-identical open-source repos appeared after a single viral thread.",
-    timingPressure:
-      "Differentiation window collapsed before feature completeness.",
-    adaptation:
-      "Shift thesis emphasis from capability to calibration memory + execution residue — harder to copy quickly.",
+      "Direction crowded within two weeks — near-identical OSS repos after one viral thread.",
+    timingPressure: "Differentiation window collapsed before feature completeness.",
+    adaptation: "Shift from capability story to calibration memory + execution residue.",
     timestamp: "2026-05-16T16:00:00Z",
   },
   {
     id: "w2",
     kind: "commoditization",
-    observation:
-      "Open-source replication compressed differentiation — the core workflow is now a weekend project with a popular model API.",
-    timingPressure:
-      "Moat weakened after model commoditization; feature parity is no longer defensible.",
-    adaptation:
-      "Double down on trajectory continuity and ecosystem-linked context — not the widget layer.",
+    observation: "Open-source replication compressed differentiation.",
+    timingPressure: "Feature parity is no longer a moat.",
+    adaptation: "Trajectory continuity over widget layer.",
     timestamp: "2026-05-16T12:00:00Z",
-  },
-  {
-    id: "w3",
-    kind: "distribution-shift",
-    observation:
-      "Distribution became more important than capability for this wedge — builders with reach shipped worse products and still won attention.",
-    timingPressure:
-      "First-mover advantage decayed in days, not quarters.",
-    adaptation:
-      "Explore calibration-driven distribution: public trajectory as positioning, not performance content.",
-    timestamp: "2026-05-15T18:00:00Z",
-  },
-  {
-    id: "w4",
-    kind: "ecosystem-shift",
-    observation:
-      "The wedge changed because the market moved — platform policy shift removed the original integration path.",
-    timingPressure:
-      "Strategic pivot required before accumulated execution became sunk cost.",
-    adaptation:
-      "Logged ecosystem timing observation here before rewriting roadmap in Notion.",
-    timestamp: "2026-05-15T10:00:00Z",
-  },
-  {
-    id: "w5",
-    kind: "opportunity",
-    observation:
-      "A narrow window opened — incumbents slow to adopt agent-native workflows; attention spike on X lasted ~72 hours.",
-    timingPressure:
-      "Repeated execution velocity matters more than perfect architecture in this phase.",
-    adaptation:
-      "Ship calibration memory MVP in core repo; defer satellite experiments.",
-    timestamp: "2026-05-14T08:00:00Z",
   },
 ];
 
 export const obsession: ObsessionCard = {
-  exploring:
-    "Strategic adaptation under compressed AI windows — calibration memory as survival layer",
+  exploring: "Observable founder calibration under weak external signal",
   changedRecently:
-    "Added window dynamics surface; core repo stays single living trajectory artifact",
+    "v0.5 — calibration log, weekly changes, failed assumptions; silence as signal",
   strugglingWith:
-    "Balancing market-aware urgency without dopamine-driven productivity theater",
-  watchingSignal:
-    "Copy-cycle speed on adjacent repos vs. our trajectory calibration cadence",
-  updatedAt: "2026-05-16",
+    "Exposure vs. operational honesty — logging isolation without performance theater",
+  watchingSignal: "Whether public adaptation logs create ecosystem pull without virality",
+  updatedAt: "2026-05-17",
 };
 
 export const signalsReceived: SignalReceived[] = [
   {
-    id: "s1",
+    id: "s0",
     interaction:
-      "Reply on X questioned whether this is 'another builder Twitter'",
-    misunderstanding:
-      "Assumed the goal was in-app social graph, not cross-ecosystem calibration memory",
-    signalFelt:
-      "Framing problem — we are not optimizing for keeping users on-platform",
+      "First X post + repo link. Views unclear; no replies, no GitHub issues, no stars spike.",
+    signalFelt: "Null signal — market did not meet abstract framing where it lives.",
     changedAfterward:
-      "README and thesis rewritten around calibration memory; feed demoted below signals and timeline",
+      "Shift from thesis-heavy artifact → founder calibration operating surface. Log silence as s0.",
+    timestamp: "2026-05-17T10:00:00Z",
+    source: "x",
+    isNullSignal: true,
+    externalRef: { source: "x", label: "Launch post — May 17" },
+  },
+  {
+    id: "s1",
+    interaction: "Earlier X thread questioned 'another builder Twitter'",
+    misunderstanding: "Assumed in-app social graph vs calibration memory",
+    signalFelt: "Framing gap on what we optimize for",
+    changedAfterward: "Reframed as ecosystem-external calibration layer",
     timestamp: "2026-05-16T14:00:00Z",
     source: "x",
-    externalRef: {
-      source: "x",
-      label: "Thread — calibration vs social",
-      url: "https://x.com/example/status/1",
-    },
   },
   {
     id: "s2",
-    interaction:
-      "Accelerator office hours: 'Where does calibration actually stick?'",
-    signalFelt:
-      "Calibration disappears when it stays in conversation but not in trajectory memory",
-    changedAfterward:
-      "Added Signals Received + explicit calibration notes structure",
+    interaction: "Accelerator: where does calibration stick?",
+    signalFelt: "Calibration disappears when conversation ends",
+    changedAfterward: "Signals received structure + persistent memory",
     timestamp: "2026-05-15T20:00:00Z",
     source: "accelerator",
-    externalRef: {
-      source: "accelerator",
-      label: "Office hours — batch 12",
-    },
   },
   {
     id: "s3",
-    interaction: "GitHub issue #4 — collaborator confused profile vs trajectory",
-    misunderstanding:
-      "Thought obsession card was a public profile; missed that feed is evidentiary",
-    signalFelt: "Execution residue (issues, commits) and reasoning must link visibly",
-    changedAfterward:
-      "Started commit ↔ context linking experiment on scaffold commit entry",
+    interaction: "GitHub issue #4 — profile vs trajectory confusion",
+    signalFelt: "Execution and belief must link visibly",
+    changedAfterward: "Commit ↔ context linking",
     timestamp: "2026-05-15T14:30:00Z",
     source: "github",
     externalRef: {
@@ -141,219 +208,70 @@ export const signalsReceived: SignalReceived[] = [
       url: "https://github.com/higuseonhye/trajectory-native/issues/4",
     },
   },
-  {
-    id: "s4",
-    interaction: "DM after demo — 'I already talk on Discord, why another app?'",
-    signalFelt:
-      "Product must ingest ecosystem interaction by reference, not replace channels",
-    changedAfterward:
-      "Ecosystem reference fields on signals and reasoning traces",
-    timestamp: "2026-05-14T22:00:00Z",
-    source: "dm",
-  },
-  {
-    id: "s5",
-    interaction:
-      "Conference hallway — 'Everyone ships now; the fight is positioning and timing'",
-    signalFelt:
-      "Window compression makes trajectory misalignment costlier than slow execution",
-    changedAfterward:
-      "Window Dynamics section added; distribution framed as survival layer not growth hack",
-    timestamp: "2026-05-16T11:00:00Z",
-    source: "conference",
-    externalRef: {
-      source: "conference",
-      label: "Builder systems track — Q&A",
-    },
-  },
 ];
 
 export const trajectoryTimeline: TimelineEvent[] = [
   {
+    id: "tl-v5",
+    kind: "calibration",
+    title: "v0.5 founder operating surface",
+    summary: "Calibration log, weekly changes, failed assumptions, null signal loop",
+    timestamp: "2026-05-17T10:00:00Z",
+  },
+  {
     id: "tl0",
     kind: "window",
     title: "Direction crowded in 2 weeks",
-    summary: "Open-source copy cycle compressed differentiation window",
+    summary: "Copy cycle compressed differentiation",
     timestamp: "2026-05-16T16:00:00Z",
   },
   {
     id: "tl1",
     kind: "signal",
-    title: "X reply reframes product",
-    summary: "Not builder Twitter — calibration memory across ecosystems",
-    timestamp: "2026-05-16T14:00:00Z",
-  },
-  {
-    id: "tl2",
-    kind: "calibration",
-    title: "Direction shift documented",
-    summary: "Optimize for trajectory evolution across ecosystem, not time-on-platform",
-    timestamp: "2026-05-16T13:00:00Z",
-  },
-  {
-    id: "tl3",
-    kind: "pivot",
-    title: "Social surface → calibration layer",
-    summary: "Signals, timeline, notes prioritized over viral feed mechanics",
-    timestamp: "2026-05-16T10:00:00Z",
-  },
-  {
-    id: "tl4",
-    kind: "reasoning",
-    title: "GitHub as execution residue",
-    summary: "Commits hold what shipped; this layer holds why and what changed",
-    timestamp: "2026-05-16T08:00:00Z",
-  },
-  {
-    id: "tl5",
-    kind: "signal",
-    title: "Accelerator calibration question",
-    summary: "Where does calibration stick after conversation ends?",
-    timestamp: "2026-05-15T20:00:00Z",
-  },
-  {
-    id: "tl6",
-    kind: "commit",
-    title: "Initial scaffold",
-    summary: "Repo structure + MVP — trajectory notes as living artifact",
-    timestamp: "2026-05-15T08:00:00Z",
-  },
-  {
-    id: "tl7",
-    kind: "obsession",
-    title: "Obsession shift",
-    summary: "Profile-centric → trajectory-first → calibration memory",
-    timestamp: "2026-05-14T12:00:00Z",
+    title: "First X post",
+    summary: "Minimal engagement — logged as calibration signal",
+    timestamp: "2026-05-16T16:00:00Z",
   },
 ];
 
 export const trajectoryFeed: TrajectoryEntry[] = [
   {
+    id: "t-v5",
+    kind: "experiment",
+    title: "v0.5 — founder adaptation surface",
+    body: "Calibration log, what changed this week, failed assumptions, signals→action, why SF note.",
+    timestamp: "2026-05-17T10:30:00Z",
+    tags: ["v0.5", "build"],
+    githubRef: "pending",
+  },
+  {
     id: "t0",
     kind: "note",
-    title: "Core repo continuity principle",
-    body: "This repo is the living trajectory artifact. Satellite repos only for isolated technical spikes — always linked back to core thesis.",
+    title: "Core repo continuity",
+    body: "One living trajectory artifact. No repo per idea.",
     timestamp: "2026-05-16T15:00:00Z",
-    tags: ["repo-strategy", "continuity"],
-  },
-  {
-    id: "t1",
-    kind: "shift",
-    title: "Pivot: social platform → calibration memory",
-    body: "Stopped optimizing for in-app interaction. Capture what changed, why, and which external signal caused it.",
-    timestamp: "2026-05-16T10:00:00Z",
-    tags: ["direction", "thesis"],
-  },
-  {
-    id: "t2",
-    kind: "experiment",
-    title: "Signals + timeline + calibration notes",
-    body: "MVP v0.3 — ecosystem-external interaction capture, trajectory timeline, commit context linking.",
-    timestamp: "2026-05-16T09:30:00Z",
-    tags: ["mvp", "build"],
-  },
-  {
-    id: "t3",
-    kind: "focus",
-    title: "Commit ↔ context residue",
-    body: "GitHub stores execution; we attach why-changed, trigger, and remaining uncertainty to commits.",
-    timestamp: "2026-05-15T18:00:00Z",
-    tags: ["github-native"],
-  },
-  {
-    id: "t4",
-    kind: "note",
-    title: "Fragmented context problem",
-    body: "Communication is abundant. Persistent calibration memory and trajectory continuity are not.",
-    timestamp: "2026-05-15T12:00:00Z",
-    tags: ["thesis"],
-  },
-  {
-    id: "t5",
-    kind: "commit",
-    title: "Initial scaffold",
-    body: "Repository structure: docs, logs, experiments, trajectory-notes.",
-    timestamp: "2026-05-15T08:00:00Z",
-    tags: ["repo"],
-    githubRef: "db84aaf",
-    commitContext: {
-      whyChanged: "Establish public trajectory artifact before adding calibration layer features",
-      trigger: "Thesis that repeated action over time beats static builder profiles",
-      uncertainty: "How much structure before it feels like another social product",
-      reasoningId: "r2",
-    },
+    tags: ["repo-strategy"],
   },
 ];
 
 export const reasoningTraces: ReasoningTrace[] = [
   {
+    id: "r5",
+    trigger: "No external engagement after public post (signal s0)",
+    insight:
+      "Weak reaction is data. The product should make founder adaptation visible even when the ecosystem is quiet.",
+    directionChange:
+      "v0.5 prioritizes calibration log and failed assumptions over thesis expansion",
+    timestamp: "2026-05-17T10:00:00Z",
+    externalRef: { source: "x", label: "Null signal — May 17" },
+  },
+  {
     id: "r1",
-    trigger:
-      "Builders rewrite context in Slack, Notion, README — calibration does not persist",
-    insight:
-      "High-signal interaction already happens on X, in DMs, at accelerators. Product must capture residue, not relocate conversation.",
-    directionChange:
-      "Design for ecosystem-external capture + GitHub execution linking",
+    trigger: "Context fragments across Slack, Notion, README",
+    insight: "Capture residue where interaction already happens",
+    directionChange: "Ecosystem-external capture + GitHub linking",
     timestamp: "2026-05-16T08:00:00Z",
-    externalRef: {
-      source: "slack",
-      label: "Internal thread — context fragmentation",
-    },
-  },
-  {
-    id: "r2",
-    trigger: "Profile fields felt performative in early wireframes",
-    insight:
-      "Timeline of obsession shifts, signals, and pivots reveals trajectory — not a bio",
-    timestamp: "2026-05-15T16:00:00Z",
-  },
-  {
-    id: "r4",
-    trigger:
-      "Window crowded in two weeks — copy repos appeared before we finished positioning",
-    insight:
-      "When differentiation periods shrink, calibration memory and public trajectory become the moat — not feature lists",
-    directionChange:
-      "Add Window Dynamics; keep all strategic evolution in this core repo",
-    timestamp: "2026-05-16T16:30:00Z",
-  },
-  {
-    id: "r3",
-    trigger: "GitHub issue #4 misunderstanding (see signal s3)",
-    insight:
-      "Issue revealed framing gap: users need visible link between execution and evolving belief",
-    directionChange: "Commit context blocks on every commit-class feed item",
-    timestamp: "2026-05-15T15:00:00Z",
-    externalRef: {
-      source: "github",
-      label: "issue #4",
-      url: "https://github.com/higuseonhye/trajectory-native/issues/4",
-    },
   },
 ];
 
-export const calibrationReplies: CalibrationReply[] = [
-  {
-    id: "c1",
-    anchor: { type: "reasoning", id: "r1" },
-    author: "collaborator-a",
-    body: "Slack thread from Tuesday already argued this — capture the signal, don't copy the chat.",
-    timestamp: "2026-05-16T08:20:00Z",
-  },
-  {
-    id: "c2",
-    anchor: { type: "reasoning", id: "r1" },
-    author: "builder",
-    body: "Agreed. Signals Received is the ingest surface; commits hold execution proof.",
-    timestamp: "2026-05-16T08:35:00Z",
-    isCalibration: true,
-  },
-  {
-    id: "c5",
-    anchor: { type: "obsession", id: "watchingSignal" },
-    author: "builder",
-    body: "Updated: track signal → timeline → obsession shift correlation.",
-    timestamp: "2026-05-16T11:15:00Z",
-    isCalibration: true,
-  },
-];
+export const calibrationReplies: CalibrationReply[] = [];

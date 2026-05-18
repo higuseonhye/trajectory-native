@@ -12,7 +12,7 @@ export function CommitContextBlock({ context, githubRef }: Props) {
       aria-label="Commit context residue"
     >
       <p className="font-mono text-[10px] uppercase tracking-[0.12em] text-[var(--kind-commit)]">
-        Commit ↔ context
+        Commit ??context
         {githubRef && (
           <span className="ml-2 text-[var(--muted)]">· {githubRef}</span>
         )}

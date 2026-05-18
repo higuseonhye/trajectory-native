@@ -29,7 +29,7 @@ export function WindowDynamics({ entries }: Props) {
         Window dynamics
       </h2>
       <p className="mt-2 text-sm text-[var(--muted)]">
-        AI-era strategic timing — crowded wedges, commoditizing capabilities,
+        AI-era strategic timing ??crowded wedges, commoditizing capabilities,
         distribution urgency, collapsing moats. Trajectory calibration matters
         more when windows compress.
       </p>

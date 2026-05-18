@@ -5,7 +5,6 @@ export type TrajectoryKind =
   | "focus"
   | "shift";
 
-/** External ecosystem where high-signal interaction occurred */
 export type SignalSource =
   | "x"
   | "github"
@@ -26,7 +25,6 @@ export interface CommitContext {
   whyChanged: string;
   trigger: string;
   uncertainty?: string;
-  /** Links to reasoning trace or signal */
   reasoningId?: string;
   signalId?: string;
 }
@@ -58,6 +56,40 @@ export interface CalibrationNotes {
   updatedAt: string;
 }
 
+/** Founder operational calibration — alive, not marketing */
+export interface CalibrationLogEntry {
+  id: string;
+  timestamp: string;
+  observation: string;
+  failedAssumption?: string;
+  emotionalRead?: string;
+  reframing?: string;
+  nextAction?: string;
+}
+
+export type WeeklyChangeCategory =
+  | "thesis"
+  | "positioning"
+  | "reframing"
+  | "operational"
+  | "interaction";
+
+export interface WeeklyChange {
+  id: string;
+  category: WeeklyChangeCategory;
+  title: string;
+  body: string;
+  timestamp: string;
+}
+
+export interface FailedAssumption {
+  id: string;
+  assumption: string;
+  whatHappened: string;
+  lesson: string;
+  timestamp: string;
+}
+
 export interface SignalReceived {
   id: string;
   interaction: string;
@@ -67,6 +99,8 @@ export interface SignalReceived {
   timestamp: string;
   source: SignalSource;
   externalRef?: EcosystemReference;
+  /** Weak or null signal — still a calibration artifact */
+  isNullSignal?: boolean;
 }
 
 export interface ReasoningTrace {
@@ -87,7 +121,6 @@ export type WindowDynamicKind =
   | "ecosystem-shift"
   | "opportunity";
 
-/** Market timing and strategic window observations — AI-era compression */
 export interface WindowDynamic {
   id: string;
   kind: WindowDynamicKind;

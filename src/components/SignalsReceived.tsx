@@ -1,5 +1,6 @@
 import type { SignalReceived } from "@/lib/types";
 import { formatRelativeTime, formatSignalSource } from "@/lib/format";
+import { Section } from "./Section";
 
 const sourceStyles: Record<string, string> = {
   x: "text-[var(--kind-shift)]",
@@ -17,39 +18,45 @@ interface Props {
 }
 
 export function SignalsReceived({ signals }: Props) {
-  return (
-    <section aria-labelledby="signals-heading">
-      <h2
-        id="signals-heading"
-        className="font-mono text-xs uppercase tracking-[0.15em] text-[var(--accent)]"
-      >
-        Signals received
-      </h2>
-      <p className="mt-2 text-sm text-[var(--muted)]">
-        High-signal interactions from X, GitHub, DMs, accelerators, and elsewhere
-        ??captured here so calibration does not disappear.
-      </p>
+  const sorted = [...signals].sort(
+    (a, b) => new Date(b.timestamp).getTime() - new Date(a.timestamp).getTime()
+  );
 
-      <ul className="mt-8 space-y-4">
-        {signals.map((signal) => (
+  return (
+    <Section
+      id="signals-heading"
+      title="Signals ??action"
+      description="Every signal becomes an artifact ??including weak or null signals. Observation without action is incomplete."
+    >
+      <ul className="space-y-3">
+        {sorted.map((signal) => (
           <li
             key={signal.id}
-            className="rounded-lg border border-[var(--border)] bg-[var(--surface)] p-5"
+            className={`rounded-md border px-5 py-4 ${
+              signal.isNullSignal
+                ? "border-dashed border-[var(--accent)] bg-[var(--calibration-bg)]"
+                : "border-[var(--border)] bg-[var(--surface-elevated)]"
+            }`}
           >
             <header className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
+              {signal.isNullSignal && (
+                <span className="font-mono text-[10px] uppercase tracking-wide text-[var(--accent)]">
+                  null signal
+                </span>
+              )}
               <span
-                className={`font-mono text-xs uppercase tracking-wide ${sourceStyles[signal.source] ?? ""}`}
+                className={`font-mono text-[10px] uppercase tracking-wide ${sourceStyles[signal.source] ?? ""}`}
               >
                 {formatSignalSource(signal.source)}
               </span>
               <time
                 dateTime={signal.timestamp}
-                className="font-mono text-xs text-[var(--muted)]"
+                className="font-mono text-[10px] text-[var(--muted)]"
               >
                 {formatRelativeTime(signal.timestamp)}
               </time>
               {signal.externalRef && (
-                <span className="font-mono text-xs text-[var(--muted)]">
+                <span className="font-mono text-[10px] text-[var(--muted)]">
                   {signal.externalRef.url ? (
                     <a
                       href={signal.externalRef.url}
@@ -66,45 +73,39 @@ export function SignalsReceived({ signals }: Props) {
               )}
             </header>
 
-            <dl className="mt-4 space-y-3 text-sm">
-              <div>
-                <dt className="text-xs font-medium text-[var(--muted)]">
-                  What interaction changed your thinking?
-                </dt>
-                <dd className="mt-1 leading-relaxed text-[var(--foreground)]">
-                  {signal.interaction}
-                </dd>
-              </div>
-              {signal.misunderstanding && (
-                <div>
-                  <dt className="text-xs font-medium text-[var(--muted)]">
-                    What misunderstanding revealed a framing problem?
-                  </dt>
-                  <dd className="mt-1 leading-relaxed text-[var(--foreground)]">
-                    {signal.misunderstanding}
-                  </dd>
-                </div>
-              )}
-              <div>
-                <dt className="text-xs font-medium text-[var(--muted)]">
-                  What signal felt important?
-                </dt>
-                <dd className="mt-1 leading-relaxed text-[var(--foreground)]">
+            <div className="mt-4 grid gap-4 sm:grid-cols-2">
+              <div className="rounded border border-[var(--border)] bg-[var(--background)] p-3">
+                <p className="font-mono text-[10px] uppercase tracking-wide text-[var(--muted)]">
+                  Signal
+                </p>
+                <p className="mt-2 text-sm leading-relaxed text-[var(--foreground)]">
                   {signal.signalFelt}
-                </dd>
+                </p>
+                {signal.interaction && (
+                  <p className="mt-2 text-xs leading-relaxed text-[var(--muted)]">
+                    {signal.interaction}
+                  </p>
+                )}
               </div>
-              <div className="border-t border-[var(--border)] pt-3">
-                <dt className="text-xs font-medium text-[var(--accent)]">
-                  What changed afterward?
-                </dt>
-                <dd className="mt-1 leading-relaxed text-[var(--foreground)]">
+              <div className="rounded border border-[var(--accent)] border-opacity-40 bg-[var(--calibration-bg)] p-3">
+                <p className="font-mono text-[10px] uppercase tracking-wide text-[var(--accent)]">
+                  Action
+                </p>
+                <p className="mt-2 text-sm leading-relaxed text-[var(--foreground)]">
                   {signal.changedAfterward}
-                </dd>
+                </p>
               </div>
-            </dl>
+            </div>
+
+            {signal.misunderstanding && (
+              <p className="mt-3 text-xs text-[var(--muted)]">
+                <span className="font-medium">Framing gap: </span>
+                {signal.misunderstanding}
+              </p>
+            )}
           </li>
         ))}
       </ul>
-    </section>
+    </Section>
   );
 }

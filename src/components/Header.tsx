@@ -1,18 +1,17 @@
-export function Header() {
+﻿export function Header() {
   return (
-    <header className="border-b border-[var(--border)] px-6 py-8 md:px-10">
+    <header className="border-b border-[var(--border)] px-6 py-10 md:px-10">
       <div className="mx-auto max-w-3xl">
-        <p className="font-mono text-xs uppercase tracking-[0.2em] text-[var(--muted)]">
-          trajectory-native · core trajectory repo
+        <p className="font-mono text-[10px] uppercase tracking-[0.22em] text-[var(--muted)]">
+          trajectory-native - v0.5
         </p>
-        <h1 className="mt-3 text-2xl font-medium tracking-tight text-[var(--foreground)] md:text-3xl">
-          Strategic adaptation under compressed windows
+        <h1 className="mt-4 text-2xl font-medium tracking-tight text-[var(--foreground)] md:text-[2rem] md:leading-tight">
+          Founder calibration console
         </h1>
-        <p className="mt-3 max-w-xl text-sm leading-relaxed text-[var(--muted)]">
-          In AI-native markets, execution is abundant while strategic windows
-          compress rapidly. This is the living calibration memory — not
-          another chat app, not a repo per idea. One artifact for trajectory,
-          reasoning, and repeated action under timing pressure.
+        <p className="mt-4 max-w-xl text-sm leading-relaxed text-[var(--muted)]">
+          Live adaptation under compressed windows. Observable movement, failed
+          assumptions, and signal-to-action loops - not startup marketing. One
+          core repo; trajectory continuity over repo fragmentation.
         </p>
       </div>
     </header>

@@ -1,6 +1,6 @@
 # Architecture
 
-## Current (v0.4)
+## Current (v0.5)
 
 ```
 trajectory-notes/  ──►  (future) parser
@@ -11,22 +11,28 @@ src/components/    ──►  presentation layer
 
 - **Stack:** Next.js 16, TypeScript, Tailwind CSS 4, App Router
 - **Data:** In-memory seed (`src/lib/data.ts`). No database yet.
-- **Types:** `CalibrationNotes`, `WindowDynamic`, `SignalReceived`, `TimelineEvent`, `CommitContext`, `TrajectoryEntry`, `ReasoningTrace`, `CalibrationReply`
+- **Types:** `CalibrationLogEntry`, `WeeklyChange`, `FailedAssumption`, `CalibrationNotes`, `WindowDynamic`, `SignalReceived`, `TimelineEvent`, `CommitContext`, `TrajectoryEntry`, `ReasoningTrace`, `CalibrationReply`
 
 ## Principles
 
-1. **Calibration memory first** — signals, notes, timeline before feed mechanics
-2. **Ecosystem-external capture** — interactions referenced from X, GitHub, DMs, etc.
-3. **Execution ↔ context linking** — commits carry why/trigger/uncertainty residue
-4. **Context-embedded calibration** — back-and-forth on objects, not global chat
-5. **Not optimized for time-on-platform** — help builders evolve across tools
+1. **Founder adaptation visible** — calibration log, weekly changes, failed assumptions first
+2. **Calibration memory** — signals (including null), notes, timeline
+3. **Ecosystem-external capture** — interactions referenced from X, GitHub, DMs, etc.
+4. **Execution ↔ context linking** — commits carry why/trigger/uncertainty residue
+5. **Null signals as artifacts** — weak/no engagement still logged with explicit action
+6. **Not optimized for virality** — observable adaptation over engagement metrics
 
 ## Component map
 
 | Component | Responsibility |
 |-----------|----------------|
-| `CalibrationNotesSection` | Live strategic beliefs, distribution/timing uncertainty |
-| `WindowDynamics` | Market timing, crowding, commoditization, adaptation |
+| `CalibrationLog` | Founder operational adaptation entries |
+| `WeeklyChanges` | Directional movement this week |
+| `FailedAssumptions` | Visible adaptation from wrong beliefs |
+| `SignalsReceived` | Signal → action loop (incl. null signals) |
+| `WhySiliconValley` | Ecosystem density note |
+| `CalibrationNotesSection` | Live strategic beliefs |
+| `WindowDynamics` | Market timing observations |
 | `TrajectoryTimeline` | Trajectory over time (signals, pivots, calibration) |
 | `SignalsReceived` | External interaction capture with aftermath |
 | `ObsessionCard` | Compressed current focus |

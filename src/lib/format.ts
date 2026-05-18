@@ -37,6 +37,14 @@ const windowKindLabels: Record<string, string> = {
   opportunity: "opportunity",
 };
 
+const weeklyCategoryLabels: Record<string, string> = {
+  thesis: "thesis",
+  positioning: "positioning",
+  reframing: "reframing",
+  operational: "operational",
+  interaction: "interaction",
+};
+
 export function formatKind(kind: string): string {
   return kindLabels[kind] ?? kind;
 }
@@ -51,6 +59,10 @@ export function formatTimelineKind(kind: string): string {
 
 export function formatWindowKind(kind: string): string {
   return windowKindLabels[kind] ?? kind;
+}
+
+export function formatWeeklyCategory(category: string): string {
+  return weeklyCategoryLabels[category] ?? category;
 }
 
 export function formatRelativeTime(iso: string): string {

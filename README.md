@@ -1,58 +1,31 @@
 # trajectory-native
 
-**Core trajectory repo** — a trajectory-aware calibration memory layer for builders operating under compressed AI-era windows.
+**Founder calibration console** — one core trajectory repo for observable adaptation under compressed AI-era windows.
 
-> In AI-native markets, execution is increasingly abundant while strategic windows compress rapidly.  
-> The challenge is no longer simply shipping.  
-> The challenge is maintaining trajectory alignment while industries move at extreme speed.
+> Execution is abundant. Strategic windows compress.  
+> When external reaction is weak, **silence is still a calibration signal.**
 
-## The real problem
+## What changed in v0.5
 
-Communication is not scarce. Builders already interact on GitHub, X, Discord, Slack, DMs, accelerators, and conferences.
-
-What breaks down:
-
-- fragmented context
-- disappearing calibration
-- no persistent trajectory memory
-- weak link between execution and evolving reasoning
-- **misalignment under timing pressure** as windows compress
-
-## What this is
-
-A **strategic adaptation layer** — not a productivity app, not a social network, not a chat replacement.
-
-| Not | Instead |
-|-----|---------|
-| LinkedIn for builders | Trajectory memory |
-| Endless in-app social | Ecosystem-external capture |
-| Repo per new idea | **One living core artifact** |
-| Vanity growth | Survival-oriented positioning |
-
-This repo is simultaneously: **product**, **thesis**, **calibration memory**, **execution residue**, and **strategic adaptation artifact**.
-
-See [`docs/repo-strategy.md`](docs/repo-strategy.md).
-
-## Core value
-
-Help builders **recalibrate trajectory** through persistent context and repeated action history — especially when:
-
-- windows open and close quickly
-- capabilities commoditize
-- distribution timing beats raw capability
-- copy cycles accelerate
-
-## MVP (v0.4)
+Shift from thesis-heavy artifact → **live founder operating surface**.
 
 | Surface | Purpose |
 |---------|---------|
-| **Calibration notes** | Beliefs, uncertainty, signals, feedback — includes distribution/timing pressure |
-| **Window dynamics** | Crowding, commoditization, moat decay, distribution urgency, ecosystem shifts |
-| **Trajectory timeline** | Trajectory over time — including window events |
-| **Signals received** | External interactions with what changed afterward |
-| **Current obsession** | Compressed strategic "now" |
-| **Execution residue** | Commits with context linking |
-| **Reasoning continuity** | Why direction changed |
+| **Calibration log** | Real founder entries — observation, failed assumptions, emotional read, reframing, next action |
+| **What changed this week?** | Observable directional movement |
+| **Failed assumptions** | Adaptation made visible |
+| **Signals → action** | Including null / weak signals |
+| **Why Silicon Valley?** | Ecosystem density as calibration infrastructure |
+
+Plus: calibration notes, window dynamics, timeline, execution residue, reasoning.
+
+## Core repo principle
+
+**One living artifact.** No repo per idea. Satellite repos only for isolated technical spikes — always linked to core thesis.
+
+See [`docs/repo-strategy.md`](docs/repo-strategy.md).
+
+## Run locally
 
 ```bash
 npm install
@@ -63,33 +36,33 @@ Open [http://localhost:3000](http://localhost:3000).
 
 ## Product demo
 
-**Hero view** — core trajectory repo, calibration notes, and window dynamics:
+**Hero — calibration log & weekly movement:**
 
-![Strategic adaptation under compressed windows — hero view](docs/screenshots/demo-hero.png)
+![Founder calibration console — hero](docs/screenshots/demo-hero.png)
 
-**Full page** — timeline, signals, execution residue, and reasoning continuity:
+**Full page:**
 
-![Strategic adaptation under compressed windows — full page](docs/screenshots/demo-full.png)
+![Founder calibration console — full](docs/screenshots/demo-full.png)
 
-## Strategic principles
+## Strategic focus
 
-1. **Do not optimize for time-on-platform** — help builders evolve across the ecosystem
-2. **Keep core repo continuity** — satellite repos only for isolated technical spikes
-3. **Trajectory calibration intensifies when windows compress** — misalignment costs more
+- Observable founder adaptation (not virality)
+- Trajectory continuity under timing pressure
+- Null signals as first-class calibration artifacts
+- Calm strategic console — not polished SaaS dashboard
 
 ## Docs
 
-- [`docs/thesis.md`](docs/thesis.md)
 - [`docs/product-direction.md`](docs/product-direction.md)
 - [`docs/window-dynamics.md`](docs/window-dynamics.md)
-- [`docs/repo-strategy.md`](docs/repo-strategy.md)
-- [`docs/context-calibration.md`](docs/context-calibration.md)
+- [`docs/x-post-2026-05-17-v05.md`](docs/x-post-2026-05-17-v05.md) — today's X post draft
+- [`docs/thesis.md`](docs/thesis.md)
 - [`docs/architecture.md`](docs/architecture.md)
 
 ## Status
 
-`v0.4.0` — experimental. Trajectory clarity and strategic coherence over feature bloat.
+`v0.5.0` — founder adaptation visible. Early. Evolving in public.
 
 ---
 
-*One core artifact. Market-aware. Calibration under compression.*
+*No reaction is data. Log it. Adapt.*

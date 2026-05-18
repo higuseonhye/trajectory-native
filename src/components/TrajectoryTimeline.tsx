@@ -30,7 +30,7 @@ export function TrajectoryTimeline({ events }: Props) {
       </h2>
       <p className="mt-2 text-sm text-[var(--muted)]">
         Obsession shifts, reasoning evolution, pivots, calibration events, and
-        signals — trajectory over time, not static identity.
+        signals ??trajectory over time, not static identity.
       </p>
 
       <ol className="mt-8 space-y-0">

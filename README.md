@@ -33,8 +33,10 @@ Not a journaling app. Not a thinking tool.
 | **Trajectory events** | Atomic unit — interactions, avoided actions, momentum, entropy |
 | **Momentum engine** | Density, open loops, interaction energy, recovery |
 | **Intervention** | Where drift is detected; what to do in reality |
-| **Interaction intelligence** | Who/what increases or drains momentum *(expanding)* |
-| **Calibration log** | Legacy surface — still useful for founder adaptation archive |
+| **Interaction intelligence** | Who/what increases or drains momentum (amplifiers vs drains) |
+| **Event ingestion** | Calendar · comms · tools · JSON adapters |
+| **Native ↔ drift bridge** | Export events for unified system-side analysis |
+| **Calibration log** | Founder adaptation archive |
 
 ---
 

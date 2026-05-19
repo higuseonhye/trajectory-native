@@ -11,7 +11,7 @@ A calm operating system to **sustain desired trajectory under entropy**.
 Thesis: [trajectory infrastructure](docs/trajectory-infrastructure.md)
 
 <p align="center">
-  <img src="docs/screenshots/demo-hero.png" alt="Personal trajectory operating system" width="720" />
+  <img src="docs/screenshots/demo-hero.png" alt="Personal trajectory workspace (v0.6)" width="720" />
 </p>
 
 ---
@@ -71,7 +71,23 @@ npm install && npm run dev
 # → http://localhost:3000
 ```
 
-Surfaces at top of page: **Intervention** · **Momentum** · **Trajectory events** · calibration log.
+Surfaces at top of page: **Intervention** · **Momentum** · **Interaction intelligence** · **Trajectory events** · **Native ↔ drift bridge** · calibration log.
+
+---
+
+## Screenshots
+
+<p align="center">
+  <img src="docs/screenshots/demo-intervention.png" alt="Intervention — drift signals and suggested actions" width="400" />
+  <img src="docs/screenshots/demo-momentum.png" alt="Momentum surface — score, density, open loops" width="400" />
+</p>
+
+<p align="center">
+  <img src="docs/screenshots/demo-interaction.png" alt="Interaction intelligence — amplifiers vs drains" width="400" />
+  <img src="docs/screenshots/demo-bridge.png" alt="Export trajectory events to trajectory-drift" width="400" />
+</p>
+
+Full scroll: [`demo-full.png`](docs/screenshots/demo-full.png)
 
 ---
 

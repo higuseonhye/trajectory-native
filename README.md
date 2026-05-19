@@ -1,75 +1,75 @@
 # trajectory-native
 
-**Human-side adaptive coherence** — founder calibration under compressed, unstable conditions.
+**Human trajectory infrastructure.**  
+A calm operating system to **sustain desired trajectory under entropy**.
 
-> Execution is abundant. Strategic windows compress.  
-> When external reaction is weak, **silence is still a calibration signal.**
+> Sustain momentum. Reduce drift. Preserve trajectory.
 
-**trajectory-native** explores human adaptation coherence.  
-**[trajectory-drift](https://github.com/higuseonhye/trajectory-drift)** explores system coordination coherence.
+**trajectory-native** — personal trajectory OS (human-side).  
+**[trajectory-drift](https://github.com/higuseonhye/trajectory-drift)** — organizational + agent coordination (system-side).
 
-Shared thesis: [adaptive coherence under unstable contexts](docs/adaptive-coherence.md).
+Thesis: [trajectory infrastructure](docs/trajectory-infrastructure.md)
 
 <p align="center">
-  <img src="docs/screenshots/demo-hero.png" alt="Founder calibration console" width="720" />
+  <img src="docs/screenshots/demo-hero.png" alt="Personal trajectory operating system" width="720" />
 </p>
 
 ---
 
 ## Why this exists
 
-Most systems optimize execution.
+Humans do not fail primarily from lack of intelligence. They fail from **trajectory drift** under entropy, isolation, weak interaction loops, and broken momentum systems.
 
-Few help humans maintain coherent adaptation under unstable conditions.
-
-trajectory-native explores:
-
-- calibration over identity
-- continuity over performance
-- adaptation over static positioning
-- reflection over reactive momentum
+Most tools optimize execution or reflection. Few sustain **momentum, interaction, and closed reality loops**.
 
 ---
 
-## Founder drift
+## What this is (v0.6 direction)
 
-Recurring human adaptation failures — operational patterns, not character flaws.
+Not a journaling app. Not a thinking tool.
 
-| Pattern | Symptom |
-|---------|---------|
-| **Emotional overfitting to weak signals** | Every silence or like rewrites the thesis |
-| **External validation dependency** | Trajectory follows audience noise |
-| **Reactive trajectory switching** | New positioning before learning accumulates |
-| **Context collapse under pressure** | Deadlines erase nuance; binary framing |
-| **Strategic fragmentation** | Many directions, no continuity |
-| **Execution without recalibration** | High output, stale assumptions |
-| **Identity attachment to past positioning** | Hard to log failed assumptions publicly |
+| Layer | Role |
+|-------|------|
+| **Trajectory events** | Atomic unit — interactions, avoided actions, momentum, entropy |
+| **Momentum engine** | Density, open loops, interaction energy, recovery |
+| **Intervention** | Where drift is detected; what to do in reality |
+| **Interaction intelligence** | Who/what increases or drains momentum *(expanding)* |
+| **Calibration log** | Legacy surface — still useful for founder adaptation archive |
+
+---
+
+## Founder drift → intervention
+
+Recurring patterns now drive **intervention signals**, not only reflection:
+
+- interaction starvation
+- momentum degradation
+- unfinished loops
+- reactive trajectory switching
+- abstraction over action
 
 Archive: [`docs/calibration-archive.md`](docs/calibration-archive.md)
 
 ---
 
-## What changed in v0.5
+## Reality loop
 
-Shift from thesis-heavy artifact → **live founder operating surface**.
+```
+reflection → action → environment → feedback → recalibration
+```
 
-| Surface | Purpose |
-|---------|---------|
-| **Calibration log** | Real founder entries — observation, failed assumptions, emotional read, reframing, next action |
-| **What changed this week?** | Observable directional movement |
-| **Failed assumptions** | Adaptation made visible |
-| **Signals → action** | Including null / weak signals |
-| **Why Silicon Valley?** | Ecosystem density as calibration infrastructure |
-
-Plus: calibration notes, window dynamics, timeline, execution residue, reasoning.
+The loop must close in the world — not stop at insight.
 
 ---
 
-## Core repo principle
+## Run locally
 
-**One living artifact.** No repo per idea. Satellite repos only for isolated technical spikes — always linked to core thesis.
+```bash
+npm install && npm run dev
+# → http://localhost:3000
+```
 
-See [`docs/repo-strategy.md`](docs/repo-strategy.md).
+Surfaces at top of page: **Intervention** · **Momentum** · **Trajectory events** · calibration log.
 
 ---
 
@@ -77,57 +77,20 @@ See [`docs/repo-strategy.md`](docs/repo-strategy.md).
 
 | Repo | Layer |
 |------|--------|
-| **trajectory-native** (this repo) | Founder calibration · trajectory continuity · adaptation under uncertainty |
-| **[trajectory-drift](https://github.com/higuseonhye/trajectory-drift)** | Multi-agent coordination · handoff drift · org memory · human–AI coherence |
-
----
-
-## Run locally
-
-```bash
-npm install
-npm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000).
-
-## Product demo
-
-**Hero — human-side adaptive coherence:**
-
-![Founder calibration console — hero](docs/screenshots/demo-hero.png)
-
-**Full page:**
-
-![Founder calibration console — full](docs/screenshots/demo-full.png)
-
----
-
-## Strategic focus
-
-- Observable founder adaptation (not virality)
-- Trajectory continuity under timing pressure
-- Null signals as first-class calibration artifacts
-- Calm strategic console — not polished SaaS dashboard
+| **trajectory-native** (this repo) | Personal trajectory OS |
+| **[trajectory-drift](https://github.com/higuseonhye/trajectory-drift)** | Human + AI coordination infrastructure |
 
 ---
 
 ## Docs
 
-- [`docs/adaptive-coherence.md`](docs/adaptive-coherence.md) — shared thesis (human + system)
-- [`docs/calibration-archive.md`](docs/calibration-archive.md) — founder adaptation cases
-- [`docs/product-direction.md`](docs/product-direction.md)
-- [`docs/window-dynamics.md`](docs/window-dynamics.md)
-- [`docs/thesis.md`](docs/thesis.md)
-- [`docs/architecture.md`](docs/architecture.md)
-- [trajectory-drift — coordination failures](https://github.com/higuseonhye/trajectory-drift/blob/main/docs/coordination-failures.md)
+- [`docs/trajectory-infrastructure.md`](docs/trajectory-infrastructure.md)
+- [`docs/calibration-archive.md`](docs/calibration-archive.md)
+- [`docs/adaptive-coherence.md`](docs/adaptive-coherence.md) — prior shared thesis
+- [trajectory-drift — organizational trajectory](https://github.com/higuseonhye/trajectory-drift/blob/main/docs/organizational-trajectory.md)
 
 ---
 
 ## Status
 
-`v0.5.0` — founder adaptation visible. Early. Evolving in public.
-
----
-
-*No reaction is data. Log it. Adapt.*
+`v0.6` direction — trajectory events + momentum + intervention shipped in UI. Early. Evolving in public.

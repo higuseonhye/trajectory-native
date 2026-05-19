@@ -1,5 +1,9 @@
 import { Header } from "@/components/Header";
+import { InterventionPanel } from "@/components/InterventionPanel";
+import { MomentumSurface } from "@/components/MomentumSurface";
+import { TrajectoryEventsFeed } from "@/components/TrajectoryEventsFeed";
 import { CalibrationLog } from "@/components/CalibrationLog";
+import { sampleTrajectoryEvents } from "@/lib/trajectory-events";
 import { WeeklyChanges } from "@/components/WeeklyChanges";
 import { FailedAssumptions } from "@/components/FailedAssumptions";
 import { SignalsReceived } from "@/components/SignalsReceived";
@@ -31,6 +35,9 @@ export default function Home() {
       <Header />
       <main className="flex-1 px-6 py-12 md:px-10 md:py-16">
         <div className="mx-auto max-w-3xl space-y-2">
+          <InterventionPanel events={sampleTrajectoryEvents} />
+          <MomentumSurface events={sampleTrajectoryEvents} />
+          <TrajectoryEventsFeed events={sampleTrajectoryEvents} />
           <CalibrationLog entries={calibrationLog} />
           <WeeklyChanges changes={weeklyChanges} />
           <FailedAssumptions assumptions={failedAssumptions} />

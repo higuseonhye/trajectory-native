@@ -1,0 +1,39 @@
+import { detectInterventions } from "@/lib/intervention";
+import { computeMomentumMetrics } from "@/lib/momentum-engine";
+import type { TrajectoryEvent } from "@/lib/trajectory-events";
+import { Section } from "./Section";
+
+interface Props {
+  events: TrajectoryEvent[];
+}
+
+export function InterventionPanel({ events }: Props) {
+  const metrics = computeMomentumMetrics(events);
+  const signals = detectInterventions(events, metrics);
+
+  if (signals.length === 0) return null;
+
+  return (
+    <Section
+      id="intervention-heading"
+      title="Intervention"
+      description="Where trajectory is drifting — and what to do in reality."
+    >
+      <ul className="space-y-4">
+        {signals.map((s) => (
+          <li
+            key={s.kind}
+            className="border-l-2 border-[var(--accent)] pl-4"
+          >
+            <p className="text-sm text-[var(--foreground)]">
+              {s.interpretation}
+            </p>
+            <p className="mt-2 text-sm text-[var(--muted)]">
+              → {s.suggestedAction}
+            </p>
+          </li>
+        ))}
+      </ul>
+    </Section>
+  );
+}

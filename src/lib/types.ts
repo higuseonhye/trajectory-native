@@ -154,6 +154,19 @@ export interface ContextAnchor {
   id: string;
 }
 
+/** @deprecated Prefer TrajectoryEvent in trajectory-events.ts for v0.6+ */
+export type TrajectoryEventKind =
+  | "interaction"
+  | "action_taken"
+  | "action_avoided"
+  | "momentum_gain"
+  | "momentum_loss"
+  | "entropy_spike"
+  | "energy_restore"
+  | "execution_collapse"
+  | "environment_alignment"
+  | "loop_unfinished";
+
 export interface CalibrationReply {
   id: string;
   anchor: ContextAnchor;

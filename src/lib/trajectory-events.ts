@@ -1,5 +1,11 @@
 /** Core atomic unit — observable trajectory events, not abstract notes. */
 
+export type AllocationKind =
+  | "labor"
+  | "ownership"
+  | "consumption"
+  | "investment";
+
 export type TrajectoryEventKind =
   | "interaction"
   | "action_taken"
@@ -22,6 +28,10 @@ export interface TrajectoryEvent {
   /** -1 entropy drain · 0 neutral · +1 momentum */
   momentumDelta?: number;
   tags?: string[];
+  /** labor vs ownership vs consumption vs investment — auto-classified if omitted */
+  allocation?: AllocationKind;
+  /** Decision journal entry linked to this event. */
+  linkedDecisionId?: string;
 }
 
 export const sampleTrajectoryEvents: TrajectoryEvent[] = [
@@ -33,6 +43,7 @@ export const sampleTrajectoryEvents: TrajectoryEvent[] = [
     description: "30min conversation — activation increased, one concrete next step committed.",
     momentumDelta: 1,
     tags: ["high-signal"],
+    allocation: "investment",
   },
   {
     id: "te2",
@@ -42,6 +53,7 @@ export const sampleTrajectoryEvents: TrajectoryEvent[] = [
     description: "Planned 5 founder reach-outs; completed 0. Abstraction work substituted.",
     momentumDelta: -1,
     tags: ["loop-open"],
+    allocation: "labor",
   },
   {
     id: "te3",
@@ -50,6 +62,8 @@ export const sampleTrajectoryEvents: TrajectoryEvent[] = [
     description: "Reactive positioning draft after low-engagement post — no customer contact.",
     momentumDelta: -1,
     tags: ["reactive-switch"],
+    allocation: "consumption",
+    linkedDecisionId: "dj1",
   },
   {
     id: "te4",
@@ -58,6 +72,9 @@ export const sampleTrajectoryEvents: TrajectoryEvent[] = [
     subject: "pair build session",
     description: "Shipped calibration log UI in 2h — execution density restored.",
     momentumDelta: 1,
+    tags: ["shipped", "ownership"],
+    allocation: "ownership",
+    linkedDecisionId: "dj2",
   },
   {
     id: "te5",
@@ -67,6 +84,7 @@ export const sampleTrajectoryEvents: TrajectoryEvent[] = [
     description: "Three warm intros uncontacted after 72h.",
     momentumDelta: -1,
     tags: ["interaction-starvation"],
+    allocation: "labor",
   },
   {
     id: "te6",
@@ -75,5 +93,6 @@ export const sampleTrajectoryEvents: TrajectoryEvent[] = [
     subject: "morning walk + no Slack",
     description: "Recovered capacity to re-read calibration log without urgency distortion.",
     momentumDelta: 1,
+    allocation: "investment",
   },
 ];

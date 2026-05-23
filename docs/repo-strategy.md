@@ -14,11 +14,13 @@ Avoid excessive repo fragmentation. **Do not create a new repo for every new ide
 
 ## What this repo preserves
 
-- continuity
-- repeated-action identity
-- evolving reasoning
-- strategic trajectory
+- continuity and compounding judgment
+- decision memory and institutional intelligence
+- ownership and leverage trajectory
+- drift detection and intervention
 - calibration history under timing pressure
+
+Conceptual architecture: [`framework/`](../framework/)
 
 ## When satellite repos are acceptable
 
@@ -42,10 +44,11 @@ Satellites must remain **connected to the core trajectory thesis** — not orpha
 
 This repo functions simultaneously as:
 
-- product (MVP UI)
-- thesis (docs/)
+- product (MVP UI — trajectory events, drift radar, intervention)
+- framework (`framework/` — principles, compounding, capital-native, product mapping)
+- thesis (`docs/`)
 - calibration memory (signals, notes, windows)
 - execution residue (commits, feed)
-- strategic adaptation artifact (trajectory-notes/)
+- strategic adaptation artifact (`trajectory-notes/`)
 
 Public calibration and repeated execution in one place.

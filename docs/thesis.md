@@ -1,5 +1,15 @@
 # Evolving thesis
 
+## Current direction (2026-05)
+
+We are no longer building an AI assistant, meeting summarizer, or productivity layer.
+
+We are building **trajectory / judgment / coordination infrastructure** — helping humans and organizations compound judgment, ownership, and long-term trajectory in the AI era.
+
+See [`product-direction.md`](./product-direction.md) and [`framework/`](../framework/).
+
+---
+
 ## Origin — the real problem
 
 AI builders ship faster. The bottleneck is not execution — it is **alignment inside context that persists**.
@@ -12,14 +22,15 @@ High-signal interaction already happens on X, in DMs, at accelerators, on GitHub
 
 trajectory-native is a **trajectory-aware calibration memory layer** — not another chat app or builder social network.
 
-## Reframing (v0.4)
+## Reframing
 
 | Old frame | New frame |
 |-----------|-----------|
-| Builder social platform | Calibration memory system |
-| Productivity dashboard | Strategic adaptation under window compression |
-| Repo per idea | Single core trajectory artifact |
-| Capability moat | Positioning + calibration + distribution timing |
+| AI productivity tool | Trajectory / judgment infrastructure |
+| Builder social platform | Decision memory + drift detection |
+| Productivity dashboard | Compounding analysis + ownership layer |
+| PM copilot patterns | Judgment infrastructure |
+| "Work faster" | "Compound long-term trajectory" |
 
 ## Window compression
 

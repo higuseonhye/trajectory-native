@@ -1,71 +1,122 @@
 # Product direction
 
-## What this repo is
+## Thesis shift
 
-The **core trajectory layer** — single living artifact for calibration memory, evolving reasoning, and strategic adaptation.
+| Old direction | New direction |
+|---------------|---------------|
+| AI productivity | Trajectory / judgment / coordination infrastructure |
+| Summarization & workflow optimization | Decision memory & drift detection |
+| PM copilot patterns | Compounding analysis & ownership layer |
+| Agent orchestration as automation | Judgment infrastructure for humans + organizations |
+| "Help humans work faster" | "Help humans compound judgment, ownership, and long-term trajectory" |
 
-Not a new repo per idea. See [`repo-strategy.md`](repo-strategy.md).
+---
 
-## Reframing stack
+## What we are building
 
-| Stage | Frame |
-|-------|-------|
-| v0.1 | Builder trajectory workspace |
-| v0.3 | Calibration memory layer |
-| v0.4 | Strategic adaptation under compressed windows |
+**A Trajectory / Judgment / Coordination System** — not an AI assistant, meeting summarizer, or productivity layer.
 
-## AI-era window dynamics
+Infrastructure that helps individuals, founders, operators, and organizations understand:
 
-Strategic reality:
+- what compounds
+- what drifts
+- what creates leverage
+- what destroys long-term trajectory
 
-- windows open suddenly
-- capabilities commoditize quickly
-- first-mover advantage decays faster
-- copy cycles accelerate
-- execution abundance increases
+---
 
-Scarce resources: **positioning**, **trajectory calibration**, **ecosystem proximity**, **distribution timing**, **repeated execution velocity**.
+## Core capabilities
 
-Trajectory calibration becomes **more important** when windows compress — misalignment costs rise.
+| Capability | Description |
+|------------|-------------|
+| **Decision Memory** | Preserve decisions, rationale, tradeoffs, commitments |
+| **Drift Detection** | Identify prestige loops, fragmentation, low-leverage activity |
+| **Compounding Analysis** | Surface what actually compounds |
+| **Ownership Layer** | Track assets, leverage, ownership trajectory |
 
-See [`window-dynamics.md`](window-dynamics.md).
+See [`framework/product-mapping/`](../framework/product-mapping/) for module architecture.
 
-## Distribution as survival layer
+---
 
-Not vanity metrics. As windows compress, visibility and positioning are survival mechanics alongside execution.
+## Concept shift
+
+| Old | New |
+|-----|-----|
+| Productivity | Ownership |
+| Task completion | Compounding |
+| Automation | Decision quality |
+| Faster workflows | Alignment |
+| — | Institutional memory |
+| — | Leverage |
+| — | Coordination |
+| — | Trajectory coherence |
+
+---
+
+## Product modules
+
+1. **Trajectory Graph** — projects, commitments, decisions, energy allocation, drift signals
+2. **Decision Journal** — decisions, confidence, assumptions, outcomes, recurring mistakes
+3. **Drift Radar** — prestige loops, reactive behavior, fragmented direction, labor-only patterns
+4. **Institutional Memory** — team strategic continuity, prevent repeated mistakes
+5. **Capital & Leverage Reflection** — time allocation, leverage accumulation, ownership trajectory
+
+---
+
+## UX direction
+
+**Avoid:** dashboard overload, AI gimmicks, fake productivity aesthetics, smart assistant theater.
+
+**Move toward:** calm systems, long-range clarity, trajectory visibility, behavioral signals, meaningful synthesis.
+
+---
 
 ## What we optimize for
 
-- trajectory visibility
-- context persistence
-- reasoning continuity
-- calibration memory
-- execution-linked evolution
-- **market-aware adaptation**
+- long-term compounding
+- trajectory coherence
+- decision quality
+- institutional memory
+- ownership and leverage accumulation
+- drift detection and intervention
 
 ## What we do NOT optimize for
 
-- virality, creator metrics, dopamine loops
-- replacing X, Discord, Slack
-- keeping users on-platform
-- excessive repo fragmentation
+- speed alone
+- task completion metrics
+- productivity aesthetics
+- virality and engagement loops
+- AI theater
 
-## Core surfaces (v0.4)
+---
 
-1. Calibration notes (incl. distribution/timing)
-2. **Window dynamics**
-3. Trajectory timeline
-4. Signals received
-5. Execution residue + commit context
-6. Reasoning continuity
+## Core question
 
-## Product philosophy
+> "What kind of human trajectory does this system help create?"
 
-Increasingly **not** a productivity product.
+---
 
-It is:
+## Framework
 
-- strategic adaptation layer
-- trajectory calibration system
-- context continuity engine
-- builder survival operating layer for compressed AI markets
+Conceptual architecture lives in [`framework/`](../framework/):
+
+- [`principles/`](../framework/principles/) — ownership, leverage, compounding, judgment
+- [`compounding-assets/`](../framework/compounding-assets/) — what compounds
+- [`capital-native/`](../framework/capital-native/) — labor vs ownership
+- [`product-mapping/`](../framework/product-mapping/) — product module mapping
+
+Drift taxonomy and detection: [trajectory-drift/framework/](https://github.com/higuseonhye/trajectory-drift/tree/main/framework)
+
+---
+
+## Constraint
+
+Must remain measurable, operational, behavior-linked, workflow-connected, execution-aware.
+
+Must NOT become abstract philosophy software, motivational software, or life wisdom product.
+
+---
+
+## Long-term vision
+
+**Judgment infrastructure layer** for founders, operators, organizations, and AI-native teams — helping them avoid drift, preserve coherence, compound intelligence, and make higher-quality long-term decisions in the AI era.

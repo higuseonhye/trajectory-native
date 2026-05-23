@@ -3,14 +3,14 @@ export function Header() {
     <header className="border-b border-[var(--border)] px-6 py-10 md:px-10">
       <div className="mx-auto max-w-3xl">
         <p className="font-mono text-[10px] uppercase tracking-[0.22em] text-[var(--muted)]">
-          trajectory-native - v0.6 direction
+          trajectory-native · v0.8 direction
         </p>
         <h1 className="mt-4 text-2xl font-medium tracking-tight text-[var(--foreground)] md:text-[2rem] md:leading-tight">
-          Personal trajectory operating system
+          Trajectory / judgment infrastructure
         </h1>
         <p className="mt-4 max-w-xl text-sm leading-relaxed text-[var(--muted)]">
-          Sustain desired trajectory under entropy. Detect drift, sustain
-          momentum, close action loops through interaction, not reflection alone.
+          Compound judgment, ownership, and long-term trajectory. Detect drift,
+          preserve decision memory, surface what actually compounds.
         </p>
         <p className="mt-3 text-xs italic text-[var(--muted)]">
           Pairs with{" "}

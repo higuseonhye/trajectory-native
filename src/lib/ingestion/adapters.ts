@@ -1,4 +1,8 @@
-import type { TrajectoryEvent, TrajectoryEventKind } from "../trajectory-events";
+import type {
+  TrajectoryEvent,
+  TrajectoryEventKind,
+  AllocationKind,
+} from "../trajectory-events";
 import type { IngestResult } from "./types";
 
 const KINDS = new Set<TrajectoryEventKind>([
@@ -17,6 +21,13 @@ const KINDS = new Set<TrajectoryEventKind>([
 function isRecord(v: unknown): v is Record<string, unknown> {
   return typeof v === "object" && v !== null && !Array.isArray(v);
 }
+
+const ALLOCATIONS = new Set<AllocationKind>([
+  "labor",
+  "ownership",
+  "consumption",
+  "investment",
+]);
 
 function normalizeEvent(raw: unknown, index: number): TrajectoryEvent {
   if (!isRecord(raw)) throw new Error(`event[${index}] must be an object`);
@@ -39,6 +50,15 @@ function normalizeEvent(raw: unknown, index: number): TrajectoryEvent {
     tags: Array.isArray(raw.tags)
       ? raw.tags.filter((t): t is string => typeof t === "string")
       : undefined,
+    allocation:
+      typeof raw.allocation === "string" &&
+      ALLOCATIONS.has(raw.allocation as AllocationKind)
+        ? (raw.allocation as AllocationKind)
+        : undefined,
+    linkedDecisionId:
+      typeof raw.linkedDecisionId === "string"
+        ? raw.linkedDecisionId
+        : undefined,
   };
 }
 

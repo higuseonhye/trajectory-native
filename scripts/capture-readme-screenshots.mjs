@@ -37,12 +37,23 @@ async function main() {
   }
 
   await sectionShot("Intervention", "demo-intervention.png");
-  await sectionShot("Momentum", "demo-momentum.png");
+  await sectionShot("Compounding analysis", "demo-compounding.png");
+  await sectionShot("Capital & leverage reflection", "demo-capital-leverage.png");
+  await sectionShot("Trajectory graph", "demo-trajectory-graph.png");
+  await sectionShot("Decision journal", "demo-decision-journal.png");
+  await sectionShot("Institutional memory", "demo-institutional-memory.png");
   await sectionShot("Interaction intelligence", "demo-interaction.png");
   await sectionShot("Native ↔ drift bridge", "demo-bridge.png");
 
   await main.screenshot({ path: path.join(OUT, "demo-full.png") });
   console.log("wrote demo-full.png");
+
+  // 16:9 crop for X / social — top of workspace (hero + intervention + compounding)
+  await page.setViewportSize({ width: 1200, height: 675 });
+  await page.goto(BASE, { waitUntil: "networkidle" });
+  await page.waitForTimeout(800);
+  await main.screenshot({ path: path.join(OUT, "demo-hero-social-16x9.png") });
+  console.log("wrote demo-hero-social-16x9.png");
 
   await browser.close();
 }

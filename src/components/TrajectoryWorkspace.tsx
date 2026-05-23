@@ -5,6 +5,11 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { InterventionPanel } from "@/components/InterventionPanel";
 import { MomentumSurface } from "@/components/MomentumSurface";
+import { CompoundingAnalysis } from "@/components/CompoundingAnalysis";
+import { CapitalLeverageReflection } from "@/components/CapitalLeverageReflection";
+import { TrajectoryGraphView } from "@/components/TrajectoryGraphView";
+import { DecisionJournal } from "@/components/DecisionJournal";
+import { TeamDecisionMemory } from "@/components/TeamDecisionMemory";
 import { TrajectoryEventsFeed } from "@/components/TrajectoryEventsFeed";
 import { InteractionGraphView } from "@/components/InteractionGraphView";
 import { EventIngestPanel } from "@/components/EventIngestPanel";
@@ -33,7 +38,13 @@ import {
   reasoningTraces,
   calibrationReplies,
 } from "@/lib/data";
+import type { DecisionEntry } from "@/lib/decision-journal";
 import type { TrajectoryEvent } from "@/lib/trajectory-events";
+import {
+  linkDecisionToEvents,
+  loadDecisionEntries,
+  saveDecisionEntries,
+} from "@/lib/decision-journal-store";
 import {
   loadTrajectoryEvents,
   mergeTrajectoryEvents,
@@ -42,10 +53,12 @@ import {
 
 export function TrajectoryWorkspace() {
   const [events, setEvents] = useState<TrajectoryEvent[]>([]);
+  const [decisions, setDecisions] = useState<DecisionEntry[]>([]);
   const [hydrated, setHydrated] = useState(false);
 
   useEffect(() => {
     setEvents(loadTrajectoryEvents());
+    setDecisions(loadDecisionEntries());
     setHydrated(true);
   }, []);
 
@@ -58,6 +71,58 @@ export function TrajectoryWorkspace() {
       });
     },
     [],
+  );
+
+  const handleAddDecision = useCallback((entry: DecisionEntry) => {
+    setDecisions((prevDecisions) => {
+      const nextDecisions = [entry, ...prevDecisions];
+      setEvents((prevEvents) => {
+        if (entry.linkedEventIds?.length) {
+          const { events: nextEvents } = linkDecisionToEvents(
+            nextDecisions,
+            prevEvents,
+            entry.id,
+            entry.linkedEventIds,
+          );
+          saveTrajectoryEvents(nextEvents);
+          return nextEvents;
+        }
+        return prevEvents;
+      });
+      saveDecisionEntries(nextDecisions);
+      return nextDecisions;
+    });
+  }, []);
+
+  const handleReviewDecision = useCallback((id: string, outcome: string) => {
+    setDecisions((prev) => {
+      const next = prev.map((d) =>
+        d.id === id
+          ? {
+              ...d,
+              status: "reviewed" as const,
+              outcome,
+              reviewedAt: new Date().toISOString(),
+            }
+          : d,
+      );
+      saveDecisionEntries(next);
+      return next;
+    });
+  }, []);
+
+  const handleLinkEvents = useCallback(
+    (decisionId: string, eventIds: string[]) => {
+      setDecisions((prev) => {
+        const { decisions: nextDecisions, events: nextEvents } =
+          linkDecisionToEvents(prev, events, decisionId, eventIds);
+        saveDecisionEntries(nextDecisions);
+        saveTrajectoryEvents(nextEvents);
+        setEvents(nextEvents);
+        return nextDecisions;
+      });
+    },
+    [events],
   );
 
   if (!hydrated) {
@@ -73,10 +138,21 @@ export function TrajectoryWorkspace() {
         <div className="mx-auto max-w-3xl space-y-2">
           <InterventionPanel events={events} />
           <MomentumSurface events={events} />
+          <CompoundingAnalysis events={events} />
+          <CapitalLeverageReflection events={events} />
+          <TrajectoryGraphView events={events} decisions={decisions} />
+          <DecisionJournal
+            events={events}
+            decisions={decisions}
+            onAdd={handleAddDecision}
+            onReview={handleReviewDecision}
+            onLinkEvents={handleLinkEvents}
+          />
+          <TeamDecisionMemory />
           <InteractionGraphView events={events} />
           <EventIngestPanel onIngest={handleIngest} />
           <BridgePanel events={events} />
-          <TrajectoryEventsFeed events={events} />
+          <TrajectoryEventsFeed events={events} decisions={decisions} />
           <CalibrationLog entries={calibrationLog} />
           <WeeklyChanges changes={weeklyChanges} />
           <FailedAssumptions assumptions={failedAssumptions} />

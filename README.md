@@ -1,42 +1,54 @@
 # trajectory-native
 
-**Human trajectory infrastructure.**  
-A calm operating system to **sustain desired trajectory under entropy**.
+**Trajectory / judgment / coordination infrastructure.**  
+Help humans and organizations **compound judgment, ownership, and long-term trajectory** in the AI era.
 
-> Sustain momentum. Reduce drift. Preserve trajectory.
+> Not AI for productivity. Infrastructure for long-term trajectory.
 
-**trajectory-native** — personal trajectory OS (human-side).  
-**[trajectory-drift](https://github.com/higuseonhye/trajectory-drift)** — organizational + agent coordination (system-side).
+**trajectory-native** — what compounds (human-side).  
+**[trajectory-drift](https://github.com/higuseonhye/trajectory-drift)** — what destroys compounding (system-side).
 
-Thesis: [trajectory infrastructure](docs/trajectory-infrastructure.md)
+Thesis: [product direction](docs/product-direction.md) · [framework](framework/)
 
 <p align="center">
-  <img src="docs/screenshots/demo-hero.png" alt="Personal trajectory workspace (v0.6)" width="720" />
+  <img src="docs/screenshots/demo-hero.png" alt="Trajectory / judgment infrastructure workspace (v0.8)" width="720" />
 </p>
 
 ---
 
 ## Why this exists
 
-Humans do not fail primarily from lack of intelligence. They fail from **trajectory drift** under entropy, isolation, weak interaction loops, and broken momentum systems.
+Modern people do not mainly suffer from lack of information. They suffer from **drift, fragmentation, misalignment, and decision entropy**.
 
-Most tools optimize execution or reflection. Few sustain **momentum, interaction, and closed reality loops**.
+Most tools optimize speed and task completion. Few help **detect drift, preserve trajectory coherence, and compound judgment**.
 
 ---
 
-## What this is (v0.6 direction)
+## What this is
 
-Not a journaling app. Not a thinking tool.
+Not an AI assistant. Not a meeting summarizer. Not a productivity layer.
 
-| Layer | Role |
-|-------|------|
-| **Trajectory events** | Atomic unit — interactions, avoided actions, momentum, entropy |
+| Capability | Role |
+|------------|------|
+| **Decision Memory** | Preserve decisions, rationale, tradeoffs, commitments |
+| **Drift Detection** | Prestige loops, fragmentation, low-leverage activity |
+| **Compounding Analysis** | Surface what actually compounds |
+| **Ownership Layer** | Assets, leverage, ownership trajectory |
+
+| Module (v0.8 shipped) | Role |
+|-----------------------|------|
+| **Capital & leverage reflection** | Dependency, optionality, ownership trajectory |
+| **Trajectory graph** | Unified timeline — decisions, events, loops, drift |
+| **Institutional memory** | Team decisions bridged from org-reasoning-mvp |
+| **Compounding analysis** | Ownership/labor/consumption allocation trends |
+| **Decision journal** | Personal judgment + event linking |
+| **Trajectory events** | Atomic unit — interactions, momentum, entropy, allocation |
 | **Momentum engine** | Density, open loops, interaction energy, recovery |
-| **Intervention** | Where drift is detected; what to do in reality |
-| **Interaction intelligence** | Who/what increases or drains momentum (amplifiers vs drains) |
-| **Event ingestion** | Calendar · comms · tools · JSON adapters |
-| **Native ↔ drift bridge** | Export events for unified system-side analysis |
-| **Calibration log** | Founder adaptation archive |
+| **Intervention / Drift Radar** | Where drift is detected; labor drift signal |
+| **Interaction intelligence** | Amplifiers vs drains |
+| **Native ↔ drift bridge** | Export events for unified analysis |
+
+See [framework/product-mapping/](framework/product-mapping/) for full module architecture.
 
 ---
 
@@ -71,20 +83,25 @@ npm install && npm run dev
 # → http://localhost:3000
 ```
 
-Surfaces at top of page: **Intervention** · **Momentum** · **Interaction intelligence** · **Trajectory events** · **Native ↔ drift bridge** · calibration log.
+Surfaces at top of page: **Intervention** · **Momentum** · **Compounding** · **Capital & leverage** · **Trajectory graph** · **Decision journal** · **Institutional memory** · **Interaction intelligence** · **Events** · **Bridge**.
 
 ---
 
 ## Screenshots
 
 <p align="center">
-  <img src="docs/screenshots/demo-intervention.png" alt="Intervention — drift signals and suggested actions" width="400" />
-  <img src="docs/screenshots/demo-momentum.png" alt="Momentum surface — score, density, open loops" width="400" />
+  <img src="docs/screenshots/demo-compounding.png" alt="Compounding analysis — ownership vs labor allocation" width="400" />
+  <img src="docs/screenshots/demo-trajectory-graph.png" alt="Trajectory graph — decisions, events, drift signals" width="400" />
 </p>
 
 <p align="center">
-  <img src="docs/screenshots/demo-interaction.png" alt="Interaction intelligence — amplifiers vs drains" width="400" />
-  <img src="docs/screenshots/demo-bridge.png" alt="Export trajectory events to trajectory-drift" width="400" />
+  <img src="docs/screenshots/demo-decision-journal.png" alt="Decision journal — assumptions, outcomes, event links" width="400" />
+  <img src="docs/screenshots/demo-capital-leverage.png" alt="Capital and leverage reflection — dependency vs optionality" width="400" />
+</p>
+
+<p align="center">
+  <img src="docs/screenshots/demo-intervention.png" alt="Intervention — drift signals and suggested actions" width="400" />
+  <img src="docs/screenshots/demo-institutional-memory.png" alt="Institutional memory — team decision continuity" width="400" />
 </p>
 
 Full scroll: [`demo-full.png`](docs/screenshots/demo-full.png)
@@ -102,13 +119,18 @@ Full scroll: [`demo-full.png`](docs/screenshots/demo-full.png)
 
 ## Docs
 
+- [`docs/product-direction.md`](docs/product-direction.md) — current thesis
+- [`framework/`](framework/) — principles, compounding assets, capital-native, product mapping
 - [`docs/trajectory-infrastructure.md`](docs/trajectory-infrastructure.md)
 - [`docs/calibration-archive.md`](docs/calibration-archive.md)
-- [`docs/adaptive-coherence.md`](docs/adaptive-coherence.md) — prior shared thesis
-- [trajectory-drift — organizational trajectory](https://github.com/higuseonhye/trajectory-drift/blob/main/docs/organizational-trajectory.md)
+- [trajectory-drift/framework/](https://github.com/higuseonhye/trajectory-drift/tree/main/framework) — drift taxonomy, signals, recovery
 
 ---
 
 ## Status
 
-`v0.6` direction — trajectory events + momentum + intervention shipped in UI. Early. Evolving in public.
+`v0.8` direction — trajectory graph, capital reflection, decision-event linking, org-reasoning bridge. Early. Evolving in public.
+
+### org-reasoning-mvp bridge
+
+Set `ORG_REASONING_URL=http://localhost:3000` when org-reasoning-mvp is running. Team decisions load live; otherwise seed data displays.

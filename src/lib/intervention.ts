@@ -1,3 +1,4 @@
+import type { CompoundingMetrics } from "./compounding-engine";
 import type { MomentumMetrics } from "./momentum-engine";
 import type { TrajectoryEvent } from "./trajectory-events";
 
@@ -7,7 +8,8 @@ export type InterventionKind =
   | "loop_fragmentation"
   | "reactive_switching"
   | "abstraction_over_action"
-  | "recovery_needed";
+  | "recovery_needed"
+  | "labor_drift";
 
 export interface InterventionSignal {
   kind: InterventionKind;
@@ -19,6 +21,7 @@ export interface InterventionSignal {
 export function detectInterventions(
   events: TrajectoryEvent[],
   metrics: MomentumMetrics,
+  compounding?: CompoundingMetrics,
 ): InterventionSignal[] {
   const signals: InterventionSignal[] = [];
 
@@ -81,6 +84,16 @@ export function detectInterventions(
       interpretation: "Entropy without recent recovery signals.",
       suggestedAction:
         "Environment reset: walk, offline block, or one non-work activation.",
+    });
+  }
+
+  if (compounding?.laborDrift) {
+    signals.push({
+      kind: "labor_drift",
+      severity: "high",
+      interpretation: `Labor ratio ${compounding.laborRatio}% — ownership at ${compounding.ownershipRatio}%.`,
+      suggestedAction:
+        "Ship one owned asset before more labor optimization this week.",
     });
   }
 

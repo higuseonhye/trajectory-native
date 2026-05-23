@@ -1,4 +1,5 @@
 import { detectInterventions } from "@/lib/intervention";
+import { computeCompoundingMetrics } from "@/lib/compounding-engine";
 import { computeMomentumMetrics } from "@/lib/momentum-engine";
 import type { TrajectoryEvent } from "@/lib/trajectory-events";
 import { Section } from "./Section";
@@ -9,7 +10,8 @@ interface Props {
 
 export function InterventionPanel({ events }: Props) {
   const metrics = computeMomentumMetrics(events);
-  const signals = detectInterventions(events, metrics);
+  const compounding = computeCompoundingMetrics(events);
+  const signals = detectInterventions(events, metrics, compounding);
 
   if (signals.length === 0) return null;
 

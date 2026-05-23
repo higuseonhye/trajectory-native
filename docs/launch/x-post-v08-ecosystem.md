@@ -6,11 +6,16 @@
 
 ## Image to attach
 
+**Do NOT use** `demo-hero-social-16x9.png` from before v0.8.1 — older captures were full-page height (invisible on X).
+
 | Priority | File | Why |
 |----------|------|-----|
-| **Best** | `docs/screenshots/demo-hero-social-16x9.png` | Full v0.8 workspace, 16:9 for X |
-| Alt | `docs/screenshots/demo-compounding.png` | Clear "not productivity" signal |
-| Alt | `../trajectory-drift/assets/screenshots/dashboard-overview.png` | Unified human + agent view |
+| **Best (ecosystem intro)** | `docs/screenshots/x-post-v08-viewport.png` | Exact 1200×675 — title + intervention + momentum |
+| **Best (product proof)** | `docs/screenshots/x-post-v08-compounding-focus.png` | Compounding + capital panels — shows v0.8 wedge |
+| Launch copy | `assets/launch/x-trajectory-infrastructure-v08.png` | Same as viewport top crop |
+| Drift pair post | `../trajectory-drift/assets/screenshots/x-post-v08-viewport.png` | Unified dashboard 1280×675 |
+
+**Avoid for X:** `demo-hero.png`, `demo-full.png`, section-only PNGs (too wide/short), old full-page social crops.
 
 ---
 
@@ -105,7 +110,7 @@ github.com/higuseonhye/trajectory-native
 
 ## Thread opener (if splitting ecosystem post)
 
-**Tweet 1** (attach `demo-hero-social-16x9.png`):
+**Tweet 1** (attach `docs/screenshots/x-post-v08-viewport.png`):
 
 ```
 We stopped building AI productivity.

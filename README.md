@@ -1,32 +1,40 @@
 # trajectory-native
 
-**Trajectory / judgment / coordination infrastructure.**  
-Help humans and organizations **compound judgment, ownership, and long-term trajectory** in the AI era.
+**A trajectory-aware operating system.**  
+Most people don't collapse — they **drift quietly**. This helps you notice, steer, and stay in contact with reality.
 
-> Not AI for productivity. Infrastructure for long-term trajectory.
+> Not productivity. Navigation. Tiny turns create different futures.
 
-**trajectory-native** — what compounds (human-side).  
-**[trajectory-drift](https://github.com/higuseonhye/trajectory-drift)** — what destroys compounding (system-side).
+**trajectory-native** — personal steering (human-side).  
+**[trajectory-drift](https://github.com/higuseonhye/trajectory-drift)** — drift detection (system-side).
 
-Thesis: [product direction](docs/product-direction.md) · [framework](framework/)
+Thesis: [product direction](docs/product-direction.md) · [steering](docs/steering.md) · [framework](framework/)
 
 <p align="center">
-  <img src="docs/screenshots/demo-hero.png" alt="Trajectory / judgment infrastructure workspace (v0.8)" width="720" />
+  <img src="docs/screenshots/demo-hero.png" alt="Trajectory-aware OS — stop drifting quietly (v0.9)" width="720" />
 </p>
 
 ---
 
 ## Why this exists
 
-Modern people do not mainly suffer from lack of information. They suffer from **drift, fragmentation, misalignment, and decision entropy**.
+People rarely collapse all at once. They **drift quietly** — losing reality-contact, emotional signal, and direction while still looking busy.
 
-Most tools optimize speed and task completion. Few help **detect drift, preserve trajectory coherence, and compound judgment**.
+Most tools push discipline and productivity. Few help you **notice drift early** and make **tiny honest turns** back toward what feels alive.
 
 ---
 
 ## What this is
 
-Not an AI assistant. Not a meeting summarizer. Not a productivity layer.
+Not a dashboard. Not a habit tracker. Not optimization software.
+
+A **personal navigation system** for steering your trajectory.
+
+| Surface layer | Depth layer |
+|---------------|-------------|
+| Drift detection · daily steering · vitality | Compounding · judgment · ownership |
+| "What's one tiny turn?" | Decision memory · trajectory graph |
+| Emotional honesty | Systems intelligence |
 
 | Capability | Role |
 |------------|------|
@@ -44,7 +52,7 @@ Not an AI assistant. Not a meeting summarizer. Not a productivity layer.
 | **Decision journal** | Personal judgment + event linking |
 | **Trajectory events** | Atomic unit — interactions, momentum, entropy, allocation |
 | **Momentum engine** | Density, open loops, interaction energy, recovery |
-| **Intervention / Drift Radar** | Where drift is detected; labor drift signal |
+| **Intervention / Drift Radar** | Quiet drift surfaced — suggested turn toward reality |
 | **Interaction intelligence** | Amplifiers vs drains |
 | **Native ↔ drift bridge** | Export events for unified analysis |
 
@@ -90,18 +98,17 @@ Surfaces at top of page: **Intervention** · **Momentum** · **Compounding** · 
 ## Screenshots
 
 <p align="center">
-  <img src="docs/screenshots/demo-compounding.png" alt="Compounding analysis — ownership vs labor allocation" width="400" />
-  <img src="docs/screenshots/demo-trajectory-graph.png" alt="Trajectory graph — decisions, events, drift signals" width="400" />
+  <img src="docs/screenshots/demo-intervention.png" alt="Quiet drift detected — one turn toward reality" width="400" />
+  <img src="docs/screenshots/demo-decision-journal.png" alt="Honest turns — decisions, assumptions, outcomes" width="400" />
 </p>
 
 <p align="center">
-  <img src="docs/screenshots/demo-decision-journal.png" alt="Decision journal — assumptions, outcomes, event links" width="400" />
-  <img src="docs/screenshots/demo-capital-leverage.png" alt="Capital and leverage reflection — dependency vs optionality" width="400" />
+  <img src="docs/screenshots/demo-trajectory-graph.png" alt="Directional evolution — tiny turns over time" width="400" />
+  <img src="docs/screenshots/demo-compounding.png" alt="Systems depth — what compounds vs what drifts" width="400" />
 </p>
 
 <p align="center">
-  <img src="docs/screenshots/demo-intervention.png" alt="Intervention — drift signals and suggested actions" width="400" />
-  <img src="docs/screenshots/demo-institutional-memory.png" alt="Institutional memory — team decision continuity" width="400" />
+  <img src="docs/screenshots/x-post-v08-viewport.png" alt="Steering mode — stop drifting quietly (1200×675)" width="720" />
 </p>
 
 Full scroll: [`demo-full.png`](docs/screenshots/demo-full.png)
@@ -120,7 +127,8 @@ Full scroll: [`demo-full.png`](docs/screenshots/demo-full.png)
 ## Docs
 
 - [`docs/product-direction.md`](docs/product-direction.md) — current thesis
-- [`framework/`](framework/) — principles, compounding assets, capital-native, product mapping
+- [`docs/steering.md`](docs/steering.md) — emotional layer (drift, rudder, reality-contact)
+- [`framework/steering/`](framework/steering/) — steering concepts
 - [`docs/trajectory-infrastructure.md`](docs/trajectory-infrastructure.md)
 - [`docs/calibration-archive.md`](docs/calibration-archive.md)
 - [trajectory-drift/framework/](https://github.com/higuseonhye/trajectory-drift/tree/main/framework) — drift taxonomy, signals, recovery
@@ -129,7 +137,7 @@ Full scroll: [`demo-full.png`](docs/screenshots/demo-full.png)
 
 ## Status
 
-`v0.8` direction — trajectory graph, capital reflection, decision-event linking, org-reasoning bridge. Early. Evolving in public.
+`v0.9` direction — trajectory-aware OS: emotional steering surface + systems depth underneath. Early. Evolving in public.
 
 ### org-reasoning-mvp bridge
 

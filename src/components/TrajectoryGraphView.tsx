@@ -47,7 +47,7 @@ export function TrajectoryGraphView({ events, decisions }: Props) {
     <Section
       id="trajectory-graph-heading"
       title="Trajectory graph"
-      description="Projects, commitments, decisions, events, and drift signals — unified view."
+      description="Directional evolution — tiny turns accumulating, not task completion."
     >
       <p className="mb-4 text-sm text-[var(--muted)]">{graph.summary}</p>
 

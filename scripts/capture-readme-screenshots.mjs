@@ -32,7 +32,12 @@ async function main() {
   const browser = await chromium.launch();
   const page = await browser.newPage({ viewport: { width: 1100, height: 900 } });
   await page.goto(BASE, { waitUntil: "networkidle" });
-  await page.waitForTimeout(1500);
+  await page.evaluate(() => localStorage.removeItem("trajectory-native:trajectory-events"));
+  await page.reload({ waitUntil: "networkidle" });
+  await page.waitForTimeout(2000);
+  await page.getByRole("heading", { name: "Stop drifting quietly." }).waitFor({
+    timeout: 30000,
+  });
 
   const main = page.locator("main").first();
 
@@ -77,12 +82,15 @@ async function main() {
   await viewportShot(page, path.join(LAUNCH, "x-trajectory-infrastructure-v08.png"));
 
   // Focus crop: compounding + capital + graph visible
-  await page
-    .getByRole("heading", { name: "Compounding analysis" })
-    .scrollIntoViewIfNeeded();
-  await page.waitForTimeout(400);
-  await viewportShot(page, path.join(OUT, "x-post-v08-compounding-focus.png"));
-  await viewportShot(page, path.join(LAUNCH, "x-compounding-focus-v08.png"));
+  const compounding = page.getByRole("heading", { name: "Compounding analysis" });
+  if (await compounding.count()) {
+    await compounding.scrollIntoViewIfNeeded();
+    await page.waitForTimeout(400);
+    await viewportShot(page, path.join(OUT, "x-post-v08-compounding-focus.png"));
+    await viewportShot(page, path.join(LAUNCH, "x-compounding-focus-v08.png"));
+  } else {
+    console.warn("skip compounding-focus — section not rendered");
+  }
 
   await browser.close();
 }

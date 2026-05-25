@@ -27,7 +27,8 @@ Not AI for productivity. A **Trajectory / Judgment / Coordination System**.
 
 | Module | Purpose | Doc |
 |--------|---------|-----|
-| **Trajectory Graph** | Visualize projects, commitments, decisions, energy allocation, drift signals | [trajectory-graph.md](./trajectory-graph.md) |
+| **Daily steering** | "What tiny turn today?" — direction not tasks | [daily-steering.md](./daily-steering.md) — planned v0.9 |
+| **Trajectory Graph** | Directional evolution over time | [trajectory-graph.md](./trajectory-graph.md) |
 | **Decision Journal** | Track decisions, confidence, assumptions, outcomes, recurring mistakes | [decision-journal.md](./decision-journal.md) — shipped v0.7 |
 | **Drift Radar** | Detect prestige loops, reactive behavior, fragmented direction | [drift-radar.md](./drift-radar.md) |
 | **Institutional Memory** | Strategic continuity for teams — prevent repeated mistakes | [institutional-memory.md](./institutional-memory.md) |

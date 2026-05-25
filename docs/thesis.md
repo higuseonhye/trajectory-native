@@ -2,11 +2,11 @@
 
 ## Current direction (2026-05)
 
-We are no longer building an AI assistant, meeting summarizer, or productivity layer.
+We are building a **trajectory-aware operating system** — not a productivity tool.
 
-We are building **trajectory / judgment / coordination infrastructure** — helping humans and organizations compound judgment, ownership, and long-term trajectory in the AI era.
+Most people drift quietly. The product helps notice drift, make tiny turns, and stay in contact with reality.
 
-See [`product-direction.md`](./product-direction.md) and [`framework/`](../framework/).
+See [`product-direction.md`](./product-direction.md) and [`steering.md`](./steering.md).
 
 ---
 

@@ -1,122 +1,159 @@
 # Product direction
 
-## Thesis shift
+## Core insight
 
-| Old direction | New direction |
-|---------------|---------------|
-| AI productivity | Trajectory / judgment / coordination infrastructure |
-| Summarization & workflow optimization | Decision memory & drift detection |
-| PM copilot patterns | Compounding analysis & ownership layer |
-| Agent orchestration as automation | Judgment infrastructure for humans + organizations |
-| "Help humans work faster" | "Help humans compound judgment, ownership, and long-term trajectory" |
+People rarely collapse all at once. **Most people drift quietly.**
+
+Drift is not laziness. Drift is:
+
+- losing contact with reality
+- losing emotional signal
+- adapting to dead systems
+- moving through inertia
+- slowly disconnecting from yourself
+
+Trajectory is not massive reinvention. **Trajectory is the accumulation of tiny turns** — a rudder, a steering correction, a slight orbital adjustment.
 
 ---
 
 ## What we are building
 
-**A Trajectory / Judgment / Coordination System** — not an AI assistant, meeting summarizer, or productivity layer.
+**A trajectory-aware operating system** — not a productivity tool, dashboard, or quantified-self tracker.
 
-Infrastructure that helps individuals, founders, operators, and organizations understand:
+A personal navigation system for:
 
-- what compounds
-- what drifts
-- what creates leverage
-- what destroys long-term trajectory
-
----
-
-## Core capabilities
-
-| Capability | Description |
-|------------|-------------|
-| **Decision Memory** | Preserve decisions, rationale, tradeoffs, commitments |
-| **Drift Detection** | Identify prestige loops, fragmentation, low-leverage activity |
-| **Compounding Analysis** | Surface what actually compounds |
-| **Ownership Layer** | Track assets, leverage, ownership trajectory |
-
-See [`framework/product-mapping/`](../framework/product-mapping/) for module architecture.
+- recognizing drift early
+- reconnecting with reality
+- making tiny honest turns
+- recovering trajectory
+- feeling alive again
 
 ---
 
-## Concept shift
+## Two layers
 
-| Old | New |
-|-----|-----|
-| Productivity | Ownership |
-| Task completion | Compounding |
-| Automation | Decision quality |
-| Faster workflows | Alignment |
-| — | Institutional memory |
-| — | Leverage |
-| — | Coordination |
-| — | Trajectory coherence |
+| Layer | Role |
+|-------|------|
+| **Surface (emotional)** | Playful, stylish, vulnerable, easy to enter — steering, drift, vitality, reality-contact |
+| **Depth (systems)** | Trajectory engine, drift taxonomy, compounding, judgment, coordination — hidden until needed |
 
----
+Entry point is emotional. Depth comes later.
 
-## Product modules
-
-1. **Trajectory Graph** — projects, commitments, decisions, energy allocation, drift signals
-2. **Decision Journal** — decisions, confidence, assumptions, outcomes, recurring mistakes
-3. **Drift Radar** — prestige loops, reactive behavior, fragmented direction, labor-only patterns
-4. **Institutional Memory** — team strategic continuity, prevent repeated mistakes
-5. **Capital & Leverage Reflection** — time allocation, leverage accumulation, ownership trajectory
+See [`steering.md`](./steering.md) for the emotional layer.  
+See [`framework/`](../framework/) for systems depth.
 
 ---
 
-## UX direction
+## Philosophy shift
 
-**Avoid:** dashboard overload, AI gimmicks, fake productivity aesthetics, smart assistant theater.
+| Most self-improvement | We focus on |
+|----------------------|-------------|
+| Discipline | Steering |
+| Productivity | Drift detection |
+| Optimization | Vitality |
+| Habits | Reality-contact |
+| Motivation | Trajectory awareness |
 
-**Move toward:** calm systems, long-range clarity, trajectory visibility, behavioral signals, meaningful synthesis.
+**Goal:** not "be more productive."  
+**Goal:** stop drifting unconsciously.
 
 ---
 
-## What we optimize for
+## What the system should NOT feel like
 
-- long-term compounding
-- trajectory coherence
-- decision quality
-- institutional memory
-- ownership and leverage accumulation
-- drift detection and intervention
+- A corporate productivity dashboard
+- A rigid planner or task manager
+- Sterile optimization software
+- Fake motivational aesthetics
 
-## What we do NOT optimize for
+## What it SHOULD feel like
 
-- speed alone
-- task completion metrics
-- productivity aesthetics
-- virality and engagement loops
-- AI theater
+- A personal navigation system
+- Emotional steering — cinematic, human, slightly chaotic
+- Anti-drift infrastructure
+- A tiny course-correction companion
+
+Alive. Emotionally resonant. Honest about shame without collapsing into it.
+
+---
+
+## Key concepts
+
+### Drift (quiet)
+
+Doomscrolling, emotional numbness, fake productivity, avoiding conversations, losing curiosity, dead loops, disconnection from reality.
+
+Product job: **notice drift early.**
+
+### Rudder / steering
+
+Life is not only acceleration — **direction matters more.**  
+One honest conversation. One real action. One tiny directional correction.
+
+Product job: **Daily steering** — "What tiny turn did you make today?"
+
+### Reality contact
+
+Real-world interaction, conversations, building, output, feedback, movement, signal exposure — not endless abstraction.
+
+Product job: **Reality-contact is anti-drift energy.**
+
+See [`framework/steering/`](../framework/steering/) for full concept mapping.
+
+---
+
+## Feature direction
+
+| Feature | Direction |
+|---------|-----------|
+| **Daily steering** | Replace rigid tasks with tiny turns — direction, not productivity |
+| **Drift detection** | Curiosity drop, low reality-contact, numbness, dead loops, inertia, avoidance |
+| **Trajectory visualization** | Directional evolution over time — not task completion |
+| **Decision journal** | Honest turns + assumptions (depth layer) |
+| **Compounding / ownership** | Long-range systems layer (depth, for operators/founders) |
+| **Institutional memory** | Team continuity (org layer) |
+
+Existing v0.8 modules map to depth layer. v0.9+ surfaces emotional entry points on top.
+
+---
+
+## What we keep from prior direction
+
+Still true underneath:
+
+- Trajectory, systems thinking, drift, feedback loops, alignment
+- Decision memory, compounding analysis, ownership layer
+- Human + organizational coordination (trajectory-drift)
+
+Reframed for accessibility — not removed.
+
+---
+
+## Brand direction (exploring)
+
+Tiny Turns · Steering Mode · Drift Club · Rudder · Anti-Drift Energy · Quiet Drift · Stay Alive · Steering Yourself Home
+
+Emotionally intelligent, internet-native, cinematic, self-aware, hopeful without being fake.
 
 ---
 
 ## Core question
 
-> "What kind of human trajectory does this system help create?"
-
----
-
-## Framework
-
-Conceptual architecture lives in [`framework/`](../framework/):
-
-- [`principles/`](../framework/principles/) — ownership, leverage, compounding, judgment
-- [`compounding-assets/`](../framework/compounding-assets/) — what compounds
-- [`capital-native/`](../framework/capital-native/) — labor vs ownership
-- [`product-mapping/`](../framework/product-mapping/) — product module mapping
-
-Drift taxonomy and detection: [trajectory-drift/framework/](https://github.com/higuseonhye/trajectory-drift/tree/main/framework)
+> "Are you drifting quietly — and what's one tiny turn back toward reality?"
 
 ---
 
 ## Constraint
 
-Must remain measurable, operational, behavior-linked, workflow-connected, execution-aware.
+Must remain measurable, operational, behavior-linked, workflow-connected.
 
-Must NOT become abstract philosophy software, motivational software, or life wisdom product.
+Must NOT become abstract philosophy software or hollow motivation — **honesty over hype.**
 
 ---
 
-## Long-term vision
+## Ecosystem
 
-**Judgment infrastructure layer** for founders, operators, organizations, and AI-native teams — helping them avoid drift, preserve coherence, compound intelligence, and make higher-quality long-term decisions in the AI era.
+| Repo | Role |
+|------|------|
+| **trajectory-native** | Personal steering OS — human navigation |
+| **trajectory-drift** | Quiet drift at scale — teams, agents, organizations |

@@ -84,7 +84,7 @@ export function DecisionJournal({
     <Section
       id="decision-journal-heading"
       title="Decision journal"
-      description="Track decisions, assumptions, and outcomes — linked to trajectory events."
+      description="Track honest turns — decisions, assumptions, and what happened after."
     >
       <ul className="space-y-4">
         {sorted.map((d) => (

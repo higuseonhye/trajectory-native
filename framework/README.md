@@ -1,10 +1,8 @@
 # trajectory-native framework
 
-> **Understand what compounds.**
+> **Stop drifting quietly. Steer.**
 
-Conceptual infrastructure for long-term human and organizational trajectory in the AI era.
-
-This is **not** generic self-improvement, motivational philosophy, or productivity optimization. It is operational compounding infrastructure — measurable, behavior-linked, and product-mappable.
+Conceptual infrastructure for human navigation — emotional surface, systems depth.
 
 ---
 
@@ -12,13 +10,25 @@ This is **not** generic self-improvement, motivational philosophy, or productivi
 
 | Section | Focus |
 |---------|--------|
-| [`principles/`](./principles/) | Core operating principles — pre-tool curiosity, ownership, leverage, compounding |
-| [`compounding-assets/`](./compounding-assets/) | What actually compounds over time |
-| [`capital-native/`](./capital-native/) | Labor vs ownership, asset accumulation, capital literacy |
-| [`leverage/`](./leverage/) | Types of leverage — AI, code, media, systems, capital |
-| [`coherence/`](./coherence/) | Long-range alignment across work, money, relationships, health |
-| [`case-studies/`](./case-studies/) | Trajectory-native humans and systems — compounding behavior, not celebrity |
-| [`product-mapping/`](./product-mapping/) | How principles map to product architecture and behavioral infrastructure |
+| [`steering/`](./steering/) | **Surface** — drift, rudder, reality-contact, vitality |
+| [`principles/`](./principles/) | Depth — ownership, leverage, compounding, judgment |
+| [`compounding-assets/`](./compounding-assets/) | What compounds over time |
+| [`capital-native/`](./capital-native/) | Labor vs ownership (depth layer) |
+| [`leverage/`](./leverage/) | Types of leverage |
+| [`coherence/`](./coherence/) | Long-range alignment |
+| [`case-studies/`](./case-studies/) | Trajectory-native behavior examples |
+| [`product-mapping/`](./product-mapping/) | Module architecture |
+
+---
+
+## Two layers
+
+| Layer | Audience | Tone |
+|-------|----------|------|
+| **Steering** | Everyone entering | Emotional, human, tiny turns |
+| **Systems** | Operators, founders, teams | Trajectory, compounding, judgment |
+
+Entry is emotional. Depth comes later.
 
 ---
 
@@ -26,17 +36,13 @@ This is **not** generic self-improvement, motivational philosophy, or productivi
 
 | Repo | Question |
 |------|----------|
-| **trajectory-native** (this repo) | What compounds? What creates leverage and ownership? |
-| **[trajectory-drift](https://github.com/higuseonhye/trajectory-drift)** | What destroys compounding? What causes drift? |
-
-Together they form a theory of long-term human and organizational trajectory.
+| **trajectory-native** | How do I steer? What tiny turn matters? |
+| **[trajectory-drift](https://github.com/higuseonhye/trajectory-drift)** | What's drifting — in me, my team, my agents? |
 
 ---
 
 ## Product thesis
 
-We are not building an AI assistant, meeting summarizer, or productivity layer.
+A **trajectory-aware operating system** — not productivity software.
 
-We are building **trajectory / judgment / coordination infrastructure** — a system that helps individuals and organizations understand what compounds, what drifts, what creates leverage, and what destroys long-term trajectory.
-
-See [`product-mapping/`](./product-mapping/) for module architecture.
+See [`product-mapping/`](./product-mapping/) · [`../docs/steering.md`](../docs/steering.md)

@@ -6,10 +6,11 @@
 
 ## Core prompt
 
-> "What tiny turn did you make today?"
+> "What tiny turn did you make today — toward direction you actually chose?"
 
 Not: "What did you complete?"  
-Not: "How productive were you?"
+Not: "How productive were you?"  
+Not: "Did you return to normal?"
 
 ---
 
@@ -40,7 +41,7 @@ Steering entries may spawn or link to trajectory events.
 
 If no turn logged + drift signals active → gentle intervention:
 
-> "No turn today. That's data too. What's one small contact with reality?"
+> "No turn today. That's data too. What's one small move toward signal you trust?"
 
 ---
 

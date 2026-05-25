@@ -4,7 +4,7 @@
 
 We are building a **trajectory-aware operating system** — not a productivity tool.
 
-Most people drift quietly. The product helps notice drift, make tiny turns, and stay in contact with reality.
+Most people drift quietly. The product helps notice unconscious inertia, make intentional turns, and maintain trajectory integrity — not merely "return to reality."
 
 See [`product-direction.md`](./product-direction.md) and [`steering.md`](./steering.md).
 

@@ -1,88 +1,115 @@
 # Steering
 
-Rudder, drift, reality-contact — the human navigation layer.
+Trajectory intelligence at human scale — rudder, drift, signal, existential honesty.
 
 ---
 
-## Drift (quiet)
+## What drift is NOT
 
-Drift is not laziness. It is slow disconnection:
+- Laziness
+- Lack of discipline
+- merely "not being productive enough"
 
-- losing contact with reality
-- losing emotional signal
+## What drift IS
+
+- unconscious inertia
+- separation from meaningful direction
+- losing contact with truth and genuine signal
 - adapting to dead systems
-- inertia without direction
-- numbness mistaken for peace
+- suppressing existential honesty
+- forgetting what actually matters
 
-Observable in product: decreasing curiosity, low interaction energy, fake productivity tags, reactive loops, avoidance events.
+---
 
-See [trajectory-drift/framework/drift-taxonomy/](https://github.com/higuseonhye/trajectory-drift/tree/main/framework/drift-taxonomy) for full taxonomy.
+## Functional but drifting
+
+| Can look like success | Can still be drift |
+|-----------------------|-------------------|
+| Productive, busy | No chosen direction |
+| Socially active | No genuine signal |
+| Externally stable | Dead inside the loop |
+| Optimized routines | Inertia disguised as discipline |
+
+| Can look unstable | Can be true steering |
+|-------------------|---------------------|
+| Unconventional path | Frontier exploration |
+| Messy transition | Transformation in progress |
+| Low "productivity" | High directional integrity |
+
+**Product must not confuse appearance with trajectory.**
 
 ---
 
 ## Rudder
 
-Small corrections compound into different futures.
+Small corrections → different futures.
 
-| Not this | This |
-|----------|------|
-| Reinvent entire life | One tiny turn |
-| Task completion | Directional correction |
-| Acceleration | Steering |
-| Optimization | Navigation |
+| Optimization | Steering |
+|--------------|----------|
+| More thrust | Correct direction |
+| Faster | Intentional |
+| Habits | Chosen turns |
+| Adapt to system | Maintain integrity |
 
-**Product:** Daily steering — log tiny turns, not task lists.
-
----
-
-## Reality contact
-
-Anti-drift energy from the real world:
-
-| High contact | Low contact |
-|--------------|-------------|
-| Conversations | Doomscrolling |
-| Building | Consuming |
-| Feedback | Abstraction |
-| Movement | Inertia |
-
-**Product signals:** `interaction` events, amplifiers vs drains, interaction starvation intervention.
+Rocket metaphor: enormous thrust + wrong bearing = miss everything.
 
 ---
 
-## Vitality
+## Signal contact
 
-Not motivation — **aliveness signal**.
+Replaces narrow "reality contact."
 
-- curiosity returning
-- surprise possible again
-- emotional honesty without collapse
-- momentum from contact, not caffeine
+**Signal** = genuine contact with what matters — not proxy metrics.
 
-Maps to: momentum engine, recovery signals, energy_restore events.
+| Genuine signal | False proxy |
+|----------------|-------------|
+| Chosen direction | Market approval |
+| Existential honesty | Social performance |
+| First-principles truth | Conventional success |
+| Energy/time honesty | Busy = alive |
+| Meaningful action | Productivity theater |
+
+Reality includes physics, psychology, civilization dynamics, AI acceleration, meaning, agency — not just inbox zero.
+
+---
+
+## Core tension
+
+Hold without flattening:
+
+- present life ↔ future civilization
+- tiny turns ↔ massive transformation
+- emotional honesty ↔ systems thinking
+- daily steering ↔ existential direction
+- individual ↔ societal trajectory
+
+---
+
+## Vitality vs function
+
+**Functioning** ≠ **alive**
+
+- Vitality: curiosity, surprise, signal sensitivity, chosen direction
+- Function: tasks complete, appearance maintained, inertia accepted
+
+Maps to: momentum engine, recovery signals, drift radar detecting "high function / low signal"
 
 ---
 
 ## Emotional honesty
 
-The system should recognize:
+- Shame without punishment
+- Drift without moralizing
+- Instability without assuming failure
+- Hope without toxic positivity
 
-- shame without punishing
-- drift without moralizing
-- stagnation without toxic positivity
-
-Surface copy: direct, human, slightly cinematic.  
-Depth copy: systems, tradeoffs, evidence.
+Surface: feelings first. Depth: systems evidence.
 
 ---
 
 ## Product mapping
 
-See [`../product-mapping/daily-steering.md`](../product-mapping/daily-steering.md) (planned v0.9).
-
-Current modules that already serve steering:
-
-- Intervention → "you're drifting"
-- Decision journal → "here's a turn you took"
-- Trajectory graph → "here's how turns accumulated"
-- Interaction intelligence → "who/what restores contact"
+- [`../product-mapping/daily-steering.md`](../product-mapping/daily-steering.md)
+- Intervention → unconscious drift named
+- Decision journal → chosen turns, existential honesty
+- Trajectory graph → directional integrity over time

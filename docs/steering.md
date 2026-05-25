@@ -1,90 +1,116 @@
 # Steering — emotional layer
 
-The surface language of trajectory-native.  
-Depth lives in [`framework/`](../framework/) and [`product-direction.md`](./product-direction.md).
+The surface people **feel** before they understand the systems underneath.
+
+Depth: [`framework/steering/`](../framework/steering/) · [`product-direction.md`](./product-direction.md)
+
+---
+
+## Entry points (feelings, not philosophy)
+
+People enter through:
+
+- "I feel disconnected."
+- "Something feels off."
+- "I'm slowly losing myself."
+- "I don't think this is the direction I actually want."
+- "I can't tell if I'm alive or just functioning."
+
+Do not lead with systems vocabulary. Lead with honesty.
 
 ---
 
 ## Vibe
 
-- Emotionally accessible — not dense philosophy upfront
-- Internet-native honesty — stylish but vulnerable
-- Playful but meaningful
-- Recognize shame without collapsing into it
-- Strength through honesty
-- **Tiny turns create different futures**
+- Emotionally accessible — not academic or cold
+- Internet-native — stylish, vulnerable, slightly playful
+- Cinematic and deeply human
+- Existential without being pretentious
+- **K-pop Demon Hunters meets existential steering**
 
-Reference energy: cinematic, alive, slightly chaotic, human — not sterile productivity software.
+Not: sterile productivity software, intellectual performance, motivational theater.
 
 ---
 
-## Drift
+## Drift (reframed)
 
-Drift happens **quietly**. Not a dramatic failure — a slow fade.
+Drift is **not** merely disconnection from daily life.
 
-| Signal | What it feels like |
-|--------|-------------------|
-| Doomscrolling | Numb escape, no reality contact |
-| Emotional numbness | Signal flatlines |
-| Fake productivity | Busy but not alive |
-| Avoiding conversations | Reality contact dropping |
-| Lost curiosity | World stops surprising you |
-| Dead loops | Same week, different calendar |
-| Disconnection | You're here but not *here* |
+| Quiet drift feels like | But also watch for |
+|------------------------|-------------------|
+| Numbness, doomscrolling | High function while dead inside |
+| Fake productivity | Social success without signal |
+| Lost curiosity | Stability that is actually inertia |
+| Dead loops | Adapting to systems you never chose |
+| "Something feels off" | Suppressing existential honesty |
 
-**Product:** notice early. Don't shame. Name it.
+**Critical:** Someone can look fine externally and be deeply drifting. Someone can look unstable and be steering toward truth.
+
+**Product:** notice unconscious drift. Never punish transformation.
 
 ---
 
 ## Rudder / steering
 
-You don't need to reinvent your life overnight.
+Not reinvention overnight. **Intentional micro-corrections.**
 
-Sometimes you only need:
+- one honest admission
+- one genuine signal followed
+- one tiny turn toward chosen direction
 
-- one honest conversation
-- one real action
-- one tiny directional correction
-
-**Daily steering prompt:**  
+**Daily steering:**  
 > "What tiny turn did you make today?"
 
-Not productivity. **Direction.**
+Not productivity. **Direction over inertia.**
 
 ---
 
-## Reality contact
+## Signal contact (not narrow "reality")
 
-The strongest anti-drift energy.
+We do **not** mean:
 
-- real conversations
-- building something
-- output in the world
-- feedback from reality
-- movement, not abstraction
+- market feedback alone
+- social participation as virtue
+- productivity as proxy for aliveness
+- conventional success as truth
 
-**Product signals:** interactions, actions taken, momentum from contact — not notes alone.
+We **do** mean reconnecting with **genuine signal**:
 
-Maps to: trajectory events, interaction intelligence, intervention when contact drops.
+- what actually matters to you
+- first-principles contact with truth
+- energy, time, and constraint honesty
+- building toward chosen direction
+- remaining awake — not just functional
+
+Behavioral proxies in product: real actions, honest decisions, momentum from chosen contact — not busy calendars.
 
 ---
 
-## How surface maps to product (today)
+## Core tension (hold it)
 
-| Emotional concept | Current module |
-|-------------------|----------------|
-| Drift detected | Intervention / Drift Radar |
-| Tiny turns | Decision journal, trajectory events |
-| Reality contact | Interaction intelligence, momentum |
-| Direction over time | Trajectory graph |
-| Quiet fade at org scale | trajectory-drift |
+| Don't flatten to… | Hold the tension… |
+|-------------------|-------------------|
+| "Be productive" | Tiny turns ↔ massive transformation |
+| "Be normal" | Present life ↔ future civilization |
+| "Optimize" | Emotional honesty ↔ systems thinking |
+| "Fit in" | Individual trajectory ↔ societal drift |
+
+---
+
+## How surface maps to product
+
+| Felt experience | Module |
+|---------------|--------|
+| "Something feels off" | Intervention / Drift Radar |
+| "One turn I chose" | Decision journal |
+| "Am I steering or functioning?" | Trajectory graph, momentum |
+| "What restores signal?" | Interaction intelligence |
+| Org/civilization drift | trajectory-drift |
 
 ---
 
 ## What we are NOT
 
-Another optimization app.  
-Another habit tracker.  
-Another "be your best self" dashboard.
+Habit tracker. Optimization app. "Return to reality" as social recovery.
 
-We help people **steer** — not sprint.
+We help people **choose direction consciously** — not drift into lives they never picked.

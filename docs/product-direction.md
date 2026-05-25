@@ -1,32 +1,70 @@
 # Product direction
 
+## Critical correction
+
+The goal is **NOT** simply "returning people to reality."
+
+That framing is too narrow. It risks collapsing into:
+
+- social functioning
+- productivity recovery
+- adaptation to existing systems
+- becoming a better participant inside inertia
+
+**That is not the vision.**
+
+---
+
 ## Core insight
 
 People rarely collapse all at once. **Most people drift quietly.**
 
 Drift is not laziness. Drift is:
 
-- losing contact with reality
-- losing emotional signal
+- unconscious inertia
+- separation from meaningful direction
+- losing contact with **truth and genuine signal**
 - adapting to dead systems
-- moving through inertia
-- slowly disconnecting from yourself
+- abandoning what actually matters
+- suppressing existential honesty
+- forgetting intentional direction
 
-Trajectory is not massive reinvention. **Trajectory is the accumulation of tiny turns** — a rudder, a steering correction, a slight orbital adjustment.
+### The distinction that matters
+
+A person can be **productive, socially successful, highly functional, externally stable** — and still be deeply drifting.
+
+Another person may appear **unstable externally** — but be moving toward transformation, frontier exploration, new paradigms, meaningful trajectory, deeper truth.
+
+The product must detect **unconscious drift**, not punish unconventional paths.
 
 ---
 
 ## What we are building
 
-**A trajectory-aware operating system** — not a productivity tool, dashboard, or quantified-self tracker.
+**Trajectory intelligence** — not a habit tracker, productivity system, self-improvement dashboard, or motivational app.
 
-A personal navigation system for:
+- Anti-drift infrastructure
+- Personal steering system
+- Cognitive navigation
+- Existential orientation tools
 
-- recognizing drift early
-- reconnecting with reality
-- making tiny honest turns
-- recovering trajectory
-- feeling alive again
+> How humans maintain meaningful direction in an age of distraction, inertia, AI acceleration, and societal drift.
+
+---
+
+## Core tension (do not flatten)
+
+This product lives in the tension between:
+
+| Pole A | Pole B |
+|--------|--------|
+| Present life | Future civilization |
+| Tiny turns | Massive transformation |
+| Emotional honesty | Systems thinking |
+| Daily steering | Existential direction |
+| Individual trajectory | Societal trajectory |
+
+Do NOT collapse this into "be more productive." That destroys the philosophy.
 
 ---
 
@@ -34,71 +72,62 @@ A personal navigation system for:
 
 | Layer | Role |
 |-------|------|
-| **Surface (emotional)** | Playful, stylish, vulnerable, easy to enter — steering, drift, vitality, reality-contact |
-| **Depth (systems)** | Trajectory engine, drift taxonomy, compounding, judgment, coordination — hidden until needed |
+| **Surface (emotional)** | Entry through feeling — disconnected, something off, slowly losing yourself |
+| **Depth (systems)** | Trajectory engine, signal taxonomy, compounding, coordination |
 
-Entry point is emotional. Depth comes later.
+People do not enter through philosophy. They enter through:
 
-See [`steering.md`](./steering.md) for the emotional layer.  
-See [`framework/`](../framework/) for systems depth.
+- "I feel disconnected."
+- "Something feels off."
+- "I'm slowly losing myself."
+- "I can't tell if I'm alive or just functioning."
 
----
+Philosophy exists **underneath** the experience.
 
-## Philosophy shift
-
-| Most self-improvement | We focus on |
-|----------------------|-------------|
-| Discipline | Steering |
-| Productivity | Drift detection |
-| Optimization | Vitality |
-| Habits | Reality-contact |
-| Motivation | Trajectory awareness |
-
-**Goal:** not "be more productive."  
-**Goal:** stop drifting unconsciously.
+See [`steering.md`](./steering.md) · [`framework/steering/`](../framework/steering/)
 
 ---
 
-## What the system should NOT feel like
+## Signal contact (reframed)
 
-- A corporate productivity dashboard
-- A rigid planner or task manager
-- Sterile optimization software
-- Fake motivational aesthetics
+Avoid reducing "reality" to market feedback, social participation, productivity, or conventional success.
 
-## What it SHOULD feel like
+**Reality is larger:**
 
-- A personal navigation system
-- Emotional steering — cinematic, human, slightly chaotic
-- Anti-drift infrastructure
-- A tiny course-correction companion
+- physics, energy constraints, time
+- human psychology
+- technological acceleration
+- civilization-scale dynamics
+- existential truth, meaning, agency
+- first-principles thinking
 
-Alive. Emotionally resonant. Honest about shame without collapsing into it.
+The product does **not** encourage blind adaptation to the current world.
+
+It helps people:
+
+- recognize unconscious drift
+- reconnect with **genuine signal**
+- steer intentionally
+- remain awake
+- maintain trajectory integrity
 
 ---
 
-## Key concepts
+## Steering, not optimization
 
-### Drift (quiet)
+Optimization is not enough. **Acceleration without steering is dangerous.**
 
-Doomscrolling, emotional numbness, fake productivity, avoiding conversations, losing curiosity, dead loops, disconnection from reality.
+A rocket with enormous thrust but wrong direction still misses its destination.
 
-Product job: **notice drift early.**
+Tiny turns matter. Small corrections matter. Trajectory emerges from accumulated directional decisions.
 
-### Rudder / steering
+Reinforce constantly:
 
-Life is not only acceleration — **direction matters more.**  
-One honest conversation. One real action. One tiny directional correction.
-
-Product job: **Daily steering** — "What tiny turn did you make today?"
-
-### Reality contact
-
-Real-world interaction, conversations, building, output, feedback, movement, signal exposure — not endless abstraction.
-
-Product job: **Reality-contact is anti-drift energy.**
-
-See [`framework/steering/`](../framework/steering/) for full concept mapping.
+- awareness
+- intentionality
+- signal sensitivity
+- existential honesty
+- **direction over inertia**
 
 ---
 
@@ -106,48 +135,41 @@ See [`framework/steering/`](../framework/steering/) for full concept mapping.
 
 | Feature | Direction |
 |---------|-----------|
-| **Daily steering** | Replace rigid tasks with tiny turns — direction, not productivity |
-| **Drift detection** | Curiosity drop, low reality-contact, numbness, dead loops, inertia, avoidance |
-| **Trajectory visualization** | Directional evolution over time — not task completion |
-| **Decision journal** | Honest turns + assumptions (depth layer) |
-| **Compounding / ownership** | Long-range systems layer (depth, for operators/founders) |
-| **Institutional memory** | Team continuity (org layer) |
-
-Existing v0.8 modules map to depth layer. v0.9+ surfaces emotional entry points on top.
+| **Daily steering** | Tiny intentional turns — not tasks |
+| **Drift detection** | Unconscious inertia, dead loops, signal loss — including while "functional" |
+| **Trajectory visualization** | Directional evolution — not completion metrics |
+| **Decision journal** | Existential honesty + assumptions |
+| **Depth layers** | Compounding, judgment, org memory (operators/founders) |
 
 ---
 
-## What we keep from prior direction
+## What we are NOT
 
-Still true underneath:
+- Habit tracker · productivity system · motivational app
+- "Return to normal" · "be more social" · "perform better"
+- Blind adaptation to existing systems
 
-- Trajectory, systems thinking, drift, feedback loops, alignment
-- Decision memory, compounding analysis, ownership layer
-- Human + organizational coordination (trajectory-drift)
+## What we SHOULD feel like
 
-Reframed for accessibility — not removed.
+Emotionally honest, cinematic, stylish, internet-native, slightly playful, vulnerable without collapsing, deeply human.
+
+Reference energy: **"K-pop Demon Hunters meets existential steering."**
+
+Not academic. Not cold systems theory. Not intellectual performance.
 
 ---
 
-## Brand direction (exploring)
+## Deeper mission
 
-Tiny Turns · Steering Mode · Drift Club · Rudder · Anti-Drift Energy · Quiet Drift · Stay Alive · Steering Yourself Home
+Not: help people perform better.
 
-Emotionally intelligent, internet-native, cinematic, self-aware, hopeful without being fake.
+**Help people remain conscious enough to choose their direction, instead of unconsciously drifting into lives they never truly chose.**
 
 ---
 
 ## Core question
 
-> "Are you drifting quietly — and what's one tiny turn back toward reality?"
-
----
-
-## Constraint
-
-Must remain measurable, operational, behavior-linked, workflow-connected.
-
-Must NOT become abstract philosophy software or hollow motivation — **honesty over hype.**
+> "Are you steering — or just functioning?"
 
 ---
 
@@ -155,5 +177,5 @@ Must NOT become abstract philosophy software or hollow motivation — **honesty 
 
 | Repo | Role |
 |------|------|
-| **trajectory-native** | Personal steering OS — human navigation |
-| **trajectory-drift** | Quiet drift at scale — teams, agents, organizations |
+| **trajectory-native** | Personal steering — individual trajectory integrity |
+| **trajectory-drift** | Drift at civilization/organizational scale |

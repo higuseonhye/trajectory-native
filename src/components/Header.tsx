@@ -6,11 +6,12 @@ export function Header() {
           trajectory-native · steering mode
         </p>
         <h1 className="mt-4 text-2xl font-medium tracking-tight text-[var(--foreground)] md:text-[2rem] md:leading-tight">
-          Stop drifting quietly.
+          Are you steering — or just functioning?
         </h1>
         <p className="mt-4 max-w-xl text-sm leading-relaxed text-[var(--muted)]">
-          A trajectory-aware operating system. Notice drift, make tiny turns,
-          stay in contact with reality — not another productivity dashboard.
+          Trajectory intelligence for the age of quiet drift. Notice unconscious
+          inertia, reconnect with genuine signal, make tiny intentional turns —
+          not another optimization dashboard.
         </p>
         <p className="mt-3 text-xs italic text-[var(--muted)]">
           Tiny turns create different futures. Pairs with{" "}
@@ -22,7 +23,7 @@ export function Header() {
           >
             trajectory-drift
           </a>{" "}
-          for teams and agents.
+          for teams and civilizational-scale drift.
         </p>
       </div>
     </header>

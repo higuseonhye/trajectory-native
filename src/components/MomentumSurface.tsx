@@ -22,7 +22,7 @@ export function MomentumSurface({ events }: Props) {
     <Section
       id="momentum-heading"
       title="Momentum"
-      description="Vitality signal — are you moving, or just spinning?"
+      description="Vitality vs function — are you alive, or just moving?"
     >
       <p className="mb-4 text-sm text-[var(--muted)]">{m.summary}</p>
       <ul className="grid grid-cols-2 gap-4 sm:grid-cols-3">

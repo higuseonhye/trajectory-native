@@ -10,7 +10,7 @@ Conceptual infrastructure for human navigation — emotional surface, systems de
 
 | Section | Focus |
 |---------|--------|
-| [`steering/`](./steering/) | **Surface** — drift, rudder, reality-contact, vitality |
+| [`steering/`](./steering/) | **Surface** — drift, rudder, signal contact, existential honesty |
 | [`principles/`](./principles/) | Depth — ownership, leverage, compounding, judgment |
 | [`compounding-assets/`](./compounding-assets/) | What compounds over time |
 | [`capital-native/`](./capital-native/) | Labor vs ownership (depth layer) |

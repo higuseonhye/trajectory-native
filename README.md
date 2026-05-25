@@ -1,9 +1,9 @@
 # trajectory-native
 
 **A trajectory-aware operating system.**  
-Most people don't collapse — they **drift quietly**. This helps you notice, steer, and stay in contact with reality.
+Most people don't collapse — they **drift quietly**. This helps you notice, steer with intention, and stay awake to your chosen direction.
 
-> Not productivity. Navigation. Tiny turns create different futures.
+> Not productivity. Not "return to normal." Conscious navigation.
 
 **trajectory-native** — personal steering (human-side).  
 **[trajectory-drift](https://github.com/higuseonhye/trajectory-drift)** — drift detection (system-side).
@@ -11,16 +11,16 @@ Most people don't collapse — they **drift quietly**. This helps you notice, st
 Thesis: [product direction](docs/product-direction.md) · [steering](docs/steering.md) · [framework](framework/)
 
 <p align="center">
-  <img src="docs/screenshots/demo-hero.png" alt="Trajectory-aware OS — stop drifting quietly (v0.9)" width="720" />
+  <img src="docs/screenshots/demo-hero.png" alt="Trajectory intelligence — are you steering or just functioning?" width="720" />
 </p>
 
 ---
 
 ## Why this exists
 
-People rarely collapse all at once. They **drift quietly** — losing reality-contact, emotional signal, and direction while still looking busy.
+People rarely collapse all at once. They **drift quietly** — unconscious inertia, signal loss, and direction fade while still looking functional.
 
-Most tools push discipline and productivity. Few help you **notice drift early** and make **tiny honest turns** back toward what feels alive.
+Most tools push optimization. Few help you ask: **am I steering, or just functioning?**
 
 ---
 
@@ -52,7 +52,7 @@ A **personal navigation system** for steering your trajectory.
 | **Decision journal** | Personal judgment + event linking |
 | **Trajectory events** | Atomic unit — interactions, momentum, entropy, allocation |
 | **Momentum engine** | Density, open loops, interaction energy, recovery |
-| **Intervention / Drift Radar** | Quiet drift surfaced — suggested turn toward reality |
+| **Intervention / Drift Radar** | Unconscious drift surfaced — one turn toward signal |
 | **Interaction intelligence** | Amplifiers vs drains |
 | **Native ↔ drift bridge** | Export events for unified analysis |
 
@@ -98,7 +98,7 @@ Surfaces at top of page: **Intervention** · **Momentum** · **Compounding** · 
 ## Screenshots
 
 <p align="center">
-  <img src="docs/screenshots/demo-intervention.png" alt="Quiet drift detected — one turn toward reality" width="400" />
+  <img src="docs/screenshots/demo-intervention.png" alt="Unconscious drift detected — one intentional turn" width="400" />
   <img src="docs/screenshots/demo-decision-journal.png" alt="Honest turns — decisions, assumptions, outcomes" width="400" />
 </p>
 
@@ -108,7 +108,7 @@ Surfaces at top of page: **Intervention** · **Momentum** · **Compounding** · 
 </p>
 
 <p align="center">
-  <img src="docs/screenshots/x-post-v08-viewport.png" alt="Steering mode — stop drifting quietly (1200×675)" width="720" />
+  <img src="docs/screenshots/x-post-v08-viewport.png" alt="Steering mode — are you steering or just functioning? (1200×675)" width="720" />
 </p>
 
 Full scroll: [`demo-full.png`](docs/screenshots/demo-full.png)
@@ -127,7 +127,7 @@ Full scroll: [`demo-full.png`](docs/screenshots/demo-full.png)
 ## Docs
 
 - [`docs/product-direction.md`](docs/product-direction.md) — current thesis
-- [`docs/steering.md`](docs/steering.md) — emotional layer (drift, rudder, reality-contact)
+- [`docs/steering.md`](docs/steering.md) — emotional layer (drift, rudder, signal contact)
 - [`framework/steering/`](framework/steering/) — steering concepts
 - [`docs/trajectory-infrastructure.md`](docs/trajectory-infrastructure.md)
 - [`docs/calibration-archive.md`](docs/calibration-archive.md)

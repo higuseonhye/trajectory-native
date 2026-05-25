@@ -35,7 +35,7 @@ async function main() {
   await page.evaluate(() => localStorage.removeItem("trajectory-native:trajectory-events"));
   await page.reload({ waitUntil: "networkidle" });
   await page.waitForTimeout(2000);
-  await page.getByRole("heading", { name: "Stop drifting quietly." }).waitFor({
+  await page.getByRole("heading", { name: /Are you steering/i }).waitFor({
     timeout: 30000,
   });
 

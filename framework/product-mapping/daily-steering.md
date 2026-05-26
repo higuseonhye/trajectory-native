@@ -56,6 +56,6 @@ If no turn logged + drift signals active → gentle intervention:
 
 ## Implementation status
 
-Planned — builds on decision journal + trajectory events.
+**Shipped** — daily steering panel, local persistence, drift pairing nudge, optional trajectory event spawn.
 
-Current proxy: log a decision or trajectory event as today's turn.
+Builds on decision journal + trajectory events. See [`DailySteeringPanel`](../../src/components/DailySteeringPanel.tsx).

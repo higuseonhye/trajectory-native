@@ -32,7 +32,10 @@ async function main() {
   const browser = await chromium.launch();
   const page = await browser.newPage({ viewport: { width: 1100, height: 900 } });
   await page.goto(BASE, { waitUntil: "networkidle" });
-  await page.evaluate(() => localStorage.removeItem("trajectory-native:trajectory-events"));
+  await page.evaluate(() => {
+    localStorage.removeItem("trajectory-native:trajectory-events");
+    localStorage.removeItem("trajectory-native:daily-steering");
+  });
   await page.reload({ waitUntil: "networkidle" });
   await page.waitForTimeout(2000);
   await page.getByRole("heading", { name: /Are you steering/i }).waitFor({
@@ -60,6 +63,7 @@ async function main() {
   console.log("wrote demo-hero.png");
 
   await sectionShot("Intervention", "demo-intervention.png");
+  await sectionShot("Daily steering", "demo-daily-steering.png");
   await sectionShot("Momentum", "demo-momentum.png");
   await sectionShot("Compounding analysis", "demo-compounding.png");
   await sectionShot("Capital & leverage reflection", "demo-capital-leverage.png");

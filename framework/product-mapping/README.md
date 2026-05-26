@@ -27,7 +27,7 @@ Not AI for productivity. A **Trajectory / Judgment / Coordination System**.
 
 | Module | Purpose | Doc |
 |--------|---------|-----|
-| **Daily steering** | "What tiny turn today?" — direction not tasks (incl. environmental turns) | [daily-steering.md](./daily-steering.md) — planned v0.9 |
+| **Daily steering** | "What tiny turn today?" — direction not tasks (incl. environmental turns) | [daily-steering.md](./daily-steering.md) — **shipped** |
 | **Environment & state** | Anti-drift atmospheres, embodied trajectory, vitality | [environment-state.md](./environment-state.md) — partial (event tags + drift signals) |
 | **Trajectory Graph** | Directional evolution over time | [trajectory-graph.md](./trajectory-graph.md) |
 | **Decision Journal** | Track decisions, confidence, assumptions, outcomes, recurring mistakes | [decision-journal.md](./decision-journal.md) — shipped v0.7 |

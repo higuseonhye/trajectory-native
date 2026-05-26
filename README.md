@@ -92,7 +92,7 @@ npm install && npm run dev
 # → http://localhost:3000
 ```
 
-Surfaces at top of page: **Intervention** · **Momentum** · **Compounding** · **Capital & leverage** · **Trajectory graph** · **Decision journal** · **Institutional memory** · **Interaction intelligence** · **Events** · **Bridge**.
+Surfaces at top of page: **Intervention** · **Daily steering** · **Momentum** · **Compounding** · **Capital & leverage** · **Trajectory graph** · **Decision journal** · **Institutional memory** · **Interaction intelligence** · **Events** · **Bridge** · **Physical layer**.
 
 ---
 
@@ -100,11 +100,11 @@ Surfaces at top of page: **Intervention** · **Momentum** · **Compounding** · 
 
 <p align="center">
   <img src="docs/screenshots/demo-intervention.png" alt="Unconscious drift detected — cognitive and environmental" width="400" />
-  <img src="docs/screenshots/demo-momentum.png" alt="Vitality vs function — environment note" width="400" />
+  <img src="docs/screenshots/demo-daily-steering.png" alt="Daily steering — what tiny turn did you make today?" width="400" />
 </p>
 
 <p align="center">
-  <img src="docs/screenshots/demo-decision-journal.png" alt="Honest turns — decisions, assumptions, outcomes" width="400" />
+  <img src="docs/screenshots/demo-momentum.png" alt="Vitality vs function — environment note" width="400" />
   <img src="docs/screenshots/demo-trajectory-events.png" alt="Events with environment context and atmosphere" width="400" />
 </p>
 
@@ -127,6 +127,7 @@ Full scroll: [`demo-full.png`](docs/screenshots/demo-full.png)
 |------|--------|
 | **trajectory-native** (this repo) | Personal trajectory OS |
 | **[trajectory-drift](https://github.com/higuseonhye/trajectory-drift)** | Human + AI coordination infrastructure |
+| **[org-reasoning-mvp](https://github.com/higuseonhye/org-reasoning-mvp)** | Decision continuity / institutional memory API |
 
 ---
 
@@ -148,4 +149,4 @@ Full scroll: [`demo-full.png`](docs/screenshots/demo-full.png)
 
 ### org-reasoning-mvp bridge
 
-Set `ORG_REASONING_URL=http://localhost:3000` when org-reasoning-mvp is running. Team decisions load live; otherwise seed data displays.
+Set `ORG_REASONING_URL=http://localhost:3002` when org-reasoning-mvp is running (default port 3002). Team decisions load live; otherwise seed data displays.

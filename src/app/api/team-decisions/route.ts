@@ -20,7 +20,7 @@ type RemoteEntry = {
 };
 
 export async function GET() {
-  const base = process.env.ORG_REASONING_URL ?? "http://localhost:3000";
+  const base = process.env.ORG_REASONING_URL ?? "http://localhost:3002";
 
   try {
     const res = await fetch(`${base}/api/decisions`, {

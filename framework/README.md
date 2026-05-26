@@ -13,6 +13,7 @@ Conceptual infrastructure for human navigation — emotional surface, systems de
 | [`steering/`](./steering/) | **Surface** — drift, rudder, signal contact, existential honesty |
 | [`environment-design/`](./environment-design/) | Anti-drift atmospheres — space, aesthetics, sensory conditions |
 | [`state-design/`](./state-design/) | Embodied state — nervous system, aliveness, environment-dependent trajectory |
+| [`physical-layer/`](./physical-layer/) | Future spatial, sensory, ritual manifestation |
 | [`principles/`](./principles/) | Depth — ownership, leverage, compounding, judgment |
 | [`compounding-assets/`](./compounding-assets/) | What compounds over time |
 | [`capital-native/`](./capital-native/) | Labor vs ownership (depth layer) |

@@ -49,6 +49,8 @@ environment?: {
 
 Or lightweight tags: `natural-light`, `nature`, `sterile`, `cinematic-scale`, `social-warm`.
 
+**Shipped:** optional `environment` on events; ingest + log form; drift detection in Intervention, Momentum, and trajectory-drift Environmental drift panel.
+
 ---
 
 ## Drift signals (environmental)

@@ -38,6 +38,8 @@ import {
   reasoningTraces,
   calibrationReplies,
 } from "@/lib/data";
+import { DailySteeringPanel } from "@/components/DailySteeringPanel";
+import { PhysicalLayerPanel } from "@/components/PhysicalLayerPanel";
 import type { DecisionEntry } from "@/lib/decision-journal";
 import type { TrajectoryEvent } from "@/lib/trajectory-events";
 import {
@@ -45,6 +47,11 @@ import {
   loadDecisionEntries,
   saveDecisionEntries,
 } from "@/lib/decision-journal-store";
+import {
+  loadSteeringTurns,
+  saveSteeringTurns,
+} from "@/lib/daily-steering-store";
+import type { SteeringTurn } from "@/lib/daily-steering";
 import {
   loadTrajectoryEvents,
   mergeTrajectoryEvents,
@@ -54,11 +61,13 @@ import {
 export function TrajectoryWorkspace() {
   const [events, setEvents] = useState<TrajectoryEvent[]>([]);
   const [decisions, setDecisions] = useState<DecisionEntry[]>([]);
+  const [steeringTurns, setSteeringTurns] = useState<SteeringTurn[]>([]);
   const [hydrated, setHydrated] = useState(false);
 
   useEffect(() => {
     setEvents(loadTrajectoryEvents());
     setDecisions(loadDecisionEntries());
+    setSteeringTurns(loadSteeringTurns());
     setHydrated(true);
   }, []);
 
@@ -125,6 +134,11 @@ export function TrajectoryWorkspace() {
     [events],
   );
 
+  const handleSteeringTurnsChange = useCallback((turns: SteeringTurn[]) => {
+    setSteeringTurns(turns);
+    saveSteeringTurns(turns);
+  }, []);
+
   if (!hydrated) {
     return (
       <p className="px-6 py-12 text-sm text-[var(--muted)]">Loading…</p>
@@ -137,6 +151,12 @@ export function TrajectoryWorkspace() {
       <main className="flex-1 px-6 py-12 md:px-10 md:py-16">
         <div className="mx-auto max-w-3xl space-y-2">
           <InterventionPanel events={events} />
+          <DailySteeringPanel
+            events={events}
+            turns={steeringTurns}
+            onTurnsChange={handleSteeringTurnsChange}
+            onIngest={handleIngest}
+          />
           <MomentumSurface events={events} />
           <CompoundingAnalysis events={events} />
           <CapitalLeverageReflection events={events} />
@@ -152,6 +172,7 @@ export function TrajectoryWorkspace() {
           <InteractionGraphView events={events} />
           <EventIngestPanel onIngest={handleIngest} />
           <BridgePanel events={events} />
+          <PhysicalLayerPanel />
           <TrajectoryEventsFeed events={events} decisions={decisions} />
           <CalibrationLog entries={calibrationLog} />
           <WeeklyChanges changes={weeklyChanges} />

@@ -69,6 +69,7 @@ Recurring patterns now drive **intervention signals**, not only reflection:
 - unfinished loops
 - reactive trajectory switching
 - abstraction over action
+- **environmental drift** — dead atmospheres, scroll loops, awe deprivation
 
 Archive: [`docs/calibration-archive.md`](docs/calibration-archive.md)
 
@@ -98,8 +99,13 @@ Surfaces at top of page: **Intervention** · **Momentum** · **Compounding** · 
 ## Screenshots
 
 <p align="center">
-  <img src="docs/screenshots/demo-intervention.png" alt="Unconscious drift detected — one intentional turn" width="400" />
+  <img src="docs/screenshots/demo-intervention.png" alt="Unconscious drift detected — cognitive and environmental" width="400" />
+  <img src="docs/screenshots/demo-momentum.png" alt="Vitality vs function — environment note" width="400" />
+</p>
+
+<p align="center">
   <img src="docs/screenshots/demo-decision-journal.png" alt="Honest turns — decisions, assumptions, outcomes" width="400" />
+  <img src="docs/screenshots/demo-trajectory-events.png" alt="Events with environment context and atmosphere" width="400" />
 </p>
 
 <p align="center">
@@ -128,6 +134,7 @@ Full scroll: [`demo-full.png`](docs/screenshots/demo-full.png)
 
 - [`docs/product-direction.md`](docs/product-direction.md) — current thesis
 - [`docs/steering.md`](docs/steering.md) — emotional layer (drift, rudder, signal contact)
+- [`docs/environment-design.md`](docs/environment-design.md) — environment & state design thesis
 - [`framework/steering/`](framework/steering/) — steering concepts
 - [`docs/trajectory-infrastructure.md`](docs/trajectory-infrastructure.md)
 - [`docs/calibration-archive.md`](docs/calibration-archive.md)

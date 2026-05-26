@@ -60,11 +60,13 @@ async function main() {
   console.log("wrote demo-hero.png");
 
   await sectionShot("Intervention", "demo-intervention.png");
+  await sectionShot("Momentum", "demo-momentum.png");
   await sectionShot("Compounding analysis", "demo-compounding.png");
   await sectionShot("Capital & leverage reflection", "demo-capital-leverage.png");
   await sectionShot("Trajectory graph", "demo-trajectory-graph.png");
   await sectionShot("Decision journal", "demo-decision-journal.png");
   await sectionShot("Institutional memory", "demo-institutional-memory.png");
+  await sectionShot("Trajectory events", "demo-trajectory-events.png");
   await sectionShot("Interaction intelligence", "demo-interaction.png");
   await sectionShot("Native ↔ drift bridge", "demo-bridge.png");
   await main.screenshot({ path: path.join(OUT, "demo-full.png") });

@@ -30,7 +30,7 @@ Designing conditions where humans reconnect with awe, beauty, vitality, meaning,
 - Copy: embodiment, aliveness, atmosphere
 - Avoid: sterile SaaS, quantified-self aesthetics
 
-**Shipped (v0.9+):** optional `environment` on trajectory events; dead/restorative detection in Intervention + Momentum.
+**Shipped (v0.9+):** optional `environment` on trajectory events; dead/restorative detection in Intervention + Momentum; manual log form + JSON ingest with environment fields.
 
 ---
 

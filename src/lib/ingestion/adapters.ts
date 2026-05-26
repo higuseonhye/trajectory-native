@@ -3,6 +3,11 @@ import type {
   TrajectoryEventKind,
   AllocationKind,
 } from "../trajectory-events";
+import type {
+  EnvironmentAtmosphere,
+  EnvironmentContext,
+  EventEnvironment,
+} from "../environment";
 import type { IngestResult } from "./types";
 
 const KINDS = new Set<TrajectoryEventKind>([
@@ -28,6 +33,41 @@ const ALLOCATIONS = new Set<AllocationKind>([
   "consumption",
   "investment",
 ]);
+
+const ENV_CONTEXTS = new Set<EnvironmentContext>([
+  "office",
+  "home",
+  "nature",
+  "transit",
+  "social",
+  "digital",
+]);
+
+const ENV_ATMOSPHERES = new Set<EnvironmentAtmosphere>([
+  "alive",
+  "neutral",
+  "dead",
+  "restorative",
+]);
+
+function normalizeEnvironment(raw: unknown): EventEnvironment | undefined {
+  if (!isRecord(raw)) return undefined;
+  const context =
+    typeof raw.context === "string" &&
+    ENV_CONTEXTS.has(raw.context as EnvironmentContext)
+      ? (raw.context as EnvironmentContext)
+      : undefined;
+  const atmosphere =
+    typeof raw.atmosphere === "string" &&
+    ENV_ATMOSPHERES.has(raw.atmosphere as EnvironmentAtmosphere)
+      ? (raw.atmosphere as EnvironmentAtmosphere)
+      : undefined;
+  const tags = Array.isArray(raw.tags)
+    ? raw.tags.filter((t): t is string => typeof t === "string")
+    : undefined;
+  if (!context && !atmosphere && !tags?.length) return undefined;
+  return { context, atmosphere, tags };
+}
 
 function normalizeEvent(raw: unknown, index: number): TrajectoryEvent {
   if (!isRecord(raw)) throw new Error(`event[${index}] must be an object`);
@@ -59,6 +99,7 @@ function normalizeEvent(raw: unknown, index: number): TrajectoryEvent {
       typeof raw.linkedDecisionId === "string"
         ? raw.linkedDecisionId
         : undefined,
+    environment: normalizeEnvironment(raw.environment),
   };
 }
 

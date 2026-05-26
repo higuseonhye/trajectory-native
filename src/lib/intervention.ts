@@ -1,4 +1,5 @@
 import type { CompoundingMetrics } from "./compounding-engine";
+import { computeEnvironmentDrift } from "./environment";
 import type { MomentumMetrics } from "./momentum-engine";
 import type { TrajectoryEvent } from "./trajectory-events";
 
@@ -9,7 +10,9 @@ export type InterventionKind =
   | "reactive_switching"
   | "abstraction_over_action"
   | "recovery_needed"
-  | "labor_drift";
+  | "labor_drift"
+  | "environmental_drift"
+  | "awe_deprivation";
 
 export interface InterventionSignal {
   kind: InterventionKind;
@@ -94,6 +97,38 @@ export function detectInterventions(
       interpretation: `Labor ratio ${compounding.laborRatio}% — ownership at ${compounding.ownershipRatio}%.`,
       suggestedAction:
         "Ship one owned asset before more labor optimization this week.",
+    });
+  }
+
+  const envDrift = computeEnvironmentDrift(events);
+  if (envDrift.deadRatio >= 50 && envDrift.deadCount >= 2) {
+    signals.push({
+      kind: "environmental_drift",
+      severity: envDrift.deadRatio >= 70 ? "high" : "medium",
+      interpretation: `${envDrift.deadRatio}% of recent events in dead atmospheres — vitality draining while functional.`,
+      suggestedAction:
+        "One environmental turn: natural light, outside walk, or a space that restores aliveness before more cognitive work.",
+    });
+  }
+
+  if (envDrift.aweDeprivation) {
+    signals.push({
+      kind: "awe_deprivation",
+      severity: "low",
+      interpretation:
+        "No nature, scale, or restorative atmosphere in recent events — awe contact fading.",
+      suggestedAction:
+        "Seek one moment of scale: coast, garden, sky, or any space that makes you feel small and alive.",
+    });
+  }
+
+  if (envDrift.scrollDominance) {
+    signals.push({
+      kind: "environmental_drift",
+      severity: "medium",
+      interpretation: "Scroll-feed environment detected — sensory numbness risk.",
+      suggestedAction:
+        "Close the feed. One offline block or physical movement before returning to work.",
     });
   }
 

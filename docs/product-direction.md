@@ -47,8 +47,11 @@ The product must detect **unconscious drift**, not punish unconventional paths.
 - Personal steering system
 - Cognitive navigation
 - Existential orientation tools
+- **Environment & state design** — conditions that restore aliveness and direction
 
-> How humans maintain meaningful direction in an age of distraction, inertia, AI acceleration, and societal drift.
+> A trajectory-aware human navigation system through environment, aesthetics, emotion, and direction — not merely self-improvement.
+
+> How humans maintain meaningful direction in an age of distraction, inertia, AI acceleration, dead environments, and societal drift.
 
 ---
 
@@ -131,12 +134,32 @@ Reinforce constantly:
 
 ---
 
+## Environment & state design
+
+Trajectory is not shaped by cognition alone. People are **environment-sensitive systems**.
+
+Drift emerges from dead environments — fluorescent survival, scroll loops, sterile systems, sensory deprivation, emotional numbness — not only from bad decisions.
+
+**State design:** humans are state-dependent. A person in a dead gray office is not the same person as in a greenhouse near the ocean. Trajectory is **embodied**.
+
+The project evolves toward:
+
+- anti-drift atmospheres
+- spaces that restore aliveness
+- emotional and sensory steering
+- conditions where people reconnect with awe, beauty, vitality, and meaning
+
+See [`environment-design.md`](./environment-design.md) · [`framework/environment-design/`](../framework/environment-design/) · [`framework/state-design/`](../framework/state-design/)
+
+---
+
 ## Feature direction
 
 | Feature | Direction |
 |---------|-----------|
-| **Daily steering** | Tiny intentional turns — not tasks |
-| **Drift detection** | Unconscious inertia, dead loops, signal loss — including while "functional" |
+| **Daily steering** | Tiny intentional turns — not tasks (including environmental turns) |
+| **Drift detection** | Unconscious inertia, dead loops, signal loss, **environmental drift** — including while "functional" |
+| **State / environment** | Where you are, what atmosphere, vitality vs numbness |
 | **Trajectory visualization** | Directional evolution — not completion metrics |
 | **Decision journal** | Existential honesty + assumptions |
 | **Depth layers** | Compounding, judgment, org memory (operators/founders) |
@@ -151,11 +174,11 @@ Reinforce constantly:
 
 ## What we SHOULD feel like
 
-Emotionally honest, cinematic, stylish, internet-native, slightly playful, vulnerable without collapsing, deeply human.
+Emotionally honest, cinematic, alive, sensory, grounded, warm, stylish, internet-native, slightly dreamlike, vulnerable without collapsing, deeply human, hopeful without being fake.
 
-Reference energy: **"K-pop Demon Hunters meets existential steering."**
+Reference energy: **"K-pop Demon Hunters meets existential steering"** — plus Malibu coastline, greenhouse atmosphere, Mediterranean winery, botanical gardens, warm natural architecture — **places where people feel alive again**.
 
-Not academic. Not cold systems theory. Not intellectual performance.
+Not academic. Not cold systems theory. Not intellectual performance. Not sterile productivity SaaS.
 
 ---
 
@@ -167,9 +190,11 @@ Not: help people perform better.
 
 ---
 
-## Core question
+## Core questions
 
 > "Are you steering — or just functioning?"
+
+> "What kinds of environments help humans remain alive, awake, emotionally connected, and directionally conscious?"
 
 ---
 

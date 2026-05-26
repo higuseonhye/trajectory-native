@@ -1,14 +1,14 @@
 # trajectory-native
 
-**A trajectory-aware operating system.**  
-Most people don't collapse — they **drift quietly**. This helps you notice, steer with intention, and stay awake to your chosen direction.
+**A trajectory-aware human environment system.**  
+Most people don't collapse — they **drift quietly**, often in dead environments. Notice, steer with intention, restore aliveness.
 
-> Not productivity. Not "return to normal." Conscious navigation.
+> Not productivity. Not "return to normal." Navigation through environment, emotion, and direction.
 
 **trajectory-native** — personal steering (human-side).  
 **[trajectory-drift](https://github.com/higuseonhye/trajectory-drift)** — drift detection (system-side).
 
-Thesis: [product direction](docs/product-direction.md) · [steering](docs/steering.md) · [framework](framework/)
+Thesis: [product direction](docs/product-direction.md) · [steering](docs/steering.md) · [environment & state](docs/environment-design.md) · [framework](framework/)
 
 <p align="center">
   <img src="docs/screenshots/demo-hero.png" alt="Trajectory intelligence — are you steering or just functioning?" width="720" />
@@ -18,9 +18,9 @@ Thesis: [product direction](docs/product-direction.md) · [steering](docs/steeri
 
 ## Why this exists
 
-People rarely collapse all at once. They **drift quietly** — unconscious inertia, signal loss, and direction fade while still looking functional.
+People rarely collapse all at once. They **drift quietly** — unconscious inertia, signal loss, and direction fade while still looking functional. **Dead environments accelerate drift:** fluorescent survival, scroll loops, sterile routines, sensory deprivation.
 
-Most tools push optimization. Few help you ask: **am I steering, or just functioning?**
+Most tools push optimization. Few help you ask: **am I steering, or just functioning?** And fewer still ask: **what environment would help me feel alive enough to choose?**
 
 ---
 
@@ -28,13 +28,13 @@ Most tools push optimization. Few help you ask: **am I steering, or just functio
 
 Not a dashboard. Not a habit tracker. Not optimization software.
 
-A **personal navigation system** for steering your trajectory.
+A **personal navigation system** for steering trajectory — through cognition, **state**, and **environment**.
 
 | Surface layer | Depth layer |
 |---------------|-------------|
-| Drift detection · daily steering · vitality | Compounding · judgment · ownership |
-| "What's one tiny turn?" | Decision memory · trajectory graph |
-| Emotional honesty | Systems intelligence |
+| Drift detection · daily steering · vitality · **environment** | Compounding · judgment · ownership |
+| "What's one tiny turn?" (including environmental) | Decision memory · trajectory graph |
+| Emotional honesty · embodied state | Systems intelligence |
 
 | Capability | Role |
 |------------|------|

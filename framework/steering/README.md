@@ -15,7 +15,8 @@ Trajectory intelligence at human scale — rudder, drift, signal, existential ho
 - unconscious inertia
 - separation from meaningful direction
 - losing contact with truth and genuine signal
-- adapting to dead systems
+- adapting to dead systems and **dead environments**
+- sensory deprivation, emotional numbness, awe loss
 - suppressing existential honesty
 - forgetting what actually matters
 
@@ -89,10 +90,21 @@ Hold without flattening:
 
 **Functioning** ≠ **alive**
 
-- Vitality: curiosity, surprise, signal sensitivity, chosen direction
-- Function: tasks complete, appearance maintained, inertia accepted
+- Vitality: curiosity, surprise, signal sensitivity, chosen direction, **sensory aliveness, aesthetic coherence**
+- Function: tasks complete, appearance maintained, inertia accepted, **surviving dead environments**
 
-Maps to: momentum engine, recovery signals, drift radar detecting "high function / low signal"
+Maps to: momentum engine, recovery signals, drift radar detecting "high function / low signal", environmental drift patterns
+
+---
+
+## Environment & state
+
+People transform through **lived environments**, not thought alone.
+
+- Dead environments → drift (fluorescent offices, scroll loops, sterile systems)
+- Alive environments → trajectory energy (nature, light, scale, warmth, beauty)
+
+See [`../environment-design/`](../environment-design/) · [`../state-design/`](../state-design/)
 
 ---
 

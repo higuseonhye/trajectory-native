@@ -11,6 +11,8 @@ Conceptual infrastructure for human navigation — emotional surface, systems de
 | Section | Focus |
 |---------|--------|
 | [`steering/`](./steering/) | **Surface** — drift, rudder, signal contact, existential honesty |
+| [`environment-design/`](./environment-design/) | Anti-drift atmospheres — space, aesthetics, sensory conditions |
+| [`state-design/`](./state-design/) | Embodied state — nervous system, aliveness, environment-dependent trajectory |
 | [`principles/`](./principles/) | Depth — ownership, leverage, compounding, judgment |
 | [`compounding-assets/`](./compounding-assets/) | What compounds over time |
 | [`capital-native/`](./capital-native/) | Labor vs ownership (depth layer) |
@@ -43,6 +45,6 @@ Entry is emotional. Depth comes later.
 
 ## Product thesis
 
-A **trajectory-aware operating system** — not productivity software.
+A **trajectory-aware human environment system** — navigation through environment, aesthetics, emotion, and direction. Not productivity software.
 
-See [`product-mapping/`](./product-mapping/) · [`../docs/steering.md`](../docs/steering.md)
+See [`product-mapping/`](./product-mapping/) · [`../docs/steering.md`](../docs/steering.md) · [`../docs/environment-design.md`](../docs/environment-design.md)

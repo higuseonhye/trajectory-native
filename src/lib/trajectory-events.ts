@@ -1,5 +1,7 @@
 /** Core atomic unit — observable trajectory events, not abstract notes. */
 
+import type { EventEnvironment } from "./environment";
+
 export type AllocationKind =
   | "labor"
   | "ownership"
@@ -32,6 +34,8 @@ export interface TrajectoryEvent {
   allocation?: AllocationKind;
   /** Decision journal entry linked to this event. */
   linkedDecisionId?: string;
+  /** Where and what atmosphere — embodied trajectory context. */
+  environment?: EventEnvironment;
 }
 
 export const sampleTrajectoryEvents: TrajectoryEvent[] = [
@@ -44,6 +48,11 @@ export const sampleTrajectoryEvents: TrajectoryEvent[] = [
     momentumDelta: 1,
     tags: ["high-signal"],
     allocation: "investment",
+    environment: {
+      context: "social",
+      atmosphere: "alive",
+      tags: ["warm", "natural-light"],
+    },
   },
   {
     id: "te2",
@@ -54,6 +63,11 @@ export const sampleTrajectoryEvents: TrajectoryEvent[] = [
     momentumDelta: -1,
     tags: ["loop-open"],
     allocation: "labor",
+    environment: {
+      context: "office",
+      atmosphere: "dead",
+      tags: ["fluorescent", "indoor-loop"],
+    },
   },
   {
     id: "te3",
@@ -64,6 +78,11 @@ export const sampleTrajectoryEvents: TrajectoryEvent[] = [
     tags: ["reactive-switch"],
     allocation: "consumption",
     linkedDecisionId: "dj1",
+    environment: {
+      context: "digital",
+      atmosphere: "dead",
+      tags: ["scroll-feed", "sensory-flat"],
+    },
   },
   {
     id: "te4",
@@ -75,6 +94,11 @@ export const sampleTrajectoryEvents: TrajectoryEvent[] = [
     tags: ["shipped", "ownership"],
     allocation: "ownership",
     linkedDecisionId: "dj2",
+    environment: {
+      context: "home",
+      atmosphere: "neutral",
+      tags: ["natural-light"],
+    },
   },
   {
     id: "te5",
@@ -85,6 +109,11 @@ export const sampleTrajectoryEvents: TrajectoryEvent[] = [
     momentumDelta: -1,
     tags: ["interaction-starvation"],
     allocation: "labor",
+    environment: {
+      context: "office",
+      atmosphere: "dead",
+      tags: ["fluorescent", "sterile"],
+    },
   },
   {
     id: "te6",
@@ -94,5 +123,10 @@ export const sampleTrajectoryEvents: TrajectoryEvent[] = [
     description: "Recovered capacity to re-read calibration log without urgency distortion.",
     momentumDelta: 1,
     allocation: "investment",
+    environment: {
+      context: "nature",
+      atmosphere: "restorative",
+      tags: ["natural-light", "ocean", "cinematic-scale"],
+    },
   },
 ];

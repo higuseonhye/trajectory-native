@@ -34,7 +34,7 @@ Not: sterile productivity software, intellectual performance, motivational theat
 
 ## Drift (reframed)
 
-Drift is **not** merely disconnection from daily life.
+Drift is **not** merely disconnection from daily life — and **not only cognitive**.
 
 | Quiet drift feels like | But also watch for |
 |------------------------|-------------------|
@@ -43,10 +43,14 @@ Drift is **not** merely disconnection from daily life.
 | Lost curiosity | Stability that is actually inertia |
 | Dead loops | Adapting to systems you never chose |
 | "Something feels off" | Suppressing existential honesty |
+| Flat, sterile surroundings | Sensory deprivation, awe loss |
+| Indoor survival loops | Environments that suppress vitality |
+
+**Environmental drift:** dead offices, scroll environments, emotionally sterile spaces, disconnected routines. People adapt to lifeless systems and stop feeling alive while remaining functional.
 
 **Critical:** Someone can look fine externally and be deeply drifting. Someone can look unstable and be steering toward truth.
 
-**Product:** notice unconscious drift. Never punish transformation.
+**Product:** notice unconscious drift — cognitive and environmental. Never punish transformation.
 
 ---
 
@@ -57,11 +61,22 @@ Not reinvention overnight. **Intentional micro-corrections.**
 - one honest admission
 - one genuine signal followed
 - one tiny turn toward chosen direction
+- one **environmental turn** — light, space, nature, warmth, scale
 
 **Daily steering:**  
 > "What tiny turn did you make today?"
 
-Not productivity. **Direction over inertia.**
+Not productivity. **Direction over inertia.** Environmental turns count — leave the dead room, seek natural light, contact awe.
+
+---
+
+## State design
+
+Humans are state-dependent. Different environments create different trajectories.
+
+Trajectory is **embodied** — not branding theater. Nervous system, emotional energy, aesthetic coherence, physical surroundings all steer.
+
+See [`environment-design.md`](./environment-design.md).
 
 ---
 
@@ -102,9 +117,10 @@ Behavioral proxies in product: real actions, honest decisions, momentum from cho
 | Felt experience | Module |
 |---------------|--------|
 | "Something feels off" | Intervention / Drift Radar |
+| "This space is killing me" | Environment / state tags, environmental drift |
 | "One turn I chose" | Decision journal |
 | "Am I steering or functioning?" | Trajectory graph, momentum |
-| "What restores signal?" | Interaction intelligence |
+| "What restores signal?" | Interaction intelligence, alive environments |
 | Org/civilization drift | trajectory-drift |
 
 ---

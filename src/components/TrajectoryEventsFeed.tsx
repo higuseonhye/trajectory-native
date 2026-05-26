@@ -1,3 +1,7 @@
+import {
+  ENVIRONMENT_ATMOSPHERE_LABELS,
+  ENVIRONMENT_CONTEXT_LABELS,
+} from "@/lib/environment";
 import { formatRelativeTime } from "@/lib/format";
 import {
   ALLOCATION_LABELS,
@@ -35,7 +39,7 @@ export function TrajectoryEventsFeed({ events, decisions }: Props) {
     <Section
       id="trajectory-events-heading"
       title="Trajectory events"
-      description="Atomic unit — what happened in reality, not only what was thought."
+      description="Atomic unit — what happened in reality, including where and what atmosphere."
     >
       <ul className="space-y-3">
         {sorted.map((e) => {
@@ -59,6 +63,21 @@ export function TrajectoryEventsFeed({ events, decisions }: Props) {
                 {formatRelativeTime(e.timestamp)}
               </span>
             </div>
+            {e.environment && (
+              <p className="mt-2 text-xs text-[var(--muted)]">
+                {e.environment.context &&
+                  ENVIRONMENT_CONTEXT_LABELS[e.environment.context]}
+                {e.environment.atmosphere && (
+                  <>
+                    {" · "}
+                    {ENVIRONMENT_ATMOSPHERE_LABELS[e.environment.atmosphere]}
+                  </>
+                )}
+                {e.environment.tags?.length ? (
+                  <> · {e.environment.tags.join(", ")}</>
+                ) : null}
+              </p>
+            )}
             {e.subject && (
               <p className="mt-1 text-xs text-[var(--muted)]">{e.subject}</p>
             )}

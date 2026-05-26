@@ -1,3 +1,4 @@
+import { computeEnvironmentDrift } from "@/lib/environment";
 import { computeMomentumMetrics } from "@/lib/momentum-engine";
 import type { TrajectoryEvent } from "@/lib/trajectory-events";
 import { Section } from "./Section";
@@ -17,6 +18,14 @@ const METRIC_KEYS = [
 
 export function MomentumSurface({ events }: Props) {
   const m = computeMomentumMetrics(events);
+  const env = computeEnvironmentDrift(events);
+
+  let envNote: string | null = null;
+  if (env.deadRatio >= 50 && env.deadCount >= 2) {
+    envNote = `${env.deadRatio}% of recent events in dead atmospheres — environment may be draining vitality.`;
+  } else if (env.restorativeCount >= 1 && env.deadCount === 0) {
+    envNote = "Recent environments lean restorative — aliveness contact present.";
+  }
 
   return (
     <Section
@@ -25,6 +34,9 @@ export function MomentumSurface({ events }: Props) {
       description="Vitality vs function — are you alive, or just moving?"
     >
       <p className="mb-4 text-sm text-[var(--muted)]">{m.summary}</p>
+      {envNote && (
+        <p className="mb-4 text-sm italic text-[var(--muted)]">{envNote}</p>
+      )}
       <ul className="grid grid-cols-2 gap-4 sm:grid-cols-3">
         {METRIC_KEYS.map(([label, key, suffix]) => (
           <li key={key}>

@@ -3,15 +3,15 @@ export function Header() {
     <header className="border-b border-[var(--border)] px-6 py-10 md:px-10">
       <div className="mx-auto max-w-3xl">
         <p className="font-mono text-[10px] uppercase tracking-[0.22em] text-[var(--muted)]">
-          trajectory-native · steering mode
+          trajectory-native · environment-aware steering
         </p>
         <h1 className="mt-4 text-2xl font-medium tracking-tight text-[var(--foreground)] md:text-[2rem] md:leading-tight">
           Are you steering — or just functioning?
         </h1>
         <p className="mt-4 max-w-xl text-sm leading-relaxed text-[var(--muted)]">
-          Trajectory intelligence for the age of quiet drift. Notice unconscious
-          inertia, reconnect with genuine signal, make tiny intentional turns —
-          not another optimization dashboard.
+          Trajectory intelligence for quiet drift — cognitive and environmental.
+          Notice unconscious inertia, dead atmospheres, and signal loss. Make
+          tiny intentional turns toward aliveness and chosen direction.
         </p>
         <p className="mt-3 text-xs italic text-[var(--muted)]">
           Tiny turns create different futures. Pairs with{" "}

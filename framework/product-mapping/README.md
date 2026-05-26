@@ -27,7 +27,8 @@ Not AI for productivity. A **Trajectory / Judgment / Coordination System**.
 
 | Module | Purpose | Doc |
 |--------|---------|-----|
-| **Daily steering** | "What tiny turn today?" — direction not tasks | [daily-steering.md](./daily-steering.md) — planned v0.9 |
+| **Daily steering** | "What tiny turn today?" — direction not tasks (incl. environmental turns) | [daily-steering.md](./daily-steering.md) — planned v0.9 |
+| **Environment & state** | Anti-drift atmospheres, embodied trajectory, vitality | [environment-state.md](./environment-state.md) — partial (event tags + drift signals) |
 | **Trajectory Graph** | Directional evolution over time | [trajectory-graph.md](./trajectory-graph.md) |
 | **Decision Journal** | Track decisions, confidence, assumptions, outcomes, recurring mistakes | [decision-journal.md](./decision-journal.md) — shipped v0.7 |
 | **Drift Radar** | Detect prestige loops, reactive behavior, fragmented direction | [drift-radar.md](./drift-radar.md) |
@@ -38,11 +39,11 @@ Not AI for productivity. A **Trajectory / Judgment / Coordination System**.
 
 ## UX direction
 
-**Avoid:** dashboard overload, AI gimmicks, fake productivity aesthetics, smart assistant theater.
+**Avoid:** dashboard overload, AI gimmicks, fake productivity aesthetics, smart assistant theater, **sterile fluorescent SaaS**.
 
-**Move toward:** calm systems, long-range clarity, trajectory visibility, behavioral signals, meaningful synthesis.
+**Move toward:** calm systems, long-range clarity, trajectory visibility, behavioral signals, meaningful synthesis — **cinematic, warm, alive, sensory** (Malibu / greenhouse / Mediterranean reference energy).
 
-The UI should feel reflective, strategic, grounded, operational, compounding-aware — not noisy, dopamine-driven, or hyperactive.
+The UI should feel reflective, strategic, grounded, operational, compounding-aware, **emotionally honest** — not noisy, dopamine-driven, hyperactive, or dead.
 
 ---
 
@@ -53,6 +54,8 @@ We are NOT optimizing speed alone.
 We ARE optimizing long-term compounding.
 
 > "What kind of human trajectory does this system help create?"
+
+> "What environment helps this person feel alive enough to choose their direction?"
 
 ---
 

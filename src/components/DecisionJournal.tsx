@@ -83,8 +83,8 @@ export function DecisionJournal({
   return (
     <Section
       id="decision-journal-heading"
-      title="Decision journal"
-      description="Track honest turns — decisions, assumptions, and what happened after."
+      title="Memory of turns"
+      description="Honest choices, assumptions, and what came after."
     >
       <ul className="space-y-4">
         {sorted.map((d) => (

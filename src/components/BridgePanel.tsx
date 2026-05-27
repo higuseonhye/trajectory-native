@@ -14,8 +14,8 @@ export function BridgePanel({ events }: Props) {
   return (
     <Section
       id="bridge"
-      title="Native ↔ drift bridge"
-      description="Export human trajectory events for system-side analysis."
+      title="Shared rhythm"
+      description="Export personal rhythm for Drift — collective noticing."
     >
       <div className="flex flex-wrap gap-3">
         <button

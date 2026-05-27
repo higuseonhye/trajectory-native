@@ -1,5 +1,7 @@
 # Product direction
 
+> **Superseded in tone by [`human-rhythm.md`](./human-rhythm.md).** This doc retains precision for builders; outward copy uses rhythm, return, continuity.
+
 ## Critical correction
 
 The goal is **NOT** simply "returning people to reality."

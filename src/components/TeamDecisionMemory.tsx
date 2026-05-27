@@ -22,8 +22,8 @@ export function TeamDecisionMemory() {
   return (
     <Section
       id="team-decisions-heading"
-      title="Institutional memory"
-      description="Team decision continuity — bridged from org-reasoning-mvp when available."
+      title="Continuity"
+      description="What the team chose to remember — bridged from Continuity when live."
     >
       {loading && (
         <p className="text-sm text-[var(--muted)]">Loading team decisions…</p>
@@ -31,8 +31,8 @@ export function TeamDecisionMemory() {
 
       {!loading && data?.source === "unavailable" && (
         <p className="text-sm text-[var(--muted)]">
-          org-reasoning-mvp unavailable. Start it on port 3000 or ingest
-          documents to populate decision memory.
+          Continuity unavailable. Start it on port 3002 or ingest
+          documents to populate memory.
         </p>
       )}
 

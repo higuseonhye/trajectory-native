@@ -38,7 +38,7 @@ async function main() {
   });
   await page.reload({ waitUntil: "networkidle" });
   await page.waitForTimeout(2000);
-  await page.getByRole("heading", { name: /Are you steering/i }).waitFor({
+  await page.getByRole("heading", { name: /Do you still feel like yourself/i }).waitFor({
     timeout: 30000,
   });
 
@@ -62,17 +62,17 @@ async function main() {
   await main.screenshot({ path: path.join(OUT, "demo-hero.png") });
   console.log("wrote demo-hero.png");
 
-  await sectionShot("Intervention", "demo-intervention.png");
-  await sectionShot("Daily steering", "demo-daily-steering.png");
-  await sectionShot("Momentum", "demo-momentum.png");
+  await sectionShot("A quiet notice", "demo-intervention.png");
+  await sectionShot("Today's turn", "demo-daily-steering.png");
+  await sectionShot("Rhythm", "demo-momentum.png");
   await sectionShot("Compounding analysis", "demo-compounding.png");
   await sectionShot("Capital & leverage reflection", "demo-capital-leverage.png");
   await sectionShot("Trajectory graph", "demo-trajectory-graph.png");
-  await sectionShot("Decision journal", "demo-decision-journal.png");
-  await sectionShot("Institutional memory", "demo-institutional-memory.png");
-  await sectionShot("Trajectory events", "demo-trajectory-events.png");
+  await sectionShot("Memory of turns", "demo-decision-journal.png");
+  await sectionShot("Continuity", "demo-institutional-memory.png");
+  await sectionShot("What happened", "demo-trajectory-events.png");
   await sectionShot("Interaction intelligence", "demo-interaction.png");
-  await sectionShot("Native ↔ drift bridge", "demo-bridge.png");
+  await sectionShot("Shared rhythm", "demo-bridge.png");
   await main.screenshot({ path: path.join(OUT, "demo-full.png") });
   console.log("wrote demo-full.png");
 

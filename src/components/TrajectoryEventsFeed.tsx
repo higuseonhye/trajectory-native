@@ -38,8 +38,8 @@ export function TrajectoryEventsFeed({ events, decisions }: Props) {
   return (
     <Section
       id="trajectory-events-heading"
-      title="Trajectory events"
-      description="Atomic unit — what happened in reality, including where and what atmosphere."
+      title="What happened"
+      description="Moments in reality — including where you were, and what the atmosphere did."
     >
       <ul className="space-y-3">
         {sorted.map((e) => {

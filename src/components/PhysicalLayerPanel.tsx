@@ -12,8 +12,8 @@ export function PhysicalLayerPanel() {
   return (
     <Section
       id="physical-layer-heading"
-      title="Physical layer"
-      description="Software is the navigation layer. Physical experiences may follow — spaces that restore aliveness."
+      title="Spaces to come"
+      description="Software is one expression. Physical rhythm — cafés, greenhouses, rituals — may follow."
     >
       <p className="text-sm text-[var(--muted)]">
         Reference energy: Malibu coastline · greenhouse · Mediterranean winery ·

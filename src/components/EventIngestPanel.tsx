@@ -110,8 +110,8 @@ export function EventIngestPanel({ onIngest }: Props) {
   return (
     <Section
       id="event-ingest"
-      title="Log & ingest events"
-      description="Record what happened — including where and what atmosphere."
+      title="Remember & import"
+      description="Hold what happened — including atmosphere — from memory or file."
     >
       <button
         type="button"

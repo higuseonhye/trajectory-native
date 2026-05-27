@@ -123,8 +123,8 @@ export function DailySteeringPanel({
   return (
     <Section
       id="daily-steering-heading"
-      title="Daily steering"
-      description="What tiny turn did you make today — toward direction you actually chose?"
+      title="Today's turn"
+      description="One small choice toward the life you actually want — not a task list."
     >
       {showNudge && (
         <p className="mb-4 border-l-2 border-[var(--accent)] pl-4 text-sm italic text-[var(--muted)]">

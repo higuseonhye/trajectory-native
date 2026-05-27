@@ -1,8 +1,8 @@
 # trajectory-native framework
 
-> **Stop drifting quietly. Steer.**
+> **Drift & Return** — conditions for aliveness.
 
-Conceptual infrastructure for human navigation — emotional surface, systems depth.
+Conceptual infrastructure — human rhythm first, precision underneath.
 
 ---
 
@@ -10,42 +10,29 @@ Conceptual infrastructure for human navigation — emotional surface, systems de
 
 | Section | Focus |
 |---------|--------|
-| [`steering/`](./steering/) | **Surface** — drift, rudder, signal contact, existential honesty |
-| [`environment-design/`](./environment-design/) | Anti-drift atmospheres — space, aesthetics, sensory conditions |
-| [`state-design/`](./state-design/) | Embodied state — nervous system, aliveness, environment-dependent trajectory |
-| [`physical-layer/`](./physical-layer/) | Future spatial, sensory, ritual manifestation |
-| [`principles/`](./principles/) | Depth — ownership, leverage, compounding, judgment |
-| [`compounding-assets/`](./compounding-assets/) | What compounds over time |
-| [`capital-native/`](./capital-native/) | Labor vs ownership (depth layer) |
-| [`leverage/`](./leverage/) | Types of leverage |
-| [`coherence/`](./coherence/) | Long-range alignment |
-| [`case-studies/`](./case-studies/) | Trajectory-native behavior examples |
-| [`product-mapping/`](./product-mapping/) | Module architecture |
+| [`human-rhythm/`](./human-rhythm/) | **Center** — philosophy shift, shared vocabulary |
+| [`steering/`](./steering/) | Subtle turns, return, signal contact |
+| [`environment-design/`](./environment-design/) | Alive atmospheres — space, aesthetics, sensory |
+| [`state-design/`](./state-design/) | Embodied rhythm — nervous system, aliveness |
+| [`physical-layer/`](./physical-layer/) | Future spatial, ritual, café expression |
+| [`principles/`](./principles/) | Depth — ownership, leverage, compounding |
+| [`product-mapping/`](./product-mapping/) | Module architecture (builders) |
 
 ---
 
-## Two layers
+## Human name
 
-| Layer | Audience | Tone |
-|-------|----------|------|
-| **Steering** | Everyone entering | Emotional, human, tiny turns |
-| **Systems** | Operators, founders, teams | Trajectory, compounding, judgment |
+**Return** — personal rhythm. GitHub slug: `trajectory-native` (for now).
 
-Entry is emotional. Depth comes later.
+See [`../docs/human-rhythm.md`](../docs/human-rhythm.md) · [`../docs/naming.md`](../docs/naming.md)
 
 ---
 
-## Relationship to trajectory-drift
+## Relationship to Drift
 
-| Repo | Question |
+| Name | Question |
 |------|----------|
-| **trajectory-native** | How do I steer? What tiny turn matters? |
-| **[trajectory-drift](https://github.com/higuseonhye/trajectory-drift)** | What's drifting — in me, my team, my agents? |
+| **Return** | Do I still feel like myself? |
+| **[Drift](https://github.com/higuseonhye/trajectory-drift)** | Has rhythm left the collective? |
 
----
-
-## Product thesis
-
-A **trajectory-aware human environment system** — navigation through environment, aesthetics, emotion, and direction. Not productivity software.
-
-See [`product-mapping/`](./product-mapping/) · [`../docs/steering.md`](../docs/steering.md) · [`../docs/environment-design.md`](../docs/environment-design.md)
+Entry is emotional. Depth comes quietly.

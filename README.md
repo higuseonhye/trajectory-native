@@ -1,152 +1,74 @@
-# trajectory-native
+# Return
 
-**A trajectory-aware human environment system.**  
-Most people don't collapse — they **drift quietly**, often in dead environments. Notice, steer with intention, restore aliveness.
+*Part of [Drift & Return](https://github.com/higuseonhye/trajectory-native/blob/main/docs/human-rhythm.md)*
 
-> Not productivity. Not "return to normal." Navigation through environment, emotion, and direction.
+---
 
-**trajectory-native** — personal steering (human-side).  
-**[trajectory-drift](https://github.com/higuseonhye/trajectory-drift)** — drift detection (system-side).
+Most people don't collapse. They **fade** — quietly, while still appearing fine.
 
-Thesis: [product direction](docs/product-direction.md) · [steering](docs/steering.md) · [environment & state](docs/environment-design.md) · [framework](framework/)
+Not from weakness. From environments that remove rhythm: fluorescent hours, scroll loops, sterile rooms, endless acceleration. The self thins out. Aliveness becomes optional.
+
+**Return** is a personal rhythm system — software, for now — that helps you notice when you've drifted from yourself, and make **subtle turns** back toward aliveness.
+
+Not a productivity tool. Not a habit tracker. Not optimization.
+
+A quiet room for:
+
+- **Today's turn** — one small choice toward the life you actually want
+- **Rhythm** — vitality vs mere functioning
+- **Memory** — decisions, moments, what mattered
+- **Atmosphere** — where you were, what the space did to you
+- **Continuity** — what endures when noise fades
+
+> *What would help me feel like myself again?*
 
 <p align="center">
-  <img src="docs/screenshots/demo-hero.png" alt="Trajectory intelligence — are you steering or just functioning?" width="720" />
+  <img src="docs/screenshots/x-post-v08-viewport.png" alt="Return — a quiet room for rhythm and subtle turns" width="720" />
 </p>
 
 ---
 
-## Why this exists
+## The feeling we're after
 
-People rarely collapse all at once. They **drift quietly** — unconscious inertia, signal loss, and direction fade while still looking functional. **Dead environments accelerate drift:** fluorescent survival, scroll loops, sterile routines, sensory deprivation.
+Old wine bars in Madrid. Vermouth hour. Greenhouse light. Kissaten silence. Warm wood, plants, natural light, conversations that have time in them.
 
-Most tools push optimization. Few help you ask: **am I steering, or just functioning?** And fewer still ask: **what environment would help me feel alive enough to choose?**
+Software should feel like **a place you want to stay** — not a tool that extracts your attention.
 
----
-
-## What this is
-
-Not a dashboard. Not a habit tracker. Not optimization software.
-
-A **personal navigation system** for steering trajectory — through cognition, **state**, and **environment**.
-
-| Surface layer | Depth layer |
-|---------------|-------------|
-| Drift detection · daily steering · vitality · **environment** | Compounding · judgment · ownership |
-| "What's one tiny turn?" (including environmental) | Decision memory · trajectory graph |
-| Emotional honesty · embodied state | Systems intelligence |
-
-| Capability | Role |
-|------------|------|
-| **Decision Memory** | Preserve decisions, rationale, tradeoffs, commitments |
-| **Drift Detection** | Prestige loops, fragmentation, low-leverage activity |
-| **Compounding Analysis** | Surface what actually compounds |
-| **Ownership Layer** | Assets, leverage, ownership trajectory |
-
-| Module (v0.8 shipped) | Role |
-|-----------------------|------|
-| **Capital & leverage reflection** | Dependency, optionality, ownership trajectory |
-| **Trajectory graph** | Unified timeline — decisions, events, loops, drift |
-| **Institutional memory** | Team decisions bridged from org-reasoning-mvp |
-| **Compounding analysis** | Ownership/labor/consumption allocation trends |
-| **Decision journal** | Personal judgment + event linking |
-| **Trajectory events** | Atomic unit — interactions, momentum, entropy, allocation |
-| **Momentum engine** | Density, open loops, interaction energy, recovery |
-| **Intervention / Drift Radar** | Unconscious drift surfaced — one turn toward signal |
-| **Interaction intelligence** | Amplifiers vs drains |
-| **Native ↔ drift bridge** | Export events for unified analysis |
-
-See [framework/product-mapping/](framework/product-mapping/) for full module architecture.
+See [aesthetic system](docs/aesthetic-system.md).
 
 ---
 
-## Founder drift → intervention
-
-Recurring patterns now drive **intervention signals**, not only reflection:
-
-- interaction starvation
-- momentum degradation
-- unfinished loops
-- reactive trajectory switching
-- abstraction over action
-- **environmental drift** — dead atmospheres, scroll loops, awe deprivation
-
-Archive: [`docs/calibration-archive.md`](docs/calibration-archive.md)
-
----
-
-## Reality loop
-
-```
-reflection → action → environment → feedback → recalibration
-```
-
-The loop must close in the world — not stop at insight.
-
----
-
-## Run locally
+## Open the room
 
 ```bash
 npm install && npm run dev
 # → http://localhost:3000
 ```
 
-Surfaces at top of page: **Intervention** · **Daily steering** · **Momentum** · **Compounding** · **Capital & leverage** · **Trajectory graph** · **Decision journal** · **Institutional memory** · **Interaction intelligence** · **Events** · **Bridge** · **Physical layer**.
-
----
-
-## Screenshots
-
-<p align="center">
-  <img src="docs/screenshots/demo-intervention.png" alt="Unconscious drift detected — cognitive and environmental" width="400" />
-  <img src="docs/screenshots/demo-daily-steering.png" alt="Daily steering — what tiny turn did you make today?" width="400" />
-</p>
-
-<p align="center">
-  <img src="docs/screenshots/demo-momentum.png" alt="Vitality vs function — environment note" width="400" />
-  <img src="docs/screenshots/demo-trajectory-events.png" alt="Events with environment context and atmosphere" width="400" />
-</p>
-
-<p align="center">
-  <img src="docs/screenshots/demo-trajectory-graph.png" alt="Directional evolution — tiny turns over time" width="400" />
-  <img src="docs/screenshots/demo-compounding.png" alt="Systems depth — what compounds vs what drifts" width="400" />
-</p>
-
-<p align="center">
-  <img src="docs/screenshots/x-post-v08-viewport.png" alt="Steering mode — are you steering or just functioning? (1200×675)" width="720" />
-</p>
-
-Full scroll: [`demo-full.png`](docs/screenshots/demo-full.png)
+You'll find, in unhurried order: a quiet notice when rhythm fades · today's turn · rhythm · memory · atmosphere · spaces to come.
 
 ---
 
 ## Ecosystem
 
-| Repo | Layer |
-|------|--------|
-| **trajectory-native** (this repo) | Personal trajectory OS |
-| **[trajectory-drift](https://github.com/higuseonhye/trajectory-drift)** | Human + AI coordination infrastructure |
-| **[org-reasoning-mvp](https://github.com/higuseonhye/org-reasoning-mvp)** | Decision continuity / institutional memory API |
+| Name | Repository | Role |
+|------|------------|------|
+| **Return** | this repo | Personal rhythm — subtle turns, environment, memory |
+| **Drift** | [trajectory-drift](https://github.com/higuseonhye/trajectory-drift) | When teams and systems lose warmth |
+| **Continuity** | [org-reasoning-mvp](https://github.com/higuseonhye/org-reasoning-mvp) | Decision memory across time |
+
+Philosophy: [human rhythm](docs/human-rhythm.md) · [naming](docs/naming.md) · [framework](framework/)
 
 ---
 
-## Docs
+## For builders
 
-- [`docs/product-direction.md`](docs/product-direction.md) — current thesis
-- [`docs/steering.md`](docs/steering.md) — emotional layer (drift, rudder, signal contact)
-- [`docs/environment-design.md`](docs/environment-design.md) — environment & state design thesis
-- [`framework/steering/`](framework/steering/) — steering concepts
-- [`docs/trajectory-infrastructure.md`](docs/trajectory-infrastructure.md)
-- [`docs/calibration-archive.md`](docs/calibration-archive.md)
-- [trajectory-drift/framework/](https://github.com/higuseonhye/trajectory-drift/tree/main/framework) — drift taxonomy, signals, recovery
+Under the warm surface: event model, rhythm engine, environment tags, bridge to Drift. Technical mapping lives in [`framework/product-mapping/`](framework/product-mapping/) — for those who need precision without losing the soul.
 
 ---
 
 ## Status
 
-`v0.9` direction — trajectory-aware OS: emotional steering surface + systems depth underneath. Early. Evolving in public.
+Evolving in public. Renaming in progress — **Return** is the human name; `trajectory-native` remains the GitHub slug for now.
 
-### org-reasoning-mvp bridge
-
-Set `ORG_REASONING_URL=http://localhost:3002` when org-reasoning-mvp is running (default port 3002). Team decisions load live; otherwise seed data displays.
+MIT-adjacent ethos: design conditions where humans do not lose themselves.

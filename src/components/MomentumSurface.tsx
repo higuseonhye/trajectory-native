@@ -30,8 +30,8 @@ export function MomentumSurface({ events }: Props) {
   return (
     <Section
       id="momentum-heading"
-      title="Momentum"
-      description="Vitality vs function — are you alive, or just moving?"
+      title="Rhythm"
+      description="Vitality vs functioning — are you alive, or just moving through the day?"
     >
       <p className="mb-4 text-sm text-[var(--muted)]">{m.summary}</p>
       {envNote && (

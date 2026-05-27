@@ -18,8 +18,8 @@ export function InterventionPanel({ events }: Props) {
   return (
     <Section
       id="intervention-heading"
-      title="Intervention"
-      description="Unconscious drift — here's what we noticed, and one turn toward signal."
+      title="A quiet notice"
+      description="When rhythm fades — a gentle reflection, and one subtle turn toward return."
     >
       <ul className="space-y-4">
         {signals.map((s) => (

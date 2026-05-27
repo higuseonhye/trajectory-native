@@ -25,8 +25,8 @@ These are normal operating conditions — not edge cases.
 
 | Layer | Repo | Focus |
 |-------|------|--------|
-| **Individuals & founders** | [trajectory-native](https://github.com/higuseonhye/trajectory-native) | Human-side adaptive coherence — calibration, continuity, recalibration under weak signals |
-| **Agents & workflows** | [trajectory-drift](https://github.com/higuseonhye/trajectory-drift) | System-side adaptive coherence — coordination, propagation, recovery across runs |
+| **Individuals & founders** | [trajectory-native](https://github.com/higuseonhye/return) | Human-side adaptive coherence — calibration, continuity, recalibration under weak signals |
+| **Agents & workflows** | [trajectory-drift](https://github.com/higuseonhye/drift) | System-side adaptive coherence — coordination, propagation, recovery across runs |
 | **Teams & organizations** | Both | Shared policies, incident memory, role drift |
 | **Multi-agent systems** | trajectory-drift | Handoffs, delegation contracts, field-level propagation |
 | **Human–AI collaboration** | Both | Overrides, async gaps, coordination fatigue |
@@ -53,4 +53,4 @@ observe → interpret → recalibrate → adapt → (recover continuity)
 
 ---
 
-See also: [calibration-archive.md](./calibration-archive.md) · [thesis.md](./thesis.md) · [trajectory-drift adaptive coherence](https://github.com/higuseonhye/trajectory-drift/blob/main/docs/adaptive-coherence.md)
+See also: [calibration-archive.md](./calibration-archive.md) · [thesis.md](./thesis.md) · [trajectory-drift adaptive coherence](https://github.com/higuseonhye/drift/blob/main/docs/adaptive-coherence.md)

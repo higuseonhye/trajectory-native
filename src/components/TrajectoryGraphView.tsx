@@ -46,8 +46,8 @@ export function TrajectoryGraphView({ events, decisions }: Props) {
   return (
     <Section
       id="trajectory-graph-heading"
-      title="Trajectory graph"
-      description="Directional evolution — tiny turns accumulating, not task completion."
+      title="The thread"
+      description="Memory across time — turns, loops, and quiet notices woven together."
     >
       <p className="mb-4 text-sm text-[var(--muted)]">{graph.summary}</p>
 

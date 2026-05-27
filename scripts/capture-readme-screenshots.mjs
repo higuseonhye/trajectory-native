@@ -65,13 +65,13 @@ async function main() {
   await sectionShot("A quiet notice", "demo-intervention.png");
   await sectionShot("Today's turn", "demo-daily-steering.png");
   await sectionShot("Rhythm", "demo-momentum.png");
-  await sectionShot("Compounding analysis", "demo-compounding.png");
-  await sectionShot("Capital & leverage reflection", "demo-capital-leverage.png");
-  await sectionShot("Trajectory graph", "demo-trajectory-graph.png");
+  await sectionShot("What endures", "demo-compounding.png");
+  await sectionShot("What you hold", "demo-capital-leverage.png");
+  await sectionShot("The thread", "demo-trajectory-graph.png");
   await sectionShot("Memory of turns", "demo-decision-journal.png");
   await sectionShot("Continuity", "demo-institutional-memory.png");
   await sectionShot("What happened", "demo-trajectory-events.png");
-  await sectionShot("Interaction intelligence", "demo-interaction.png");
+  await sectionShot("Who restores you", "demo-interaction.png");
   await sectionShot("Shared rhythm", "demo-bridge.png");
   await main.screenshot({ path: path.join(OUT, "demo-full.png") });
   console.log("wrote demo-full.png");
@@ -87,8 +87,8 @@ async function main() {
   await viewportShot(page, path.join(OUT, "demo-hero-social-16x9.png"));
   await viewportShot(page, path.join(LAUNCH, "x-trajectory-infrastructure-v08.png"));
 
-  // Focus crop: compounding + capital + graph visible
-  const compounding = page.getByRole("heading", { name: "Compounding analysis" });
+  // Focus crop: what endures + what you hold + thread visible
+  const compounding = page.getByRole("heading", { name: "What endures" });
   if (await compounding.count()) {
     await compounding.scrollIntoViewIfNeeded();
     await page.waitForTimeout(400);

@@ -50,4 +50,4 @@ Not from lack of intelligence — from **institutional memory fragmentation**:
 ## Framework connection
 
 - [Decision Memory](./decision-memory.md)
-- [trajectory-drift/framework/organizational-drift/](https://github.com/higuseonhye/trajectory-drift/tree/main/framework/organizational-drift)
+- [trajectory-drift/framework/organizational-drift/](https://github.com/higuseonhye/drift/tree/main/framework/organizational-drift)

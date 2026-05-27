@@ -20,7 +20,7 @@ Not notes. Trajectory events.
 Silence is still a calibration signal.
 Momentum is what actually moves you.
 
-https://github.com/higuseonhye/trajectory-native
+https://github.com/higuseonhye/return
 
 #BuildInPublic
 ```

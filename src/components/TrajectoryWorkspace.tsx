@@ -148,8 +148,8 @@ export function TrajectoryWorkspace() {
   return (
     <>
       <Header />
-      <main className="flex-1 px-6 py-12 md:px-10 md:py-16">
-        <div className="mx-auto max-w-3xl space-y-2">
+      <main className="flex-1 px-6 py-14 md:px-10 md:py-20">
+        <div className="mx-auto max-w-2xl space-y-2">
           <InterventionPanel events={events} />
           <DailySteeringPanel
             events={events}

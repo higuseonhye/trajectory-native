@@ -33,6 +33,6 @@ See [`../docs/human-rhythm.md`](../docs/human-rhythm.md) · [`../docs/naming.md`
 | Name | Question |
 |------|----------|
 | **Return** | Do I still feel like myself? |
-| **[Drift](https://github.com/higuseonhye/trajectory-drift)** | Has rhythm left the collective? |
+| **[Drift](https://github.com/higuseonhye/drift)** | Has rhythm left the collective? |
 
 Entry is emotional. Depth comes quietly.

@@ -71,11 +71,11 @@ We are not building software for extraction. We are designing systems for **huma
 
 ## Ecosystem (working names)
 
-| Repository (GitHub) | Human name | Role |
-|---------------------|------------|------|
-| **trajectory-native** | **Return** | Personal rhythm — subtle turns, memory, environment, today's invitation |
-| **trajectory-drift** | **Drift** | Collective rhythm — when teams and systems lose warmth and continuity |
-| **org-reasoning-mvp** | **Continuity** | Decision memory — what was chosen, and why it mattered |
+| Repository | Human name | Role |
+|------------|------------|------|
+| **[return](https://github.com/higuseonhye/return)** | **Return** | Personal rhythm — subtle turns, memory, environment |
+| **[drift](https://github.com/higuseonhye/drift)** | **Drift** | Collective rhythm — when teams lose warmth |
+| **[continuity](https://github.com/higuseonhye/continuity)** | **Continuity** | Decision memory — what was chosen |
 
 Full naming exploration: [`naming.md`](./naming.md) · Visual tone: [`aesthetic-system.md`](./aesthetic-system.md)
 

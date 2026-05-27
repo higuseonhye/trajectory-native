@@ -33,4 +33,4 @@ The old language — anti-drift, optimization, calibration — remains useful in
 2. **Drift** (this repo's sibling) — collective rhythm
 3. **Continuity** (org-reasoning) — memory
 
-Canonical doc: [trajectory-native/docs/human-rhythm.md](https://github.com/higuseonhye/trajectory-native/blob/main/docs/human-rhythm.md)
+Canonical doc: [trajectory-native/docs/human-rhythm.md](https://github.com/higuseonhye/return/blob/main/docs/human-rhythm.md)

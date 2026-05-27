@@ -39,7 +39,7 @@ Capability parity is no longer a moat in commoditized wedges.
 
 - [`../principles/`](../principles/) — pre-tool curiosity
 - [`../compounding-assets/`](../compounding-assets/) — institutional memory compounds
-- [trajectory-drift/framework/drift-taxonomy/](https://github.com/higuseonhye/trajectory-drift/tree/main/framework/drift-taxonomy) — prestige drift, noise drift
+- [trajectory-drift/framework/drift-taxonomy/](https://github.com/higuseonhye/drift/tree/main/framework/drift-taxonomy) — prestige drift, noise drift
 
 ---
 

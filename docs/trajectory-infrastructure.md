@@ -55,6 +55,6 @@ What happened in reality — not abstract thoughts.
 | Repo | Scope |
 |------|--------|
 | **trajectory-native** | Personal trajectory OS — human-side |
-| **[trajectory-drift](https://github.com/higuseonhye/trajectory-drift)** | Organizational trajectory coherence — human + AI + teams |
+| **[trajectory-drift](https://github.com/higuseonhye/drift)** | Organizational trajectory coherence — human + AI + teams |
 
 Prior framing: [adaptive-coherence.md](./adaptive-coherence.md) (evolved into this doc).

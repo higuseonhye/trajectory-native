@@ -35,9 +35,9 @@ Vermouth hour energy. Kissaten silence. Greenhouse light.
 
 Not dashboards. Rooms.
 
-github.com/higuseonhye/trajectory-native
-github.com/higuseonhye/trajectory-drift
-github.com/higuseonhye/org-reasoning-mvp
+github.com/higuseonhye/return
+github.com/higuseonhye/drift
+github.com/higuseonhye/continuity
 ```
 
 ---
@@ -53,7 +53,7 @@ Return · Drift · Continuity
 
 Drift & Return
 
-github.com/higuseonhye/trajectory-native
+github.com/higuseonhye/return
 ```
 
 ---

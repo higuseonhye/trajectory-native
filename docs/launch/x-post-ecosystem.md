@@ -15,8 +15,8 @@ trajectory-drift — when agents agree and grounding doesn't.
 Human adaptation on one side.
 System coordination on the other.
 
-https://github.com/higuseonhye/trajectory-native
-https://github.com/higuseonhye/trajectory-drift
+https://github.com/higuseonhye/return
+https://github.com/higuseonhye/drift
 
 #BuildInPublic
 ```

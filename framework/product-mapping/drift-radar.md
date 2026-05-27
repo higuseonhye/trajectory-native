@@ -17,7 +17,7 @@ Detect prestige loops, reactive behavior, fragmented direction, and low-leverage
 | **Organizational Drift** | Team coherence decay |
 | **AI Drift** | Tool hype replacing judgment and ownership |
 
-Full taxonomy: [trajectory-drift/framework/drift-taxonomy/](https://github.com/higuseonhye/trajectory-drift/tree/main/framework/drift-taxonomy)
+Full taxonomy: [trajectory-drift/framework/drift-taxonomy/](https://github.com/higuseonhye/drift/tree/main/framework/drift-taxonomy)
 
 ---
 
@@ -30,7 +30,7 @@ Full taxonomy: [trajectory-drift/framework/drift-taxonomy/](https://github.com/h
 - Reactive behavior and context switching
 - High activity, low compounding
 
-See [trajectory-drift/framework/signals/](https://github.com/higuseonhye/trajectory-drift/tree/main/framework/signals)
+See [trajectory-drift/framework/signals/](https://github.com/higuseonhye/drift/tree/main/framework/signals)
 
 ---
 

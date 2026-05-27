@@ -21,8 +21,8 @@ export function InteractionGraphView({ events }: Props) {
     return (
       <Section
         id="interaction-graph"
-        title="Interaction intelligence"
-        description="Who and what shapes momentum — requires subjects on events."
+        title="Who restores you"
+        description="People and places that shape your rhythm — when subjects are remembered."
       >
         <p className="text-sm text-[var(--muted)]">
           Add subjects to trajectory events to map amplifiers and drains.
@@ -36,8 +36,8 @@ export function InteractionGraphView({ events }: Props) {
   return (
     <Section
       id="interaction-graph"
-      title="Interaction intelligence"
-      description="Who increases momentum · who creates entropy."
+      title="Who restores you"
+      description="Who gives energy · who quietly drains it."
     >
       <p className="mb-4 text-sm italic text-[var(--muted)]">
         {graph.observation}

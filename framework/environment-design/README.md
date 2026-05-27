@@ -78,4 +78,4 @@ Use as **design north star**, not lifestyle content.
 
 - [`../state-design/`](../state-design/) — embodied state
 - [`../steering/`](../steering/) — steering through environment
-- [trajectory-drift/framework/drift-taxonomy/](https://github.com/higuseonhye/trajectory-drift/tree/main/framework/drift-taxonomy) — environmental drift
+- [trajectory-drift/framework/drift-taxonomy/](https://github.com/higuseonhye/drift/tree/main/framework/drift-taxonomy) — environmental drift

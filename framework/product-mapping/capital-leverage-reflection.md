@@ -50,4 +50,4 @@ Implementation: `src/lib/capital-leverage-engine.ts` · `src/components/CapitalL
 
 - [`../capital-native/`](../capital-native/)
 - [`../leverage/`](../leverage/)
-- [trajectory-drift/framework/capital-drift/](https://github.com/higuseonhye/trajectory-drift/tree/main/framework/capital-drift)
+- [trajectory-drift/framework/capital-drift/](https://github.com/higuseonhye/drift/tree/main/framework/capital-drift)

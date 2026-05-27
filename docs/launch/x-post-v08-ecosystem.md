@@ -40,8 +40,8 @@ trajectory-drift — what destroys compounding
 Not faster workflows.
 Long-term trajectory coherence in the AI era.
 
-native: https://github.com/higuseonhye/trajectory-native
-drift: https://github.com/higuseonhye/trajectory-drift
+native: https://github.com/higuseonhye/return
+drift: https://github.com/higuseonhye/drift
 
 #BuildInPublic
 ```
@@ -56,8 +56,8 @@ Not AI productivity. Trajectory infrastructure.
 native → what compounds (drift, decisions, ownership)
 drift → what destroys compounding (human + agents)
 
-github.com/higuseonhye/trajectory-native
-github.com/higuseonhye/trajectory-drift
+github.com/higuseonhye/return
+github.com/higuseonhye/drift
 
 #BuildInPublic
 ```
@@ -73,7 +73,7 @@ Building trajectory infrastructure:
 · what compounds (native)
 · what destroys compounding (drift)
 
-github.com/higuseonhye/trajectory-native
+github.com/higuseonhye/return
 ```
 
 ---
@@ -91,7 +91,7 @@ drift detection · decision journal · compounding analysis · ownership layer
 
 "What kind of trajectory does this create?"
 
-github.com/higuseonhye/trajectory-native
+github.com/higuseonhye/return
 ```
 
 ---
@@ -103,7 +103,7 @@ v0.8: detect drift, compound judgment, track ownership.
 
 Not AI productivity — trajectory infrastructure.
 
-github.com/higuseonhye/trajectory-native
+github.com/higuseonhye/return
 ```
 
 ---
@@ -129,7 +129,7 @@ trajectory-native — what compounds
 · decision journal (linked to events)
 · compounding + capital reflection
 
-github.com/higuseonhye/trajectory-native
+github.com/higuseonhye/return
 ```
 
 **Tweet 3:**
@@ -141,5 +141,5 @@ trajectory-drift — what destroys compounding
 · coordination + human–AI coherence
 · institutional memory
 
-github.com/higuseonhye/trajectory-drift
+github.com/higuseonhye/drift
 ```

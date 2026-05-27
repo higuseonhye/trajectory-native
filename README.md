@@ -1,6 +1,6 @@
 # Return
 
-*Part of [Drift & Return](https://github.com/higuseonhye/trajectory-native/blob/main/docs/human-rhythm.md)*
+*Part of [Drift & Return](https://github.com/higuseonhye/return/blob/main/docs/human-rhythm.md)*
 
 ---
 
@@ -53,9 +53,9 @@ You'll find, in unhurried order: a quiet notice when rhythm fades · today's tur
 
 | Name | Repository | Role |
 |------|------------|------|
-| **Return** | this repo | Personal rhythm — subtle turns, environment, memory |
-| **Drift** | [trajectory-drift](https://github.com/higuseonhye/trajectory-drift) | When teams and systems lose warmth |
-| **Continuity** | [org-reasoning-mvp](https://github.com/higuseonhye/org-reasoning-mvp) | Decision memory across time |
+| **Return** | [return](https://github.com/higuseonhye/return) | Personal rhythm — subtle turns, environment, memory |
+| **Drift** | [drift](https://github.com/higuseonhye/drift) | When teams and systems lose warmth |
+| **Continuity** | [continuity](https://github.com/higuseonhye/continuity) | Decision memory across time |
 
 Philosophy: [human rhythm](docs/human-rhythm.md) · [naming](docs/naming.md) · [framework](framework/)
 
@@ -69,6 +69,6 @@ Under the warm surface: event model, rhythm engine, environment tags, bridge to 
 
 ## Status
 
-Evolving in public. Renaming in progress — **Return** is the human name; `trajectory-native` remains the GitHub slug for now.
+Evolving in public. **Return** · [github.com/higuseonhye/return](https://github.com/higuseonhye/return)
 
 MIT-adjacent ethos: design conditions where humans do not lose themselves.

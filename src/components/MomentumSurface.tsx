@@ -7,14 +7,11 @@ interface Props {
   events: TrajectoryEvent[];
 }
 
-const METRIC_KEYS = [
-  ["Score", "momentumScore"],
-  ["Density", "momentumDensity", "%"],
-  ["Open loops", "openLoops"],
-  ["Interactions", "interactionEnergy"],
-  ["Entropy", "entropyAccumulation"],
-  ["Recovery", "recoverySignals"],
-] as const;
+function vitalityWord(score: number): string {
+  if (score > 25) return "returning";
+  if (score < -25) return "fading";
+  return "steady";
+}
 
 export function MomentumSurface({ events }: Props) {
   const m = computeMomentumMetrics(events);
@@ -22,10 +19,12 @@ export function MomentumSurface({ events }: Props) {
 
   let envNote: string | null = null;
   if (env.deadRatio >= 50 && env.deadCount >= 2) {
-    envNote = `${env.deadRatio}% of recent events in dead atmospheres — environment may be draining vitality.`;
+    envNote = `Many recent moments happened in dead atmospheres — the room may be draining you.`;
   } else if (env.restorativeCount >= 1 && env.deadCount === 0) {
-    envNote = "Recent environments lean restorative — aliveness contact present.";
+    envNote = "Some restorative contact in recent environments — aliveness is present.";
   }
+
+  const vitality = vitalityWord(m.momentumScore);
 
   return (
     <Section
@@ -33,23 +32,33 @@ export function MomentumSurface({ events }: Props) {
       title="Rhythm"
       description="Vitality vs functioning — are you alive, or just moving through the day?"
     >
-      <p className="mb-4 text-sm text-[var(--muted)]">{m.summary}</p>
+      <p className="text-sm leading-relaxed text-[var(--foreground)]">
+        {m.summary}
+      </p>
+
+      <p className="mt-6 text-sm text-[var(--muted)]">
+        Vitality feels{" "}
+        <span className="text-[var(--foreground)]">{vitality}</span>
+        {m.openLoops > 0 && (
+          <>
+            {" "}
+            · {m.openLoops} open loop{m.openLoops > 1 ? "s" : ""} still waiting
+          </>
+        )}
+        {m.recoverySignals > 0 && (
+          <>
+            {" "}
+            · {m.recoverySignals} moment{m.recoverySignals > 1 ? "s" : ""} of
+            recovery
+          </>
+        )}
+      </p>
+
       {envNote && (
-        <p className="mb-4 text-sm italic text-[var(--muted)]">{envNote}</p>
+        <p className="mt-4 text-sm italic leading-relaxed text-[var(--muted)]">
+          {envNote}
+        </p>
       )}
-      <ul className="grid grid-cols-2 gap-4 sm:grid-cols-3">
-        {METRIC_KEYS.map(([label, key, suffix]) => (
-          <li key={key}>
-            <p className="text-[11px] uppercase tracking-wide text-[var(--muted)]">
-              {label}
-            </p>
-            <p className="mt-1 font-mono text-2xl text-[var(--foreground)]">
-              {m[key]}
-              {suffix ?? ""}
-            </p>
-          </li>
-        ))}
-      </ul>
     </Section>
   );
 }

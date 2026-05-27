@@ -44,9 +44,9 @@ Shipped today:
 · environmental drift detection (dead atmospheres, awe deprivation)
 · org-reasoning-mvp — decision memory API (3rd repo)
 
-native (personal): github.com/higuseonhye/trajectory-native
-drift (teams + agents): github.com/higuseonhye/trajectory-drift
-memory (decisions): github.com/higuseonhye/org-reasoning-mvp
+native (personal): github.com/higuseonhye/return
+drift (teams + agents): github.com/higuseonhye/drift
+memory (decisions): github.com/higuseonhye/continuity
 
 #BuildInPublic
 ```
@@ -64,7 +64,7 @@ Shipped: daily steering, environment-aware events, environmental drift panel.
 
 native · drift · org-reasoning-mvp
 
-github.com/higuseonhye/trajectory-native
+github.com/higuseonhye/return
 
 #BuildInPublic
 ```
@@ -82,7 +82,7 @@ Now asking:
 
 Daily steering + environmental drift — shipped.
 
-github.com/higuseonhye/trajectory-native
+github.com/higuseonhye/return
 ```
 
 ---
@@ -119,7 +119,7 @@ trajectory-native — personal layer
 · events tagged with atmosphere (dead / restorative / nature)
 · intervention when environments drain vitality
 
-github.com/higuseonhye/trajectory-native
+github.com/higuseonhye/return
 ```
 
 **Tweet 4** (attach `../trajectory-drift/assets/screenshots/environmental-drift-panel.png`):
@@ -131,7 +131,7 @@ trajectory-drift — system layer
 · dead atmospheres, scroll dominance, awe deprivation
 · teams + agents drifting while metrics look fine
 
-github.com/higuseonhye/trajectory-drift
+github.com/higuseonhye/drift
 ```
 
 **Tweet 5:**
@@ -144,7 +144,7 @@ Decision continuity API → institutional memory in native.
 Three repos. One thesis:
 design conditions where humans stay directionally conscious.
 
-github.com/higuseonhye/org-reasoning-mvp
+github.com/higuseonhye/continuity
 ```
 
 ---
@@ -170,7 +170,7 @@ Daily steering · environment tags · environmental drift signals
 
 "What tiny turn did you make today?"
 
-github.com/higuseonhye/trajectory-native
+github.com/higuseonhye/return
 ```
 
 ---
@@ -186,7 +186,7 @@ Teams drift in dead environments too — while metrics look fine.
 
 Environmental drift panel · native bridge · anti-drift atmospheres
 
-github.com/higuseonhye/trajectory-drift
+github.com/higuseonhye/drift
 ```
 
 ---

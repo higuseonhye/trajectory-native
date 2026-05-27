@@ -205,7 +205,7 @@ export const signalsReceived: SignalReceived[] = [
     externalRef: {
       source: "github",
       label: "issue #4",
-      url: "https://github.com/higuseonhye/trajectory-native/issues/4",
+      url: "https://github.com/higuseonhye/return/issues/4",
     },
   },
 ];

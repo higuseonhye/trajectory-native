@@ -80,5 +80,5 @@ See [`../product-mapping/capital-leverage-reflection.md`](../product-mapping/cap
 ## Related drift patterns
 
 See trajectory-drift:
-- [`capital-drift`](https://github.com/higuseonhye/trajectory-drift/tree/main/framework/capital-drift) — failure to understand ownership and compounding
-- [`behavioral-patterns`](https://github.com/higuseonhye/trajectory-drift/tree/main/framework/behavioral-patterns) — prestige loops, pseudo-productivity
+- [`capital-drift`](https://github.com/higuseonhye/drift/tree/main/framework/capital-drift) — failure to understand ownership and compounding
+- [`behavioral-patterns`](https://github.com/higuseonhye/drift/tree/main/framework/behavioral-patterns) — prestige loops, pseudo-productivity

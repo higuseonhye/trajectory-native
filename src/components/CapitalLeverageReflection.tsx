@@ -7,9 +7,9 @@ interface Props {
 }
 
 const TRAJECTORY_LABEL = {
-  building: "building",
-  flat: "flat",
-  declining: "declining",
+  building: "building slowly",
+  flat: "holding steady",
+  declining: "thinning out",
 } as const;
 
 export function CapitalLeverageReflection({ events }: Props) {
@@ -20,61 +20,34 @@ export function CapitalLeverageReflection({ events }: Props) {
   return (
     <Section
       id="capital-leverage-heading"
-      title="Capital & leverage reflection"
-      description="Behavioral allocation — not investment advice. Where leverage accumulates vs dissipates."
+      title="What you hold"
+      description="Reflection on dependency, optionality, and what you're actually accumulating — not financial advice."
     >
-      <p className="mb-4 text-sm text-[var(--muted)]">{r.summary}</p>
+      <p className="text-sm leading-relaxed text-[var(--foreground)]">
+        {r.summary}
+      </p>
 
-      <div className="mb-6 grid grid-cols-2 gap-4 sm:grid-cols-4">
-        <div>
-          <p className="text-[11px] uppercase tracking-wide text-[var(--muted)]">
-            Dependency
-          </p>
-          <p className="mt-1 font-mono text-2xl text-[var(--foreground)]">
-            {r.dependencyScore}
-          </p>
-        </div>
-        <div>
-          <p className="text-[11px] uppercase tracking-wide text-[var(--muted)]">
-            Optionality
-          </p>
-          <p className="mt-1 font-mono text-2xl text-[var(--foreground)]">
-            {r.optionalityScore}
-          </p>
-        </div>
-        <div>
-          <p className="text-[11px] uppercase tracking-wide text-[var(--muted)]">
-            Ownership trajectory
-          </p>
-          <p className="mt-1 font-mono text-sm uppercase text-[var(--accent)]">
-            {TRAJECTORY_LABEL[r.ownershipTrajectory]}
-          </p>
-        </div>
-        <div>
-          <p className="text-[11px] uppercase tracking-wide text-[var(--muted)]">
-            Dominant leverage
-          </p>
-          <p className="mt-1 font-mono text-sm text-[var(--foreground)]">
-            {r.dominantLeverage}
-          </p>
-        </div>
-      </div>
+      <ul className="mt-8 space-y-3">
+        {r.reflectionPrompts.map((p) => (
+          <li
+            key={p}
+            className="border-l border-[var(--border)] pl-4 text-sm leading-relaxed text-[var(--muted)]"
+          >
+            {p}
+          </li>
+        ))}
+      </ul>
 
-      <div className="border-t border-[var(--border)] pt-4">
-        <p className="text-[10px] uppercase tracking-wide text-[var(--muted)]">
-          Reflection prompts
-        </p>
-        <ul className="mt-2 space-y-2">
-          {r.reflectionPrompts.map((p) => (
-            <li
-              key={p}
-              className="border-l-2 border-[var(--border)] pl-3 text-sm text-[var(--foreground)]"
-            >
-              {p}
-            </li>
-          ))}
-        </ul>
-      </div>
+      <p className="mt-10 text-xs text-[var(--muted)]">
+        Ownership feels{" "}
+        <span className="text-[var(--foreground)]">
+          {TRAJECTORY_LABEL[r.ownershipTrajectory]}
+        </span>
+        {" · "}
+        optionality {r.optionalityScore}
+        {" · "}
+        dependency {r.dependencyScore}
+      </p>
     </Section>
   );
 }

@@ -51,4 +51,4 @@ _Cases to be added as operational examples emerge — linked to real patterns, n
 ## Related
 
 - [`../principles/`](../principles/) — what trajectory-native behavior looks like
-- [`../../trajectory-drift/framework/drift-taxonomy/`](https://github.com/higuseonhye/trajectory-drift/tree/main/framework/drift-taxonomy) — failure patterns to contrast
+- [`../../trajectory-drift/framework/drift-taxonomy/`](https://github.com/higuseonhye/drift/tree/main/framework/drift-taxonomy) — failure patterns to contrast

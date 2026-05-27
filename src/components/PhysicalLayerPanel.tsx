@@ -35,7 +35,7 @@ export function PhysicalLayerPanel() {
       <p className="mt-4 text-xs text-[var(--muted)]">
         Framework:{" "}
         <a
-          href="https://github.com/higuseonhye/trajectory-native/tree/main/framework/physical-layer"
+          href="https://github.com/higuseonhye/return/tree/main/framework/physical-layer"
           className="underline underline-offset-2 hover:text-[var(--foreground)]"
           target="_blank"
           rel="noopener noreferrer"

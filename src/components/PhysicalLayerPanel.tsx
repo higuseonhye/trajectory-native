@@ -1,46 +1,80 @@
 import { Section } from "./Section";
 
+const REFERENCES = [
+  {
+    name: "Vermouth hour",
+    detail: "Madrid wine bars · aperitivo · the hour before evening — unhurried, warm, alive.",
+  },
+  {
+    name: "Kissaten & greenhouse",
+    detail: "Japanese coffee silence · botanical light · places with time embedded in them.",
+  },
+  {
+    name: "Gatherings",
+    detail: "Not networking. One subtle turn shared aloud. Return made social, not performative.",
+  },
+] as const;
+
 const DOMAINS = [
-  { name: "Spatial", examples: "Greenhouse aesthetics, warm architecture" },
-  { name: "Sensory", examples: "Light, scent, plants, texture, fabric" },
-  { name: "Hospitality", examples: "Winery atmosphere, retreats, curated spaces" },
-  { name: "Objects", examples: "Furniture, fashion as trajectory artifacts" },
-  { name: "Ritual", examples: "Embodied practices tied to steering" },
+  { name: "Rooms", examples: "Warm wood, natural light, old signage with modern care" },
+  { name: "Ritual", examples: "Today's turn · vermouth hour · embodied return" },
+  { name: "Objects", examples: "Journals, scent, fabric — rhythm you can hold" },
 ] as const;
 
 export function PhysicalLayerPanel() {
   return (
     <Section
       id="physical-layer-heading"
-      title="Spaces to come"
-      description="Software is one expression. Physical rhythm — cafés, greenhouses, rituals — may follow."
+      title="Vermouth Hour"
+      description="Software is one expression. The philosophy may become rooms, gatherings, and rituals you can walk into."
     >
-      <p className="text-sm text-[var(--muted)]">
-        Reference energy: Malibu coastline · greenhouse · Mediterranean winery ·
-        botanical gardens · places where people feel alive again.
+      <p className="text-sm leading-relaxed text-[var(--muted)]">
+        A north star for physical design — not luxury, not startup culture. Warmth,
+        silence, conversation with time in it. Places where people feel like
+        themselves again.
       </p>
-      <ul className="mt-4 space-y-3">
-        {DOMAINS.map((d) => (
+
+      <ul className="mt-8 space-y-4">
+        {REFERENCES.map((r) => (
           <li
-            key={d.name}
-            className="rounded border border-[var(--border)] px-4 py-3"
+            key={r.name}
+            className="border-l border-[var(--accent)]/40 pl-4"
           >
-            <p className="font-mono text-[10px] uppercase tracking-wide text-[var(--accent)]">
-              {d.name}
+            <p className="text-sm font-medium text-[var(--foreground)]">
+              {r.name}
             </p>
-            <p className="mt-1 text-sm text-[var(--foreground)]">{d.examples}</p>
+            <p className="mt-1 text-sm leading-relaxed text-[var(--muted)]">
+              {r.detail}
+            </p>
           </li>
         ))}
       </ul>
-      <p className="mt-4 text-xs text-[var(--muted)]">
+
+      <ul className="mt-10 space-y-3">
+        {DOMAINS.map((d) => (
+          <li
+            key={d.name}
+            className="rounded border border-[var(--border)]/80 px-4 py-3"
+          >
+            <p className="text-xs tracking-wide text-[var(--accent)]">
+              {d.name}
+            </p>
+            <p className="mt-1 text-sm text-[var(--foreground)]">
+              {d.examples}
+            </p>
+          </li>
+        ))}
+      </ul>
+
+      <p className="mt-8 text-xs text-[var(--muted)]">
         Framework:{" "}
         <a
-          href="https://github.com/higuseonhye/return/tree/main/framework/physical-layer"
+          href="https://github.com/higuseonhye/return/tree/main/framework/vermouth-hour"
           className="underline underline-offset-2 hover:text-[var(--foreground)]"
           target="_blank"
           rel="noopener noreferrer"
         >
-          physical-layer/
+          vermouth-hour/
         </a>
       </p>
     </Section>

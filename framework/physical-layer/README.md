@@ -1,6 +1,14 @@
 # Physical layer
 
-Software is the **navigation and memory layer** for trajectory across environments. Physical manifestation may follow.
+Software is the **memory and rhythm layer**. Physical expression may follow — spaces where return is embodied, not only logged.
+
+---
+
+## Vermouth Hour
+
+Atmospheric north star for physical design: [vermouth-hour/](../vermouth-hour/)
+
+Madrid wine bars · vermouth hour · kissaten · aperitivo · greenhouse golden hour — warmth, silence, time in the room.
 
 ---
 
@@ -8,28 +16,27 @@ Software is the **navigation and memory layer** for trajectory across environmen
 
 | Domain | Examples |
 |--------|----------|
-| **Spatial** | Greenhouse aesthetics, warm natural architecture |
-| **Sensory** | Light, scent, plants, texture, fabric |
-| **Hospitality** | Winery / Mediterranean atmosphere, retreats |
-| **Objects** | Furniture, fashion as trajectory artifacts |
-| **Ritual** | Embodied practices tied to daily steering |
+| **Spatial** | Greenhouse aesthetics, warm wood, layered history |
+| **Sensory** | Natural light, scent, plants, texture, fabric |
+| **Hospitality** | Vermouth hour gatherings, retreats, curated rooms |
+| **Objects** | Journals, furniture, fashion as rhythm artifacts |
+| **Ritual** | Today's turn spoken aloud; embodied return |
 
 ---
 
 ## Design north star
 
-Places where people **feel alive again** — not lifestyle marketing, but conditions for chosen direction.
-
-Reference energy: Malibu coastline · greenhouse · botanical gardens · warm human-centered spaces.
+Places where people **feel alive again** — conditions for chosen direction, not lifestyle marketing.
 
 ---
 
-## Product relationship
+## Ecosystem
 
 | Layer | Role |
 |-------|------|
-| **trajectory-native** | Log turns, events, environment context |
-| **Physical (future)** | Curated spaces, materials, rituals |
-| **trajectory-drift** | Org-scale anti-dead-environment design |
+| **Return** | Personal rhythm in software |
+| **Drift** | Collective rhythm |
+| **Continuity** | Memory |
+| **Physical (future)** | Vermouth Hour — rooms, gatherings, objects |
 
 See [`../product-mapping/environment-state.md`](../product-mapping/environment-state.md).

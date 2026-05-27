@@ -15,6 +15,7 @@ Conceptual infrastructure — human rhythm first, precision underneath.
 | [`environment-design/`](./environment-design/) | Alive atmospheres — space, aesthetics, sensory |
 | [`state-design/`](./state-design/) | Embodied rhythm — nervous system, aliveness |
 | [`physical-layer/`](./physical-layer/) | Future spatial, ritual, café expression |
+| [`vermouth-hour/`](./vermouth-hour/) | Physical north star — gatherings, warmth, time in the room |
 | [`principles/`](./principles/) | Depth — ownership, leverage, compounding |
 | [`product-mapping/`](./product-mapping/) | Module architecture (builders) |
 

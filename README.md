@@ -45,7 +45,7 @@ npm install && npm run dev
 # → http://localhost:3000
 ```
 
-You'll find, in unhurried order: a quiet notice when rhythm fades · today's turn · rhythm · memory · atmosphere · spaces to come.
+You'll find, in unhurried order: a quiet notice · today's turn · rhythm · memory · **Vermouth Hour** · shared rhythm with Drift.
 
 ---
 

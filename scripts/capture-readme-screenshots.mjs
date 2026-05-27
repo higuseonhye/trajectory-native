@@ -72,6 +72,7 @@ async function main() {
   await sectionShot("Continuity", "demo-institutional-memory.png");
   await sectionShot("What happened", "demo-trajectory-events.png");
   await sectionShot("Who restores you", "demo-interaction.png");
+  await sectionShot("Vermouth Hour", "demo-vermouth-hour.png");
   await sectionShot("Shared rhythm", "demo-bridge.png");
   await main.screenshot({ path: path.join(OUT, "demo-full.png") });
   console.log("wrote demo-full.png");

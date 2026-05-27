@@ -85,12 +85,13 @@ Full naming exploration: [`naming.md`](./naming.md) · Visual tone: [`aesthetic-
 
 Software is one expression. The deeper mission may include:
 
-- physical spaces and gatherings
-- rituals and objects
-- journals and cafés
-- greenhouse environments
+- **Vermouth Hour** gatherings and warm rooms
+- rituals, journals, objects
+- greenhouse and kissaten-inspired spaces
 - conversation systems
 - slow technology
+
+See [`framework/vermouth-hour/`](../framework/vermouth-hour/).
 
 **Designing environments where humans do not lose themselves.**
 

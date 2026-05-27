@@ -28,7 +28,7 @@ Names should **not** sound like: SaaS startups, AI infrastructure, corporate wel
 
 | Name | Fit |
 |------|-----|
-| **Vermouth Hour** | Gatherings, cafés, spatial layer |
+| **Vermouth Hour** | Gatherings, physical layer, spatial brand ([framework](../framework/vermouth-hour/)) |
 | **The Warm Turn** | Personal ritual language |
 | **The Long Evening** | Poetic umbrella |
 | **Quiet Rituals** | Embodied practices |

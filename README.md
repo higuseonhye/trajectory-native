@@ -57,7 +57,7 @@ You'll find, in unhurried order: a quiet notice · today's turn · rhythm · mem
 | **Drift** | [drift](https://github.com/higuseonhye/drift) | When teams and systems lose warmth |
 | **Continuity** | [continuity](https://github.com/higuseonhye/continuity) | Decision memory across time |
 
-Philosophy: [human rhythm](docs/human-rhythm.md) · [naming](docs/naming.md) · [local setup](docs/LOCAL.md) · [framework](framework/)
+Philosophy: [human rhythm](docs/human-rhythm.md) · [about](docs/ABOUT.md) · [naming](docs/naming.md) · [local setup](docs/LOCAL.md) · [framework](framework/)
 
 ---
 

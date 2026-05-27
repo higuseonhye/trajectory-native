@@ -1,4 +1,4 @@
-# trajectory-native framework
+# Return framework
 
 > **Drift & Return** — conditions for aliveness.
 
@@ -22,7 +22,7 @@ Conceptual infrastructure — human rhythm first, precision underneath.
 
 ## Human name
 
-**Return** — personal rhythm. GitHub slug: `trajectory-native` (for now).
+**Return** — personal rhythm. GitHub: [higuseonhye/return](https://github.com/higuseonhye/return)
 
 See [`../docs/human-rhythm.md`](../docs/human-rhythm.md) · [`../docs/naming.md`](../docs/naming.md)
 
